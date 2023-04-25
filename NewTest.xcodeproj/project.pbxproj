@@ -1,0 +1,950 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		480E76A9297A868E0071B049 /* GERMAN.json in Resources */ = {isa = PBXBuildFile; fileRef = 48CD8D0429792E26008573F8 /* GERMAN.json */; };
+		480E76AA297A868E0071B049 /* ENGLISH.json in Resources */ = {isa = PBXBuildFile; fileRef = 48CD8D0229792E25008573F8 /* ENGLISH.json */; };
+		480E76AB297A868E0071B049 /* TURKISH.json in Resources */ = {isa = PBXBuildFile; fileRef = 48CD8D0329792E26008573F8 /* TURKISH.json */; };
+		481065992922646600053004 /* SDKLivenessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481065972922646600053004 /* SDKLivenessViewController.swift */; };
+		4810659A2922646600053004 /* SDKLivenessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 481065982922646600053004 /* SDKLivenessViewController.xib */; };
+		4813037E29221E1300E66D73 /* SDKVideoRecorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4813037C29221E1300E66D73 /* SDKVideoRecorderViewController.swift */; };
+		4813037F29221E1300E66D73 /* SDKVideoRecorderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4813037D29221E1300E66D73 /* SDKVideoRecorderViewController.xib */; };
+		48171405294716830095A64F /* netfox in Frameworks */ = {isa = PBXBuildFile; productRef = 48171404294716830095A64F /* netfox */; settings = {ATTRIBUTES = (Required, ); }; };
+		48171422294734FA0095A64F /* SDKPassportReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48171420294734FA0095A64F /* SDKPassportReaderViewController.swift */; };
+		48171423294734FA0095A64F /* SDKPassportReaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48171421294734FA0095A64F /* SDKPassportReaderViewController.xib */; };
+		4820A4A22924CDAD004DB388 /* sample.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4820A4A12924CDAC004DB388 /* sample.mp4 */; };
+		48263C10292789C7005200A1 /* SDKThankYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48263C0E292789C7005200A1 /* SDKThankYouViewController.swift */; };
+		48263C11292789C7005200A1 /* SDKThankYouViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48263C0F292789C7005200A1 /* SDKThankYouViewController.xib */; };
+		4831506029F7E2DC00FDEB3B /* IdentifySDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4831505E29F7E2D700FDEB3B /* IdentifySDK.xcframework */; };
+		4831506129F7E2DC00FDEB3B /* IdentifySDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4831505E29F7E2D700FDEB3B /* IdentifySDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4831506729F7E87400FDEB3B /* WebRTC in Frameworks */ = {isa = PBXBuildFile; productRef = 4831506629F7E87400FDEB3B /* WebRTC */; };
+		483BDB0F28F459CC00635BCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483BDB0E28F459CC00635BCC /* AppDelegate.swift */; };
+		483BDB1828F459CC00635BCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 483BDB1728F459CC00635BCC /* Assets.xcassets */; };
+		483BDB1B28F459CC00635BCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 483BDB1928F459CC00635BCC /* LaunchScreen.storyboard */; };
+		4857BFF82902D621001FE850 /* OpenSSL in Frameworks */ = {isa = PBXBuildFile; productRef = 4857BFF72902D621001FE850 /* OpenSSL */; settings = {ATTRIBUTES = (Required, ); }; };
+		4857BFFB2902D636001FE850 /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = 4857BFFA2902D636001FE850 /* Starscream */; settings = {ATTRIBUTES = (Required, ); }; };
+		485C15322907D2E8007B9ED0 /* SDKLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C15302907D2E8007B9ED0 /* SDKLoginViewController.swift */; };
+		485C15332907D2E8007B9ED0 /* SDKLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485C15312907D2E8007B9ED0 /* SDKLoginViewController.xib */; };
+		485C15392907D3CF007B9ED0 /* SDKViewOptionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C15382907D3CF007B9ED0 /* SDKViewOptionsController.swift */; };
+		485C154E2907DC19007B9ED0 /* SDKSelfieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C154C2907DC19007B9ED0 /* SDKSelfieViewController.swift */; };
+		485C154F2907DC19007B9ED0 /* SDKSelfieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485C154D2907DC19007B9ED0 /* SDKSelfieViewController.xib */; };
+		485C155A2907F3A7007B9ED0 /* SDKUITableViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C15512907F3A7007B9ED0 /* SDKUITableViewCell+.swift */; };
+		485C155B2907F3A7007B9ED0 /* SDKUIApplication+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C15522907F3A7007B9ED0 /* SDKUIApplication+.swift */; };
+		485C155C2907F3A7007B9ED0 /* SDKBundle+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C15532907F3A7007B9ED0 /* SDKBundle+.swift */; };
+		485C155D2907F3A7007B9ED0 /* SDKUIImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C15542907F3A7007B9ED0 /* SDKUIImageView+.swift */; };
+		485C155E2907F3A7007B9ED0 /* SDKUIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C15552907F3A7007B9ED0 /* SDKUIStackView+.swift */; };
+		485C155F2907F3A7007B9ED0 /* SDKString+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C15562907F3A7007B9ED0 /* SDKString+.swift */; };
+		485C15602907F3A7007B9ED0 /* SDKUIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C15572907F3A7007B9ED0 /* SDKUIImage+.swift */; };
+		485C15612907F3A7007B9ED0 /* SDKUIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C15582907F3A7007B9ED0 /* SDKUIView+.swift */; };
+		485C15622907F3A7007B9ED0 /* SDKCgRect+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C15592907F3A7007B9ED0 /* SDKCgRect+.swift */; };
+		485C15642907F3FA007B9ED0 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 485C15632907F3FA007B9ED0 /* Colors.xcassets */; };
+		485C15682907FC69007B9ED0 /* SDKCardReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C15662907FC69007B9ED0 /* SDKCardReaderViewController.swift */; };
+		485C15692907FC69007B9ED0 /* SDKCardReaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485C15672907FC69007B9ED0 /* SDKCardReaderViewController.xib */; };
+		485C157029080383007B9ED0 /* WeScan in Frameworks */ = {isa = PBXBuildFile; productRef = 485C156F29080383007B9ED0 /* WeScan */; settings = {ATTRIBUTES = (Required, ); }; };
+		485C157C2908190D007B9ED0 /* SDKNfcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C157A2908190D007B9ED0 /* SDKNfcViewController.swift */; };
+		485C157D2908190D007B9ED0 /* SDKNfcViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485C157B2908190D007B9ED0 /* SDKNfcViewController.xib */; };
+		4862133429B0C05F001428A0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4862133329B0C05F001428A0 /* Alamofire */; };
+		4880596E291D0EBD0058C7CD /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 4880596D291D0EBD0058C7CD /* Toast */; settings = {ATTRIBUTES = (Required, ); }; };
+		4881A7FF29238CB400EB4072 /* SDKAddressConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4881A7FD29238CB400EB4072 /* SDKAddressConfirmViewController.swift */; };
+		4881A80029238CB400EB4072 /* SDKAddressConfirmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4881A7FE29238CB400EB4072 /* SDKAddressConfirmViewController.xib */; };
+		4881A80729239A1100EB4072 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4881A80629239A1100EB4072 /* IQKeyboardManagerSwift */; settings = {ATTRIBUTES = (Required, ); }; };
+		4881A80B2923BEF400EB4072 /* SDKCallScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4881A8092923BEF400EB4072 /* SDKCallScreenViewController.swift */; };
+		4881A80C2923BEF400EB4072 /* SDKCallScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4881A80A2923BEF400EB4072 /* SDKCallScreenViewController.xib */; };
+		4881A8102923BF0000EB4072 /* SDKRingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4881A80E2923BF0000EB4072 /* SDKRingViewController.swift */; };
+		4881A8112923BF0000EB4072 /* SDKRingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4881A80F2923BF0000EB4072 /* SDKRingViewController.xib */; };
+		4887009A292CDA3500961218 /* SDKListenSocketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48870098292CDA3500961218 /* SDKListenSocketViewController.swift */; };
+		4887009B292CDA3500961218 /* SDKListenSocketViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48870099292CDA3500961218 /* SDKListenSocketViewController.xib */; };
+		48A151EB292B73BA005B376B /* SDKSignLangViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A151E9292B73BA005B376B /* SDKSignLangViewController.swift */; };
+		48A151EC292B73BA005B376B /* SDKSignLangViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A151EA292B73BA005B376B /* SDKSignLangViewController.xib */; };
+		48AB73FB291A75E200F591A4 /* SDKSignatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB73F9291A75E200F591A4 /* SDKSignatureViewController.swift */; };
+		48AB73FC291A75E200F591A4 /* SDKSignatureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48AB73FA291A75E200F591A4 /* SDKSignatureViewController.xib */; };
+		48AB73FF291A762100F591A4 /* SwiftSignatureView in Frameworks */ = {isa = PBXBuildFile; productRef = 48AB73FE291A762100F591A4 /* SwiftSignatureView */; settings = {ATTRIBUTES = (Required, ); }; };
+		48CD8CFF29792C8F008573F8 /* SDKIdentifyColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CD8CFE29792C8F008573F8 /* SDKIdentifyColorTheme.swift */; };
+		48CD8D0129792D5A008573F8 /* SDKLangManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CD8D0029792D5A008573F8 /* SDKLangManager.swift */; };
+		48D802292924F6B000B9BB83 /* CHIOTPField in Frameworks */ = {isa = PBXBuildFile; productRef = 48D802282924F6B000B9BB83 /* CHIOTPField */; settings = {ATTRIBUTES = (Required, ); }; };
+		48DE147B290A6C1900057EAD /* SDKColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DE147A290A6C1900057EAD /* SDKColorManager.swift */; };
+		48DE147D290A6C3E00057EAD /* SDKButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DE147C290A6C3E00057EAD /* SDKButtonExtension.swift */; };
+		48DE1485290A7D3A00057EAD /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DE1484290A7D3A00057EAD /* UIViewController+.swift */; };
+		48E8E43129266B8A0045C3F8 /* SDKSpeechRecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E8E42F29266B8A0045C3F8 /* SDKSpeechRecViewController.swift */; };
+		48E8E43229266B8A0045C3F8 /* SDKSpeechRecViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48E8E43029266B8A0045C3F8 /* SDKSpeechRecViewController.xib */; };
+		48F0867829F7CA4E00FCA4BF /* QKMRZScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 48F0867729F7CA4E00FCA4BF /* QKMRZScanner */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		48E8319329B1D717000E5556 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4831506129F7E2DC00FDEB3B /* IdentifySDK.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		481065972922646600053004 /* SDKLivenessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKLivenessViewController.swift; sourceTree = "<group>"; };
+		481065982922646600053004 /* SDKLivenessViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKLivenessViewController.xib; sourceTree = "<group>"; };
+		4813037C29221E1300E66D73 /* SDKVideoRecorderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKVideoRecorderViewController.swift; sourceTree = "<group>"; };
+		4813037D29221E1300E66D73 /* SDKVideoRecorderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKVideoRecorderViewController.xib; sourceTree = "<group>"; };
+		48171420294734FA0095A64F /* SDKPassportReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKPassportReaderViewController.swift; sourceTree = "<group>"; };
+		48171421294734FA0095A64F /* SDKPassportReaderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKPassportReaderViewController.xib; sourceTree = "<group>"; };
+		4820A4A12924CDAC004DB388 /* sample.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample.mp4; sourceTree = "<group>"; };
+		48263C0E292789C7005200A1 /* SDKThankYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKThankYouViewController.swift; sourceTree = "<group>"; };
+		48263C0F292789C7005200A1 /* SDKThankYouViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKThankYouViewController.xib; sourceTree = "<group>"; };
+		4831505E29F7E2D700FDEB3B /* IdentifySDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = IdentifySDK.xcframework; sourceTree = "<group>"; };
+		483BDB0B28F459CC00635BCC /* NewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		483BDB0E28F459CC00635BCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		483BDB1528F459CC00635BCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		483BDB1728F459CC00635BCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		483BDB1A28F459CC00635BCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		483BDB1C28F459CC00635BCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		485C15302907D2E8007B9ED0 /* SDKLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKLoginViewController.swift; sourceTree = "<group>"; };
+		485C15312907D2E8007B9ED0 /* SDKLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKLoginViewController.xib; sourceTree = "<group>"; };
+		485C15382907D3CF007B9ED0 /* SDKViewOptionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKViewOptionsController.swift; sourceTree = "<group>"; };
+		485C154C2907DC19007B9ED0 /* SDKSelfieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKSelfieViewController.swift; sourceTree = "<group>"; };
+		485C154D2907DC19007B9ED0 /* SDKSelfieViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKSelfieViewController.xib; sourceTree = "<group>"; };
+		485C15512907F3A7007B9ED0 /* SDKUITableViewCell+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SDKUITableViewCell+.swift"; sourceTree = "<group>"; };
+		485C15522907F3A7007B9ED0 /* SDKUIApplication+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SDKUIApplication+.swift"; sourceTree = "<group>"; };
+		485C15532907F3A7007B9ED0 /* SDKBundle+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SDKBundle+.swift"; sourceTree = "<group>"; };
+		485C15542907F3A7007B9ED0 /* SDKUIImageView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SDKUIImageView+.swift"; sourceTree = "<group>"; };
+		485C15552907F3A7007B9ED0 /* SDKUIStackView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SDKUIStackView+.swift"; sourceTree = "<group>"; };
+		485C15562907F3A7007B9ED0 /* SDKString+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SDKString+.swift"; sourceTree = "<group>"; };
+		485C15572907F3A7007B9ED0 /* SDKUIImage+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SDKUIImage+.swift"; sourceTree = "<group>"; };
+		485C15582907F3A7007B9ED0 /* SDKUIView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SDKUIView+.swift"; sourceTree = "<group>"; };
+		485C15592907F3A7007B9ED0 /* SDKCgRect+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SDKCgRect+.swift"; sourceTree = "<group>"; };
+		485C15632907F3FA007B9ED0 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		485C15662907FC69007B9ED0 /* SDKCardReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKCardReaderViewController.swift; sourceTree = "<group>"; };
+		485C15672907FC69007B9ED0 /* SDKCardReaderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKCardReaderViewController.xib; sourceTree = "<group>"; };
+		485C157A2908190D007B9ED0 /* SDKNfcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKNfcViewController.swift; sourceTree = "<group>"; };
+		485C157B2908190D007B9ED0 /* SDKNfcViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKNfcViewController.xib; sourceTree = "<group>"; };
+		4881A7FD29238CB400EB4072 /* SDKAddressConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKAddressConfirmViewController.swift; sourceTree = "<group>"; };
+		4881A7FE29238CB400EB4072 /* SDKAddressConfirmViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKAddressConfirmViewController.xib; sourceTree = "<group>"; };
+		4881A8092923BEF400EB4072 /* SDKCallScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKCallScreenViewController.swift; sourceTree = "<group>"; };
+		4881A80A2923BEF400EB4072 /* SDKCallScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKCallScreenViewController.xib; sourceTree = "<group>"; };
+		4881A80E2923BF0000EB4072 /* SDKRingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKRingViewController.swift; sourceTree = "<group>"; };
+		4881A80F2923BF0000EB4072 /* SDKRingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKRingViewController.xib; sourceTree = "<group>"; };
+		48870098292CDA3500961218 /* SDKListenSocketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKListenSocketViewController.swift; sourceTree = "<group>"; };
+		48870099292CDA3500961218 /* SDKListenSocketViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKListenSocketViewController.xib; sourceTree = "<group>"; };
+		489CBB1A28F586D500D22CC1 /* NewTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NewTest.entitlements; sourceTree = "<group>"; };
+		48A151E9292B73BA005B376B /* SDKSignLangViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKSignLangViewController.swift; sourceTree = "<group>"; };
+		48A151EA292B73BA005B376B /* SDKSignLangViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKSignLangViewController.xib; sourceTree = "<group>"; };
+		48AB73F9291A75E200F591A4 /* SDKSignatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKSignatureViewController.swift; sourceTree = "<group>"; };
+		48AB73FA291A75E200F591A4 /* SDKSignatureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKSignatureViewController.xib; sourceTree = "<group>"; };
+		48CD8CFE29792C8F008573F8 /* SDKIdentifyColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKIdentifyColorTheme.swift; sourceTree = "<group>"; };
+		48CD8D0029792D5A008573F8 /* SDKLangManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKLangManager.swift; sourceTree = "<group>"; };
+		48CD8D0229792E25008573F8 /* ENGLISH.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ENGLISH.json; sourceTree = "<group>"; };
+		48CD8D0329792E26008573F8 /* TURKISH.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TURKISH.json; sourceTree = "<group>"; };
+		48CD8D0429792E26008573F8 /* GERMAN.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GERMAN.json; sourceTree = "<group>"; };
+		48DE147A290A6C1900057EAD /* SDKColorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKColorManager.swift; sourceTree = "<group>"; };
+		48DE147C290A6C3E00057EAD /* SDKButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKButtonExtension.swift; sourceTree = "<group>"; };
+		48DE1484290A7D3A00057EAD /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		48E8E42F29266B8A0045C3F8 /* SDKSpeechRecViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKSpeechRecViewController.swift; sourceTree = "<group>"; };
+		48E8E43029266B8A0045C3F8 /* SDKSpeechRecViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKSpeechRecViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		483BDB0828F459CC00635BCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4831506029F7E2DC00FDEB3B /* IdentifySDK.xcframework in Frameworks */,
+				4831506729F7E87400FDEB3B /* WebRTC in Frameworks */,
+				4880596E291D0EBD0058C7CD /* Toast in Frameworks */,
+				48AB73FF291A762100F591A4 /* SwiftSignatureView in Frameworks */,
+				4857BFF82902D621001FE850 /* OpenSSL in Frameworks */,
+				4881A80729239A1100EB4072 /* IQKeyboardManagerSwift in Frameworks */,
+				48171405294716830095A64F /* netfox in Frameworks */,
+				48F0867829F7CA4E00FCA4BF /* QKMRZScanner in Frameworks */,
+				4857BFFB2902D636001FE850 /* Starscream in Frameworks */,
+				48D802292924F6B000B9BB83 /* CHIOTPField in Frameworks */,
+				4862133429B0C05F001428A0 /* Alamofire in Frameworks */,
+				485C157029080383007B9ED0 /* WeScan in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		481065962922645900053004 /* Liveness */ = {
+			isa = PBXGroup;
+			children = (
+				481065972922646600053004 /* SDKLivenessViewController.swift */,
+				481065982922646600053004 /* SDKLivenessViewController.xib */,
+			);
+			path = Liveness;
+			sourceTree = "<group>";
+		};
+		4813037B29221E0200E66D73 /* Video Recorder */ = {
+			isa = PBXGroup;
+			children = (
+				4813037C29221E1300E66D73 /* SDKVideoRecorderViewController.swift */,
+				4813037D29221E1300E66D73 /* SDKVideoRecorderViewController.xib */,
+			);
+			path = "Video Recorder";
+			sourceTree = "<group>";
+		};
+		4817141F294734EA0095A64F /* Passport */ = {
+			isa = PBXGroup;
+			children = (
+				48171420294734FA0095A64F /* SDKPassportReaderViewController.swift */,
+				48171421294734FA0095A64F /* SDKPassportReaderViewController.xib */,
+			);
+			path = Passport;
+			sourceTree = "<group>";
+		};
+		4825517729238BEB00C4C75E /* Address Confirm */ = {
+			isa = PBXGroup;
+			children = (
+				4881A7FD29238CB400EB4072 /* SDKAddressConfirmViewController.swift */,
+				4881A7FE29238CB400EB4072 /* SDKAddressConfirmViewController.xib */,
+			);
+			path = "Address Confirm";
+			sourceTree = "<group>";
+		};
+		48263C0D292789BB005200A1 /* ThankYou */ = {
+			isa = PBXGroup;
+			children = (
+				48263C0E292789C7005200A1 /* SDKThankYouViewController.swift */,
+				48263C0F292789C7005200A1 /* SDKThankYouViewController.xib */,
+			);
+			path = ThankYou;
+			sourceTree = "<group>";
+		};
+		483BDB0228F459CC00635BCC = {
+			isa = PBXGroup;
+			children = (
+				483BDB0D28F459CC00635BCC /* NewTest */,
+				483BDB0C28F459CC00635BCC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		483BDB0C28F459CC00635BCC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				483BDB0B28F459CC00635BCC /* NewTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		483BDB0D28F459CC00635BCC /* NewTest */ = {
+			isa = PBXGroup;
+			children = (
+				4820A4A12924CDAC004DB388 /* sample.mp4 */,
+				4831505E29F7E2D700FDEB3B /* IdentifySDK.xcframework */,
+				485C15502907F3A7007B9ED0 /* RequiredForApp */,
+				485C152F2907D2D7007B9ED0 /* Views */,
+				489CBB1A28F586D500D22CC1 /* NewTest.entitlements */,
+				483BDB0E28F459CC00635BCC /* AppDelegate.swift */,
+				483BDB1428F459CC00635BCC /* Main.storyboard */,
+				483BDB1728F459CC00635BCC /* Assets.xcassets */,
+				485C15632907F3FA007B9ED0 /* Colors.xcassets */,
+				483BDB1928F459CC00635BCC /* LaunchScreen.storyboard */,
+				483BDB1C28F459CC00635BCC /* Info.plist */,
+			);
+			path = NewTest;
+			sourceTree = "<group>";
+		};
+		485C152F2907D2D7007B9ED0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				48870097292CDA2400961218 /* Internet Connection Check */,
+				48AB73F8291A75C800F591A4 /* Module List */,
+				485C154B2907DC0E007B9ED0 /* Login */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		485C154A2907DC07007B9ED0 /* Selfie */ = {
+			isa = PBXGroup;
+			children = (
+				485C154C2907DC19007B9ED0 /* SDKSelfieViewController.swift */,
+				485C154D2907DC19007B9ED0 /* SDKSelfieViewController.xib */,
+			);
+			path = Selfie;
+			sourceTree = "<group>";
+		};
+		485C154B2907DC0E007B9ED0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				485C15302907D2E8007B9ED0 /* SDKLoginViewController.swift */,
+				485C15312907D2E8007B9ED0 /* SDKLoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		485C15502907F3A7007B9ED0 /* RequiredForApp */ = {
+			isa = PBXGroup;
+			children = (
+				48CD8CFD29792C31008573F8 /* Language Files */,
+				485C15382907D3CF007B9ED0 /* SDKViewOptionsController.swift */,
+				48DE1484290A7D3A00057EAD /* UIViewController+.swift */,
+				48DE147C290A6C3E00057EAD /* SDKButtonExtension.swift */,
+				48DE147A290A6C1900057EAD /* SDKColorManager.swift */,
+				485C15512907F3A7007B9ED0 /* SDKUITableViewCell+.swift */,
+				485C15522907F3A7007B9ED0 /* SDKUIApplication+.swift */,
+				485C15532907F3A7007B9ED0 /* SDKBundle+.swift */,
+				485C15542907F3A7007B9ED0 /* SDKUIImageView+.swift */,
+				485C15552907F3A7007B9ED0 /* SDKUIStackView+.swift */,
+				485C15562907F3A7007B9ED0 /* SDKString+.swift */,
+				485C15572907F3A7007B9ED0 /* SDKUIImage+.swift */,
+				485C15582907F3A7007B9ED0 /* SDKUIView+.swift */,
+				485C15592907F3A7007B9ED0 /* SDKCgRect+.swift */,
+				48CD8CFE29792C8F008573F8 /* SDKIdentifyColorTheme.swift */,
+			);
+			path = RequiredForApp;
+			sourceTree = "<group>";
+		};
+		485C15652907FC57007B9ED0 /* IdCardReader */ = {
+			isa = PBXGroup;
+			children = (
+				4817141F294734EA0095A64F /* Passport */,
+				485C15662907FC69007B9ED0 /* SDKCardReaderViewController.swift */,
+				485C15672907FC69007B9ED0 /* SDKCardReaderViewController.xib */,
+			);
+			path = IdCardReader;
+			sourceTree = "<group>";
+		};
+		485C1579290818EA007B9ED0 /* NFC */ = {
+			isa = PBXGroup;
+			children = (
+				485C157A2908190D007B9ED0 /* SDKNfcViewController.swift */,
+				485C157B2908190D007B9ED0 /* SDKNfcViewController.xib */,
+			);
+			path = NFC;
+			sourceTree = "<group>";
+		};
+		4881A8082923BEDD00EB4072 /* Call Screen */ = {
+			isa = PBXGroup;
+			children = (
+				4881A80D2923BEF700EB4072 /* RingScreen */,
+				4881A8092923BEF400EB4072 /* SDKCallScreenViewController.swift */,
+				4881A80A2923BEF400EB4072 /* SDKCallScreenViewController.xib */,
+			);
+			path = "Call Screen";
+			sourceTree = "<group>";
+		};
+		4881A80D2923BEF700EB4072 /* RingScreen */ = {
+			isa = PBXGroup;
+			children = (
+				4881A80E2923BF0000EB4072 /* SDKRingViewController.swift */,
+				4881A80F2923BF0000EB4072 /* SDKRingViewController.xib */,
+			);
+			path = RingScreen;
+			sourceTree = "<group>";
+		};
+		48870097292CDA2400961218 /* Internet Connection Check */ = {
+			isa = PBXGroup;
+			children = (
+				48870098292CDA3500961218 /* SDKListenSocketViewController.swift */,
+				48870099292CDA3500961218 /* SDKListenSocketViewController.xib */,
+			);
+			path = "Internet Connection Check";
+			sourceTree = "<group>";
+		};
+		48A151E8292B73B0005B376B /* Sign Lang */ = {
+			isa = PBXGroup;
+			children = (
+				48A151E9292B73BA005B376B /* SDKSignLangViewController.swift */,
+				48A151EA292B73BA005B376B /* SDKSignLangViewController.xib */,
+			);
+			path = "Sign Lang";
+			sourceTree = "<group>";
+		};
+		48AB73F7291A75C300F591A4 /* Signature */ = {
+			isa = PBXGroup;
+			children = (
+				48AB73F9291A75E200F591A4 /* SDKSignatureViewController.swift */,
+				48AB73FA291A75E200F591A4 /* SDKSignatureViewController.xib */,
+			);
+			path = Signature;
+			sourceTree = "<group>";
+		};
+		48AB73F8291A75C800F591A4 /* Module List */ = {
+			isa = PBXGroup;
+			children = (
+				48A151E8292B73B0005B376B /* Sign Lang */,
+				48263C0D292789BB005200A1 /* ThankYou */,
+				48E8E42E29266B7C0045C3F8 /* Speech Recognition */,
+				4881A8082923BEDD00EB4072 /* Call Screen */,
+				4825517729238BEB00C4C75E /* Address Confirm */,
+				481065962922645900053004 /* Liveness */,
+				4813037B29221E0200E66D73 /* Video Recorder */,
+				485C154A2907DC07007B9ED0 /* Selfie */,
+				485C15652907FC57007B9ED0 /* IdCardReader */,
+				485C1579290818EA007B9ED0 /* NFC */,
+				48AB73F7291A75C300F591A4 /* Signature */,
+			);
+			path = "Module List";
+			sourceTree = "<group>";
+		};
+		48CD8CFD29792C31008573F8 /* Language Files */ = {
+			isa = PBXGroup;
+			children = (
+				48CD8D0229792E25008573F8 /* ENGLISH.json */,
+				48CD8D0429792E26008573F8 /* GERMAN.json */,
+				48CD8D0329792E26008573F8 /* TURKISH.json */,
+				48CD8D0029792D5A008573F8 /* SDKLangManager.swift */,
+			);
+			path = "Language Files";
+			sourceTree = "<group>";
+		};
+		48E8E42E29266B7C0045C3F8 /* Speech Recognition */ = {
+			isa = PBXGroup;
+			children = (
+				48E8E42F29266B8A0045C3F8 /* SDKSpeechRecViewController.swift */,
+				48E8E43029266B8A0045C3F8 /* SDKSpeechRecViewController.xib */,
+			);
+			path = "Speech Recognition";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		483BDB0A28F459CC00635BCC /* NewTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 483BDB1F28F459CC00635BCC /* Build configuration list for PBXNativeTarget "NewTest" */;
+			buildPhases = (
+				483BDB0728F459CC00635BCC /* Sources */,
+				483BDB0828F459CC00635BCC /* Frameworks */,
+				483BDB0928F459CC00635BCC /* Resources */,
+				48E8319329B1D717000E5556 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NewTest;
+			packageProductDependencies = (
+				4857BFF72902D621001FE850 /* OpenSSL */,
+				4857BFFA2902D636001FE850 /* Starscream */,
+				485C156F29080383007B9ED0 /* WeScan */,
+				48AB73FE291A762100F591A4 /* SwiftSignatureView */,
+				4880596D291D0EBD0058C7CD /* Toast */,
+				4881A80629239A1100EB4072 /* IQKeyboardManagerSwift */,
+				48D802282924F6B000B9BB83 /* CHIOTPField */,
+				48171404294716830095A64F /* netfox */,
+				4862133329B0C05F001428A0 /* Alamofire */,
+				48F0867729F7CA4E00FCA4BF /* QKMRZScanner */,
+				4831506629F7E87400FDEB3B /* WebRTC */,
+			);
+			productName = NewTest;
+			productReference = 483BDB0B28F459CC00635BCC /* NewTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		483BDB0328F459CC00635BCC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					483BDB0A28F459CC00635BCC = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = 483BDB0628F459CC00635BCC /* Build configuration list for PBXProject "NewTest" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 483BDB0228F459CC00635BCC;
+			packageReferences = (
+				4857BFF62902D621001FE850 /* XCRemoteSwiftPackageReference "OpenSSL" */,
+				4857BFF92902D636001FE850 /* XCRemoteSwiftPackageReference "Starscream" */,
+				485C156E29080383007B9ED0 /* XCRemoteSwiftPackageReference "WeScan" */,
+				48AB73FD291A762100F591A4 /* XCRemoteSwiftPackageReference "SwiftSignatureView" */,
+				4880596C291D0EBD0058C7CD /* XCRemoteSwiftPackageReference "Toast" */,
+				4881A80529239A1100EB4072 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				48D802272924F6B000B9BB83 /* XCRemoteSwiftPackageReference "CHIOTPField" */,
+				48171403294716830095A64F /* XCRemoteSwiftPackageReference "netfox" */,
+				4862133229B0C05F001428A0 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				48F0867629F7CA4E00FCA4BF /* XCRemoteSwiftPackageReference "QKMRZScanner" */,
+				4831506529F7E87400FDEB3B /* XCRemoteSwiftPackageReference "WebRTC" */,
+			);
+			productRefGroup = 483BDB0C28F459CC00635BCC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				483BDB0A28F459CC00635BCC /* NewTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		483BDB0928F459CC00635BCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48263C11292789C7005200A1 /* SDKThankYouViewController.xib in Resources */,
+				483BDB1B28F459CC00635BCC /* LaunchScreen.storyboard in Resources */,
+				485C157D2908190D007B9ED0 /* SDKNfcViewController.xib in Resources */,
+				48AB73FC291A75E200F591A4 /* SDKSignatureViewController.xib in Resources */,
+				4813037F29221E1300E66D73 /* SDKVideoRecorderViewController.xib in Resources */,
+				4820A4A22924CDAD004DB388 /* sample.mp4 in Resources */,
+				485C154F2907DC19007B9ED0 /* SDKSelfieViewController.xib in Resources */,
+				4881A80029238CB400EB4072 /* SDKAddressConfirmViewController.xib in Resources */,
+				48E8E43229266B8A0045C3F8 /* SDKSpeechRecViewController.xib in Resources */,
+				4881A80C2923BEF400EB4072 /* SDKCallScreenViewController.xib in Resources */,
+				480E76AB297A868E0071B049 /* TURKISH.json in Resources */,
+				485C15332907D2E8007B9ED0 /* SDKLoginViewController.xib in Resources */,
+				480E76AA297A868E0071B049 /* ENGLISH.json in Resources */,
+				4887009B292CDA3500961218 /* SDKListenSocketViewController.xib in Resources */,
+				4881A8112923BF0000EB4072 /* SDKRingViewController.xib in Resources */,
+				485C15642907F3FA007B9ED0 /* Colors.xcassets in Resources */,
+				4810659A2922646600053004 /* SDKLivenessViewController.xib in Resources */,
+				483BDB1828F459CC00635BCC /* Assets.xcassets in Resources */,
+				485C15692907FC69007B9ED0 /* SDKCardReaderViewController.xib in Resources */,
+				480E76A9297A868E0071B049 /* GERMAN.json in Resources */,
+				48171423294734FA0095A64F /* SDKPassportReaderViewController.xib in Resources */,
+				48A151EC292B73BA005B376B /* SDKSignLangViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		483BDB0728F459CC00635BCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48DE147D290A6C3E00057EAD /* SDKButtonExtension.swift in Sources */,
+				4881A7FF29238CB400EB4072 /* SDKAddressConfirmViewController.swift in Sources */,
+				485C155C2907F3A7007B9ED0 /* SDKBundle+.swift in Sources */,
+				481065992922646600053004 /* SDKLivenessViewController.swift in Sources */,
+				485C15392907D3CF007B9ED0 /* SDKViewOptionsController.swift in Sources */,
+				485C155B2907F3A7007B9ED0 /* SDKUIApplication+.swift in Sources */,
+				485C155F2907F3A7007B9ED0 /* SDKString+.swift in Sources */,
+				4881A8102923BF0000EB4072 /* SDKRingViewController.swift in Sources */,
+				48263C10292789C7005200A1 /* SDKThankYouViewController.swift in Sources */,
+				485C15622907F3A7007B9ED0 /* SDKCgRect+.swift in Sources */,
+				48AB73FB291A75E200F591A4 /* SDKSignatureViewController.swift in Sources */,
+				4881A80B2923BEF400EB4072 /* SDKCallScreenViewController.swift in Sources */,
+				4887009A292CDA3500961218 /* SDKListenSocketViewController.swift in Sources */,
+				485C155A2907F3A7007B9ED0 /* SDKUITableViewCell+.swift in Sources */,
+				4813037E29221E1300E66D73 /* SDKVideoRecorderViewController.swift in Sources */,
+				48DE1485290A7D3A00057EAD /* UIViewController+.swift in Sources */,
+				48DE147B290A6C1900057EAD /* SDKColorManager.swift in Sources */,
+				48171422294734FA0095A64F /* SDKPassportReaderViewController.swift in Sources */,
+				48A151EB292B73BA005B376B /* SDKSignLangViewController.swift in Sources */,
+				485C15322907D2E8007B9ED0 /* SDKLoginViewController.swift in Sources */,
+				485C154E2907DC19007B9ED0 /* SDKSelfieViewController.swift in Sources */,
+				483BDB0F28F459CC00635BCC /* AppDelegate.swift in Sources */,
+				48CD8D0129792D5A008573F8 /* SDKLangManager.swift in Sources */,
+				48E8E43129266B8A0045C3F8 /* SDKSpeechRecViewController.swift in Sources */,
+				485C155E2907F3A7007B9ED0 /* SDKUIStackView+.swift in Sources */,
+				485C15612907F3A7007B9ED0 /* SDKUIView+.swift in Sources */,
+				485C15602907F3A7007B9ED0 /* SDKUIImage+.swift in Sources */,
+				48CD8CFF29792C8F008573F8 /* SDKIdentifyColorTheme.swift in Sources */,
+				485C15682907FC69007B9ED0 /* SDKCardReaderViewController.swift in Sources */,
+				485C155D2907F3A7007B9ED0 /* SDKUIImageView+.swift in Sources */,
+				485C157C2908190D007B9ED0 /* SDKNfcViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		483BDB1428F459CC00635BCC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				483BDB1528F459CC00635BCC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		483BDB1928F459CC00635BCC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				483BDB1A28F459CC00635BCC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		483BDB1D28F459CC00635BCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		483BDB1E28F459CC00635BCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		483BDB2028F459CC00635BCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = NewTest/NewTest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 26;
+				DEVELOPMENT_TEAM = TQUQ2HQ482;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NewTest",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NewTest/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				INFOPLIST_KEY_NFCReaderUsageDescription = "NFC Kullanım izni";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Belge taramak için izin";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Kısa video çekimi için mikrafon izni gerekmektedir";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Konuşma tanıma izni";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.identifyNew.24;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		483BDB2128F459CC00635BCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = NewTest/NewTest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 26;
+				DEVELOPMENT_TEAM = TQUQ2HQ482;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NewTest",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NewTest/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				INFOPLIST_KEY_NFCReaderUsageDescription = "NFC Kullanım izni";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Belge taramak için izin";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Kısa video çekimi için mikrafon izni gerekmektedir";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Konuşma tanıma izni";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.identifyNew.24;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		483BDB0628F459CC00635BCC /* Build configuration list for PBXProject "NewTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				483BDB1D28F459CC00635BCC /* Debug */,
+				483BDB1E28F459CC00635BCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		483BDB1F28F459CC00635BCC /* Build configuration list for PBXNativeTarget "NewTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				483BDB2028F459CC00635BCC /* Debug */,
+				483BDB2128F459CC00635BCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		48171403294716830095A64F /* XCRemoteSwiftPackageReference "netfox" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kasketis/netfox";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		4831506529F7E87400FDEB3B /* XCRemoteSwiftPackageReference "WebRTC" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stasel/WebRTC.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 94.0.0;
+			};
+		};
+		4857BFF62902D621001FE850 /* XCRemoteSwiftPackageReference "OpenSSL" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/OpenSSL.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.1.1700;
+			};
+		};
+		4857BFF92902D636001FE850 /* XCRemoteSwiftPackageReference "Starscream" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/daltoniam/Starscream.git";
+			requirement = {
+				kind = exactVersion;
+				version = 3.1.1;
+			};
+		};
+		485C156E29080383007B9ED0 /* XCRemoteSwiftPackageReference "WeScan" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WeTransfer/WeScan.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.7.0;
+			};
+		};
+		4862133229B0C05F001428A0 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		4880596C291D0EBD0058C7CD /* XCRemoteSwiftPackageReference "Toast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hengyu/Toast.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		4881A80529239A1100EB4072 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		48AB73FD291A762100F591A4 /* XCRemoteSwiftPackageReference "SwiftSignatureView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alankarmisra/SwiftSignatureView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		48D802272924F6B000B9BB83 /* XCRemoteSwiftPackageReference "CHIOTPField" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ChiliLabs/CHIOTPField.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+		48F0867629F7CA4E00FCA4BF /* XCRemoteSwiftPackageReference "QKMRZScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Mattijah/QKMRZScanner.git";
+			requirement = {
+				branch = "master-spm";
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		48171404294716830095A64F /* netfox */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 48171403294716830095A64F /* XCRemoteSwiftPackageReference "netfox" */;
+			productName = netfox;
+		};
+		4831506629F7E87400FDEB3B /* WebRTC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4831506529F7E87400FDEB3B /* XCRemoteSwiftPackageReference "WebRTC" */;
+			productName = WebRTC;
+		};
+		4857BFF72902D621001FE850 /* OpenSSL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4857BFF62902D621001FE850 /* XCRemoteSwiftPackageReference "OpenSSL" */;
+			productName = OpenSSL;
+		};
+		4857BFFA2902D636001FE850 /* Starscream */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4857BFF92902D636001FE850 /* XCRemoteSwiftPackageReference "Starscream" */;
+			productName = Starscream;
+		};
+		485C156F29080383007B9ED0 /* WeScan */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 485C156E29080383007B9ED0 /* XCRemoteSwiftPackageReference "WeScan" */;
+			productName = WeScan;
+		};
+		4862133329B0C05F001428A0 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4862133229B0C05F001428A0 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		4880596D291D0EBD0058C7CD /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4880596C291D0EBD0058C7CD /* XCRemoteSwiftPackageReference "Toast" */;
+			productName = Toast;
+		};
+		4881A80629239A1100EB4072 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4881A80529239A1100EB4072 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		48AB73FE291A762100F591A4 /* SwiftSignatureView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 48AB73FD291A762100F591A4 /* XCRemoteSwiftPackageReference "SwiftSignatureView" */;
+			productName = SwiftSignatureView;
+		};
+		48D802282924F6B000B9BB83 /* CHIOTPField */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 48D802272924F6B000B9BB83 /* XCRemoteSwiftPackageReference "CHIOTPField" */;
+			productName = CHIOTPField;
+		};
+		48F0867729F7CA4E00FCA4BF /* QKMRZScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 48F0867629F7CA4E00FCA4BF /* XCRemoteSwiftPackageReference "QKMRZScanner" */;
+			productName = QKMRZScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 483BDB0328F459CC00635BCC /* Project object */;
+}
