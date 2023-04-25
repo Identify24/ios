@@ -59316,2835 +59316,2835 @@
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 5731,
+      "offset": 5733,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 5849,
+      "offset": 5851,
       "length": 25,
       "value": "\"\/Applications\/Cydia.app\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 5922,
+      "offset": 5924,
       "length": 48,
       "value": "\"\/Library\/MobileSubstrate\/MobileSubstrate.dylib\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 6018,
+      "offset": 6020,
       "length": 11,
       "value": "\"\/bin\/bash\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 6077,
+      "offset": 6079,
       "length": 16,
       "value": "\"\/usr\/sbin\/sshd\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 6141,
+      "offset": 6143,
       "length": 10,
       "value": "\"\/etc\/apt\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 6199,
+      "offset": 6201,
       "length": 14,
       "value": "\"\/usr\/bin\/ssh\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 6261,
+      "offset": 6263,
       "length": 22,
       "value": "\"\/private\/var\/lib\/apt\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 6306,
+      "offset": 6308,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 6355,
+      "offset": 6357,
       "length": 25,
       "value": "\"\/Applications\/Cydia.app\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 6411,
+      "offset": 6413,
       "length": 48,
       "value": "\"\/Library\/MobileSubstrate\/MobileSubstrate.dylib\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 6490,
+      "offset": 6492,
       "length": 11,
       "value": "\"\/bin\/bash\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 6532,
+      "offset": 6534,
       "length": 16,
       "value": "\"\/usr\/sbin\/sshd\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 6579,
+      "offset": 6581,
       "length": 10,
       "value": "\"\/etc\/apt\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 6620,
+      "offset": 6622,
       "length": 14,
       "value": "\"\/usr\/bin\/ssh\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 6657,
+      "offset": 6659,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 6700,
+      "offset": 6702,
       "length": 11,
       "value": "\"\/private\/\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 6763,
+      "offset": 6765,
       "length": 11,
       "value": "\"anyString\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 6807,
+      "offset": 6809,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 6917,
+      "offset": 6919,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 6959,
+      "offset": 6961,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 7066,
+      "offset": 7068,
       "length": 3,
       "value": "\"r\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 7111,
+      "offset": 7113,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 7155,
+      "offset": 7157,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 7310,
+      "offset": 7312,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 7340,
+      "offset": 7342,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 7370,
+      "offset": 7372,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 7397,
+      "offset": 7399,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 7456,
+      "offset": 7458,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 7541,
+      "offset": 7543,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "IntegerLiteral",
-      "offset": 7652,
+      "offset": 7654,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 7682,
+      "offset": 7684,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 7723,
+      "offset": 7725,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "IntegerLiteral",
-      "offset": 7798,
+      "offset": 7800,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 7829,
+      "offset": 7831,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 7871,
+      "offset": 7873,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "IntegerLiteral",
-      "offset": 7946,
+      "offset": 7948,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 7977,
+      "offset": 7979,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 8019,
+      "offset": 8021,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "IntegerLiteral",
-      "offset": 8094,
+      "offset": 8096,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 8122,
+      "offset": 8124,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 8160,
+      "offset": 8162,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 8341,
+      "offset": 8343,
       "length": 52,
       "value": "\"### web modülleri ekleniyor ### \""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 8392,
+      "offset": 8394,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "Array",
-      "offset": 8431,
+      "offset": 8433,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 8490,
+      "offset": 8492,
       "length": 8,
       "value": "\"idCard\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 8573,
+      "offset": 8575,
       "length": 9,
       "value": "\"Id Card\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 8865,
+      "offset": 8867,
       "length": 5,
       "value": "\"nfc\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 8945,
+      "offset": 8947,
       "length": 18,
       "value": "\"Mrz & Nfc Screen\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 9218,
+      "offset": 9220,
       "length": 46,
       "value": "\"Cihazda NFC desteği yok, modül eklenemiyor\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 9324,
+      "offset": 9326,
       "length": 8,
       "value": "\"selfie\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 9407,
+      "offset": 9409,
       "length": 8,
       "value": "\"Selfie\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 9698,
+      "offset": 9700,
       "length": 19,
       "value": "\"livenessDetection\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 9792,
+      "offset": 9794,
       "length": 20,
       "value": "\"Liveness Detection\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 10110,
+      "offset": 10112,
       "length": 13,
       "value": "\"addressConf\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 10200,
+      "offset": 10202,
       "length": 17,
       "value": "\"Address Confirm\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 10509,
+      "offset": 10511,
       "length": 13,
       "value": "\"videoRecord\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 10597,
+      "offset": 10599,
       "length": 16,
       "value": "\"Video Recorder\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 10915,
+      "offset": 10917,
       "length": 11,
       "value": "\"signature\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 11001,
+      "offset": 11003,
       "length": 11,
       "value": "\"Signature\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 11304,
+      "offset": 11306,
       "length": 8,
       "value": "\"speech\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 11387,
+      "offset": 11389,
       "length": 20,
       "value": "\"Speech Recognition\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 11690,
+      "offset": 11692,
       "length": 12,
       "value": "\"waitScreen\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 11779,
+      "offset": 11781,
       "length": 13,
       "value": "\"Live Stream\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 12438,
+      "offset": 12440,
       "length": 43,
       "value": "\"Modüller tamamlandı, sdk kapatılabilir\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "IntegerLiteral",
-      "offset": 12650,
+      "offset": 12652,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "FloatLiteral",
-      "offset": 12751,
+      "offset": 12753,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "IntegerLiteral",
-      "offset": 14329,
+      "offset": 14331,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 14532,
+      "offset": 14534,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "FloatLiteral",
-      "offset": 14761,
+      "offset": 14763,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 16811,
+      "offset": 16813,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 16823,
+      "offset": 16825,
       "length": 13,
       "value": "\"stepChanged\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 16866,
+      "offset": 16868,
       "length": 39,
       "value": "\"Gönderilen ekran: \""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 16904,
+      "offset": 16906,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 17617,
+      "offset": 17619,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 17676,
+      "offset": 17678,
       "length": 3,
       "value": "\"3\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 17770,
+      "offset": 17772,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 17849,
+      "offset": 17851,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 17934,
+      "offset": 17936,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "Array",
-      "offset": 18011,
+      "offset": 18013,
       "length": 9,
       "value": "[0, 1, 2, 3]"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "Array",
-      "offset": 18083,
+      "offset": 18085,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "IntegerLiteral",
-      "offset": 18138,
+      "offset": 18140,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "IntegerLiteral",
-      "offset": 18142,
+      "offset": 18144,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 18519,
+      "offset": 18521,
       "length": 21,
       "value": "\"Socket is CONNECTED\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "FloatLiteral",
-      "offset": 18684,
+      "offset": 18686,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "FloatLiteral",
-      "offset": 18895,
+      "offset": 18897,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 19025,
+      "offset": 19027,
       "length": 25,
       "value": "\"Socket is NOT CONNECTED\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "FloatLiteral",
-      "offset": 19252,
+      "offset": 19254,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 19375,
+      "offset": 19377,
       "length": 6,
       "value": "\"HATA\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "FloatLiteral",
-      "offset": 19501,
+      "offset": 19503,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 19632,
+      "offset": 19634,
       "length": 6,
       "value": "\"Hata\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 20002,
+      "offset": 20004,
       "length": 24,
       "value": "\"Socket is RE-CONNECTED\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 20221,
+      "offset": 20223,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 21274,
+      "offset": 21276,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 21384,
+      "offset": 21386,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 21530,
+      "offset": 21532,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 21548,
+      "offset": 21550,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 21567,
+      "offset": 21569,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 21594,
+      "offset": 21596,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 21610,
+      "offset": 21612,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 21638,
+      "offset": 21640,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "FloatLiteral",
-      "offset": 21714,
+      "offset": 21716,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 21728,
+      "offset": 21730,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 21843,
+      "offset": 21845,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 21930,
+      "offset": 21932,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 22064,
+      "offset": 22066,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "FloatLiteral",
-      "offset": 22138,
+      "offset": 22140,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 22605,
+      "offset": 22607,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 22715,
+      "offset": 22717,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 22861,
+      "offset": 22863,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 22879,
+      "offset": 22881,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 22898,
+      "offset": 22900,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 22925,
+      "offset": 22927,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 22941,
+      "offset": 22943,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 22969,
+      "offset": 22971,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "FloatLiteral",
-      "offset": 23045,
+      "offset": 23047,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 23059,
+      "offset": 23061,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 23174,
+      "offset": 23176,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 23261,
+      "offset": 23263,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 23395,
+      "offset": 23397,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "FloatLiteral",
-      "offset": 23469,
+      "offset": 23471,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 23874,
+      "offset": 23876,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 23950,
+      "offset": 23952,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 23999,
+      "offset": 24001,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 24345,
+      "offset": 24347,
       "length": 52,
       "value": "\"Lütfen kimliğinizi ön kameranın üzerine koyun\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 24463,
+      "offset": 24465,
       "length": 43,
       "value": "\"NFC okuma işlemi başarıyla tamamlandı\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 24709,
+      "offset": 24711,
       "length": 54,
       "value": "\"Veriler okunuyor \""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 24739,
+      "offset": 24741,
       "length": 3,
       "value": "\" ...\n\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 24762,
+      "offset": 24764,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 24915,
+      "offset": 24917,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 25143,
+      "offset": 25145,
       "length": 5,
       "value": "\"N\/A\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 25205,
+      "offset": 25207,
       "length": 3,
       "value": "\"F\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 25244,
+      "offset": 25246,
       "length": 8,
       "value": "\"FEMALE\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 25316,
+      "offset": 25318,
       "length": 3,
       "value": "\"M\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 25355,
+      "offset": 25357,
       "length": 6,
       "value": "\"MALE\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 25423,
+      "offset": 25425,
       "length": 9,
       "value": "\"Unknown\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 25495,
+      "offset": 25497,
       "length": 3,
       "value": "\"P\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 25540,
+      "offset": 25542,
       "length": 10,
       "value": "\"Passport\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 25620,
+      "offset": 25622,
       "length": 3,
       "value": "\"I\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 25665,
+      "offset": 25667,
       "length": 9,
       "value": "\"ID Card\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 26173,
+      "offset": 26175,
       "length": 6,
       "value": "\"5F1F\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 26239,
+      "offset": 26241,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 26728,
+      "offset": 26730,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 26796,
+      "offset": 26798,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 26872,
+      "offset": 26874,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 26931,
+      "offset": 26933,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 26986,
+      "offset": 26988,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 27067,
+      "offset": 27069,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 27227,
+      "offset": 27229,
       "length": 19,
       "value": "\"Adres bilgisi yok\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 27456,
+      "offset": 27458,
       "length": 28,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 27477,
+      "offset": 27479,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 27483,
+      "offset": 27485,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 27531,
+      "offset": 27533,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 27793,
+      "offset": 27795,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 28014,
+      "offset": 28016,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 28090,
+      "offset": 28092,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 28139,
+      "offset": 28141,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 28241,
+      "offset": 28243,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 28307,
+      "offset": 28309,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 28372,
+      "offset": 28374,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 28424,
+      "offset": 28426,
       "length": 30,
       "value": "\"KPS dataları kullanılıyor\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 28991,
+      "offset": 28993,
       "length": 54,
       "value": "\"Veriler okunuyor \""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 29021,
+      "offset": 29023,
       "length": 3,
       "value": "\" ...\n\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 29044,
+      "offset": 29046,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 29197,
+      "offset": 29199,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 29425,
+      "offset": 29427,
       "length": 5,
       "value": "\"N\/A\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 29487,
+      "offset": 29489,
       "length": 3,
       "value": "\"F\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 29526,
+      "offset": 29528,
       "length": 8,
       "value": "\"FEMALE\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 29598,
+      "offset": 29600,
       "length": 3,
       "value": "\"M\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 29637,
+      "offset": 29639,
       "length": 6,
       "value": "\"MALE\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 29705,
+      "offset": 29707,
       "length": 9,
       "value": "\"Unknown\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 29777,
+      "offset": 29779,
       "length": 3,
       "value": "\"P\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 29822,
+      "offset": 29824,
       "length": 10,
       "value": "\"Passport\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 29902,
+      "offset": 29904,
       "length": 3,
       "value": "\"I\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 29947,
+      "offset": 29949,
       "length": 9,
       "value": "\"ID Card\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 30455,
+      "offset": 30457,
       "length": 6,
       "value": "\"5F1F\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 30521,
+      "offset": 30523,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 31031,
+      "offset": 31033,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 31099,
+      "offset": 31101,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 31175,
+      "offset": 31177,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 31234,
+      "offset": 31236,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 31289,
+      "offset": 31291,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 31370,
+      "offset": 31372,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 31530,
+      "offset": 31532,
       "length": 19,
       "value": "\"Adres bilgisi yok\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 31759,
+      "offset": 31761,
       "length": 28,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 31780,
+      "offset": 31782,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 31786,
+      "offset": 31788,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "IntegerLiteral",
-      "offset": 32046,
+      "offset": 32048,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 32085,
+      "offset": 32087,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 32249,
+      "offset": 32251,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 32261,
+      "offset": 32263,
       "length": 15,
       "value": "\"MAX_ERR_COUNT\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 32383,
+      "offset": 32385,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 32395,
+      "offset": 32397,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 32700,
+      "offset": 32702,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 32712,
+      "offset": 32714,
       "length": 11,
       "value": "\"NFCStatus\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 32733,
+      "offset": 32735,
       "length": 14,
       "value": "\"notAvailable\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 33260,
+      "offset": 33262,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 33272,
+      "offset": 33274,
       "length": 11,
       "value": "\"NFCStatus\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 33813,
+      "offset": 33815,
       "length": 10,
       "value": "\"isSpeech\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 33848,
+      "offset": 33850,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 33892,
+      "offset": 33894,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 35610,
+      "offset": 35612,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 35816,
+      "offset": 35818,
       "length": 22,
       "value": "\"kimlik no uyuşmuyor\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 35880,
+      "offset": 35882,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 35913,
+      "offset": 35915,
       "length": 22,
       "value": "\"kimlik no uyuşmuyor\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 36181,
+      "offset": 36183,
       "length": 19,
       "value": "\"Doc no uyuşmuyor\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 36242,
+      "offset": 36244,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 36275,
+      "offset": 36277,
       "length": 19,
       "value": "\"Doc no uyuşmuyor\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 36592,
+      "offset": 36594,
       "length": 29,
       "value": "\"doğum tarihleri uyuşmuyor\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 36663,
+      "offset": 36665,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 36696,
+      "offset": 36698,
       "length": 29,
       "value": "\"doğum tarihleri uyuşmuyor\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 37028,
+      "offset": 37030,
       "length": 28,
       "value": "\"valid tarihleri uyuşmuyor\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 37098,
+      "offset": 37100,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 37131,
+      "offset": 37133,
       "length": 28,
       "value": "\"valid tarihleri uyuşmuyor\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 37643,
+      "offset": 37645,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 37700,
+      "offset": 37702,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 37744,
+      "offset": 37746,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "IntegerLiteral",
-      "offset": 38135,
+      "offset": 38137,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "IntegerLiteral",
-      "offset": 38182,
+      "offset": 38184,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "FloatLiteral",
-      "offset": 38350,
+      "offset": 38352,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 38381,
+      "offset": 38383,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 38599,
+      "offset": 38601,
       "length": 28,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 38620,
+      "offset": 38622,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 38626,
+      "offset": 38628,
       "length": 16,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 38641,
+      "offset": 38643,
       "length": 17,
       "value": "\"validateAddress\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 38693,
+      "offset": 38695,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 38725,
+      "offset": 38727,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 38819,
+      "offset": 38821,
       "length": 5,
       "value": "\"404\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 38851,
+      "offset": 38853,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 39080,
+      "offset": 39082,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "IntegerLiteral",
-      "offset": 39122,
+      "offset": 39124,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "IntegerLiteral",
-      "offset": 39164,
+      "offset": 39166,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "FloatLiteral",
-      "offset": 39327,
+      "offset": 39329,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 39358,
+      "offset": 39360,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 39571,
+      "offset": 39573,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "FloatLiteral",
-      "offset": 39691,
+      "offset": 39693,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 39859,
+      "offset": 39861,
       "length": 14,
       "value": "\"upload fotos\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 39971,
+      "offset": 39973,
       "length": 15,
       "value": "\"uploadIdFront\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 40062,
+      "offset": 40064,
       "length": 14,
       "value": "\"uploadIdBack\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 40152,
+      "offset": 40154,
       "length": 14,
       "value": "\"uploadSelfie\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 40324,
+      "offset": 40326,
       "length": 17,
       "value": "\"uploadSignature\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 40409,
+      "offset": 40411,
       "length": 6,
       "value": "\"true\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 40580,
+      "offset": 40582,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "FloatLiteral",
-      "offset": 40831,
+      "offset": 40833,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 40862,
+      "offset": 40864,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 41172,
+      "offset": 41174,
       "length": 24,
       "value": "\"Cropped photo uploaded\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 41582,
+      "offset": 41584,
       "length": 30,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 41605,
+      "offset": 41607,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 41611,
+      "offset": 41613,
       "length": 16,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 41626,
+      "offset": 41628,
       "length": 13,
       "value": "\"uploadVideo\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 41923,
+      "offset": 41925,
       "length": 11,
       "value": "\"startCall\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 41978,
+      "offset": 41980,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 42390,
+      "offset": 42392,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 42473,
+      "offset": 42475,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 42527,
+      "offset": 42529,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 42570,
+      "offset": 42572,
       "length": 53,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 42583,
+      "offset": 42585,
       "length": 7,
       "value": "\" hatası: \""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 42622,
+      "offset": 42624,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 42773,
+      "offset": 42775,
       "length": 7,
       "value": "\"offer\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 42852,
+      "offset": 42854,
       "length": 5,
       "value": "\"sdp\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 42901,
+      "offset": 42903,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 43181,
+      "offset": 43183,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 43250,
+      "offset": 43252,
       "length": 53,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 43263,
+      "offset": 43265,
       "length": 7,
       "value": "\" hatası: \""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 43302,
+      "offset": 43304,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 43324,
+      "offset": 43326,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 43355,
+      "offset": 43357,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 43477,
+      "offset": 43479,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 43514,
+      "offset": 43516,
       "length": 64,
       "value": "\"Customer ID alınamadı, lütfen bağlantınızı kontrol edin\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 43691,
+      "offset": 43693,
       "length": 18,
       "value": "\"Call Wait Screen\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 43748,
+      "offset": 43750,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 43760,
+      "offset": 43762,
       "length": 11,
       "value": "\"subscribe\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 44172,
+      "offset": 44174,
       "length": 14,
       "value": "\"Socket ERROR\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 44411,
+      "offset": 44413,
       "length": 6,
       "value": "\"true\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 44420,
+      "offset": 44422,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 44427,
+      "offset": 44429,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 44514,
+      "offset": 44516,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 44558,
+      "offset": 44560,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 44878,
+      "offset": 44880,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 44940,
+      "offset": 44942,
       "length": 14,
       "value": "\"Socket ERROR\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 45042,
+      "offset": 45044,
       "length": 14,
       "value": "\"uploadIdBack\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 45134,
+      "offset": 45136,
       "length": 15,
       "value": "\"uploadIdFront\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 45228,
+      "offset": 45230,
       "length": 14,
       "value": "\"uploadSelfie\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 45320,
+      "offset": 45322,
       "length": 17,
       "value": "\"uploadSignature\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 45418,
+      "offset": 45420,
       "length": 13,
       "value": "\"uploadVideo\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 45508,
+      "offset": 45510,
       "length": 17,
       "value": "\"validateAddress\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "IntegerLiteral",
-      "offset": 45780,
+      "offset": 45782,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "IntegerLiteral",
-      "offset": 45786,
+      "offset": 45788,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "IntegerLiteral",
-      "offset": 45796,
+      "offset": 45798,
       "length": 3,
       "value": "125"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "IntegerLiteral",
-      "offset": 45808,
+      "offset": 45810,
       "length": 3,
       "value": "165"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 46070,
+      "offset": 46072,
       "length": 18,
       "value": "\"Call Wait Screen\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 46127,
+      "offset": 46129,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 46139,
+      "offset": 46141,
       "length": 13,
       "value": "\"stepChanged\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 46189,
+      "offset": 46191,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 46228,
+      "offset": 46230,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 46265,
+      "offset": 46267,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 46300,
+      "offset": 46302,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 46333,
+      "offset": 46335,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 46374,
+      "offset": 46376,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 46409,
+      "offset": 46411,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 46444,
+      "offset": 46446,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 46488,
+      "offset": 46490,
       "length": 4,
       "value": "\"TR\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 46570,
+      "offset": 46572,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 47020,
+      "offset": 47022,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 47070,
+      "offset": 47072,
       "length": 19,
       "value": "\"log msg not found\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 47164,
+      "offset": 47166,
       "length": 86,
       "value": "\"⚠️⚠️⚠️ Identify LOG: \""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 47210,
+      "offset": 47212,
       "length": 19,
       "value": "\"log msg not found\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 47230,
+      "offset": 47232,
       "length": 18,
       "value": "\" ⚠️⚠️⚠️\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 47386,
+      "offset": 47388,
       "length": 32,
       "value": "\"Sending socket msg: \""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 47417,
+      "offset": 47419,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 47795,
+      "offset": 47797,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 47807,
+      "offset": 47809,
       "length": 16,
       "value": "\"networkQuality\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 48450,
+      "offset": 48452,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 48709,
+      "offset": 48711,
       "length": 44,
       "value": "\"🔧🔧🔧 gelen socket mesajı: \""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 48752,
+      "offset": 48754,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 48931,
+      "offset": 48933,
       "length": 11,
       "value": "\"candidate\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 49220,
+      "offset": 49222,
       "length": 10,
       "value": "\"initCall\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 49418,
+      "offset": 49420,
       "length": 8,
       "value": "\"newSub\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 49529,
+      "offset": 49531,
       "length": 10,
       "value": "\"imOnline\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 49644,
+      "offset": 49646,
       "length": 11,
       "value": "\"startCall\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 49724,
+      "offset": 49726,
       "length": 9,
       "value": "\"endCall\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 49952,
+      "offset": 49954,
       "length": 15,
       "value": "\"terminateCall\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 50198,
+      "offset": 50200,
       "length": 11,
       "value": "\"imOffline\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 50432,
+      "offset": 50434,
       "length": 12,
       "value": "\"requestTan\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "IntegerLiteral",
-      "offset": 50498,
+      "offset": 50500,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 50720,
+      "offset": 50722,
       "length": 5,
       "value": "\"sdp\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 51129,
+      "offset": 51131,
       "length": 13,
       "value": "\"toggleFlash\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 51395,
+      "offset": 51397,
       "length": 14,
       "value": "\"toggleCamera\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 51618,
+      "offset": 51620,
       "length": 13,
       "value": "\"faceGuideOn\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 51689,
+      "offset": 51691,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 51931,
+      "offset": 51933,
       "length": 14,
       "value": "\"faceGuideOff\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 52145,
+      "offset": 52147,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 52248,
+      "offset": 52250,
       "length": 9,
       "value": "\"skipNFC\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 52476,
+      "offset": 52478,
       "length": 11,
       "value": "\"idGuideOn\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 52683,
+      "offset": 52685,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 52781,
+      "offset": 52783,
       "length": 12,
       "value": "\"idGuideOff\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 52990,
+      "offset": 52992,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 53090,
+      "offset": 53092,
       "length": 13,
       "value": "\"subRejected\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 53289,
+      "offset": 53291,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 53390,
+      "offset": 53392,
       "length": 12,
       "value": "\"subscribed\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 53627,
+      "offset": 53629,
       "length": 15,
       "value": "\"snapshotToken\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 53720,
+      "offset": 53722,
       "length": 20,
       "value": "\"Fotoğraf çekildi\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 53908,
+      "offset": 53910,
       "length": 20,
       "value": "\"Fotoğraf çekildi\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 53979,
+      "offset": 53981,
       "length": 19,
       "value": "\"restartNFCProcess\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 54081,
+      "offset": 54083,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 54116,
+      "offset": 54118,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 54153,
+      "offset": 54155,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 54330,
+      "offset": 54332,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 54377,
+      "offset": 54379,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 54428,
+      "offset": 54430,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 54481,
+      "offset": 54483,
       "length": 12,
       "value": "\"areYouHere\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 54610,
+      "offset": 54612,
       "length": 12,
       "value": "\"queueStats\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 54664,
+      "offset": 54666,
       "length": 38,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "IntegerLiteral",
-      "offset": 54699,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
-      "kind": "StringLiteral",
       "offset": 54701,
-      "length": 4,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
-      "kind": "StringLiteral",
-      "offset": 54704,
-      "length": 38,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
-      "kind": "IntegerLiteral",
-      "offset": 54739,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
+      "offset": 54703,
+      "length": 4,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
+      "kind": "StringLiteral",
+      "offset": 54706,
+      "length": 38,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
+      "kind": "IntegerLiteral",
       "offset": 54741,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
-      "kind": "StringLiteral",
-      "offset": 54797,
-      "length": 38,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
-      "kind": "IntegerLiteral",
-      "offset": 54832,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
+      "offset": 54743,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
+      "kind": "StringLiteral",
+      "offset": 54799,
+      "length": 38,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
+      "kind": "IntegerLiteral",
       "offset": 54834,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
+      "kind": "StringLiteral",
+      "offset": 54836,
       "length": 4,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 54837,
+      "offset": 54839,
       "length": 38,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "IntegerLiteral",
-      "offset": 54872,
+      "offset": 54874,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 54874,
+      "offset": 54876,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 55165,
+      "offset": 55167,
       "length": 12,
       "value": "\"requestTan\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "IntegerLiteral",
-      "offset": 55231,
+      "offset": 55233,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 56265,
+      "offset": 56267,
       "length": 7,
       "value": "\"audio\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 56275,
+      "offset": 56277,
       "length": 7,
       "value": "\"audio\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 56285,
+      "offset": 56287,
       "length": 7,
       "value": "\"video\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 56345,
+      "offset": 56347,
       "length": 11,
       "value": "\"candidate\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 56422,
+      "offset": 56424,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 56811,
+      "offset": 56813,
       "length": 14,
       "value": "\"Socket ERROR\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 57015,
+      "offset": 57017,
       "length": 8,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 57022,
+      "offset": 57024,
       "length": 22,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 57126,
+      "offset": 57128,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 57249,
+      "offset": 57251,
       "length": 13,
       "value": "\"tan_entered\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 57301,
+      "offset": 57303,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 57310,
+      "offset": 57312,
       "length": 13,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 57322,
+      "offset": 57324,
       "length": 16,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 57800,
+      "offset": 57802,
       "length": 6,
       "value": "\"conf\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 57845,
+      "offset": 57847,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 57857,
+      "offset": 57859,
       "length": 10,
       "value": "\"imOnline\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 58195,
+      "offset": 58197,
       "length": 53,
       "value": "\"gelen socket mesajı: \""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 58247,
+      "offset": 58249,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 58368,
+      "offset": 58370,
       "length": 13,
       "value": "\"toggleFlash\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 58436,
+      "offset": 58438,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 58773,
+      "offset": 58775,
       "length": 14,
       "value": "\"Socket ERROR\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 58959,
+      "offset": 58961,
       "length": 14,
       "value": "\"toggleCamera\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 59028,
+      "offset": 59030,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 59365,
+      "offset": 59367,
       "length": 14,
       "value": "\"Socket ERROR\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 59551,
+      "offset": 59553,
       "length": 11,
       "value": "\"faceGuide\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 59618,
+      "offset": 59620,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 59955,
+      "offset": 59957,
       "length": 14,
       "value": "\"Socket ERROR\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 60141,
+      "offset": 60143,
       "length": 9,
       "value": "\"idGuide\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 60206,
+      "offset": 60208,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 60543,
+      "offset": 60545,
       "length": 14,
       "value": "\"Socket ERROR\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 60705,
+      "offset": 60707,
       "length": 11,
       "value": "\"isSmiling\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 60725,
+      "offset": 60727,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 60768,
+      "offset": 60770,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 60997,
+      "offset": 60999,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 61147,
+      "offset": 61149,
       "length": 14,
       "value": "\"Socket ERROR\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 61321,
+      "offset": 61323,
       "length": 10,
       "value": "\"iamAlive\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 61384,
+      "offset": 61386,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "StringLiteral",
-      "offset": 61721,
+      "offset": 61723,
       "length": 14,
       "value": "\"Socket ERROR\""
     },
     {
       "filePath": "\/Users\/emirbeytekin\/Documents\/Identify\/iosSDKRaw\/IdentifySDK\/Identify.swift",
       "kind": "BooleanLiteral",
-      "offset": 62045,
+      "offset": 62047,
       "length": 4,
       "value": "true"
     },

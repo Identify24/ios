@@ -18,8 +18,6 @@
 		48171422294734FA0095A64F /* SDKPassportReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48171420294734FA0095A64F /* SDKPassportReaderViewController.swift */; };
 		48171423294734FA0095A64F /* SDKPassportReaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48171421294734FA0095A64F /* SDKPassportReaderViewController.xib */; };
 		4820A4A22924CDAD004DB388 /* sample.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4820A4A12924CDAC004DB388 /* sample.mp4 */; };
-		4821824629F7FF31002C9EC2 /* IdentifySDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4821824429F7FF2C002C9EC2 /* IdentifySDK.xcframework */; };
-		4821824729F7FF31002C9EC2 /* IdentifySDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4821824429F7FF2C002C9EC2 /* IdentifySDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		48263C10292789C7005200A1 /* SDKThankYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48263C0E292789C7005200A1 /* SDKThankYouViewController.swift */; };
 		48263C11292789C7005200A1 /* SDKThankYouViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48263C0F292789C7005200A1 /* SDKThankYouViewController.xib */; };
 		4831506729F7E87400FDEB3B /* WebRTC in Frameworks */ = {isa = PBXBuildFile; productRef = 4831506629F7E87400FDEB3B /* WebRTC */; };
@@ -49,6 +47,8 @@
 		485C157C2908190D007B9ED0 /* SDKNfcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C157A2908190D007B9ED0 /* SDKNfcViewController.swift */; };
 		485C157D2908190D007B9ED0 /* SDKNfcViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485C157B2908190D007B9ED0 /* SDKNfcViewController.xib */; };
 		4862133429B0C05F001428A0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4862133329B0C05F001428A0 /* Alamofire */; };
+		486E87AE29F80140002B35F6 /* IdentifySDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 486E87AC29F8013C002B35F6 /* IdentifySDK.xcframework */; };
+		486E87AF29F80140002B35F6 /* IdentifySDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 486E87AC29F8013C002B35F6 /* IdentifySDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4880596E291D0EBD0058C7CD /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 4880596D291D0EBD0058C7CD /* Toast */; settings = {ATTRIBUTES = (Required, ); }; };
 		4881A7FF29238CB400EB4072 /* SDKAddressConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4881A7FD29238CB400EB4072 /* SDKAddressConfirmViewController.swift */; };
 		4881A80029238CB400EB4072 /* SDKAddressConfirmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4881A7FE29238CB400EB4072 /* SDKAddressConfirmViewController.xib */; };
@@ -82,7 +82,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4821824729F7FF31002C9EC2 /* IdentifySDK.xcframework in Embed Frameworks */,
+				486E87AF29F80140002B35F6 /* IdentifySDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,7 +97,6 @@
 		48171420294734FA0095A64F /* SDKPassportReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKPassportReaderViewController.swift; sourceTree = "<group>"; };
 		48171421294734FA0095A64F /* SDKPassportReaderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKPassportReaderViewController.xib; sourceTree = "<group>"; };
 		4820A4A12924CDAC004DB388 /* sample.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample.mp4; sourceTree = "<group>"; };
-		4821824429F7FF2C002C9EC2 /* IdentifySDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = IdentifySDK.xcframework; sourceTree = "<group>"; };
 		48263C0E292789C7005200A1 /* SDKThankYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKThankYouViewController.swift; sourceTree = "<group>"; };
 		48263C0F292789C7005200A1 /* SDKThankYouViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKThankYouViewController.xib; sourceTree = "<group>"; };
 		483BDB0B28F459CC00635BCC /* NewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +124,7 @@
 		485C15672907FC69007B9ED0 /* SDKCardReaderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKCardReaderViewController.xib; sourceTree = "<group>"; };
 		485C157A2908190D007B9ED0 /* SDKNfcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKNfcViewController.swift; sourceTree = "<group>"; };
 		485C157B2908190D007B9ED0 /* SDKNfcViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKNfcViewController.xib; sourceTree = "<group>"; };
+		486E87AC29F8013C002B35F6 /* IdentifySDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = IdentifySDK.xcframework; sourceTree = "<group>"; };
 		4881A7FD29238CB400EB4072 /* SDKAddressConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKAddressConfirmViewController.swift; sourceTree = "<group>"; };
 		4881A7FE29238CB400EB4072 /* SDKAddressConfirmViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKAddressConfirmViewController.xib; sourceTree = "<group>"; };
 		4881A8092923BEF400EB4072 /* SDKCallScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKCallScreenViewController.swift; sourceTree = "<group>"; };
@@ -155,7 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4821824629F7FF31002C9EC2 /* IdentifySDK.xcframework in Frameworks */,
+				486E87AE29F80140002B35F6 /* IdentifySDK.xcframework in Frameworks */,
 				4831506729F7E87400FDEB3B /* WebRTC in Frameworks */,
 				4880596E291D0EBD0058C7CD /* Toast in Frameworks */,
 				48AB73FF291A762100F591A4 /* SwiftSignatureView in Frameworks */,
@@ -237,8 +237,8 @@
 		483BDB0D28F459CC00635BCC /* NewTest */ = {
 			isa = PBXGroup;
 			children = (
-				4821824429F7FF2C002C9EC2 /* IdentifySDK.xcframework */,
 				4820A4A12924CDAC004DB388 /* sample.mp4 */,
+				486E87AC29F8013C002B35F6 /* IdentifySDK.xcframework */,
 				485C15502907F3A7007B9ED0 /* RequiredForApp */,
 				485C152F2907D2D7007B9ED0 /* Views */,
 				489CBB1A28F586D500D22CC1 /* NewTest.entitlements */,
