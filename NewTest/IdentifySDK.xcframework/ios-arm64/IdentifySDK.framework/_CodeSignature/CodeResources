@@ -14,7 +14,7 @@
 		</data>
 		<key>Modules/IdentifySDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		rbl6yH1pcUdJ033jngv26IBAzzQ=
+		XOCTOEENu8dmil/LYGKCQV1EReU=
 		</data>
 		<key>Modules/IdentifySDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/IdentifySDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		KMYu5krZmZRIX7dijUOlYF0xchM=
+		fcUbBFE7t/VZH9RaVcRK9QGD0CA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -50,7 +50,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/47p8XTC2MNYVpO16boqGtrJwSRrCHkcX8PEuXGTV5w=
+			nb/oSthsE6/EINMovJCmnHF0C7xxhFNuCBsUbTlLuic=
 			</data>
 		</dict>
 		<key>Modules/IdentifySDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -78,7 +78,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yQN3/EMyIfEkCFRtEQB+l8jfyOvXFA2NXHHFOdNyO9g=
+			rXfcCHSOwDJqYE2rLwHMSHRkM3UpmI4MAOnbTLg1jnM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
