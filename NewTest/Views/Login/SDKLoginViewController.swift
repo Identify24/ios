@@ -85,7 +85,7 @@ class SDKLoginViewController: SDKViewOptionsController {
                 self.identIdArea.text = "ec20a18d72cb3b5f871fb83988b365de970519f8"
             }
             self.showLoader()
-            
+//            self.manager.selectedModuleList = ["addressConf"]
             self.manager.setupSDK(
                 identId: identIdArea.text!,
                 baseApiUrl: self.selectedServer.apiUrl,
@@ -101,7 +101,6 @@ class SDKLoginViewController: SDKViewOptionsController {
                 logLevel: .all) { socketStats, apiResp, webErr in
                     
                 print("socket resp : \(socketStats)")
-                
                 if let err = webErr, err.errorMessages != "" { // web servisten hata gelirse
                     self.showToast(type:. fail, title: self.translate(text: .coreError), subTitle: err.errorMessages, attachTo: self.view) {
                         self.hideLoader()
