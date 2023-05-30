@@ -86,9 +86,11 @@ class SDKCallScreenViewController: SDKBaseViewController {
     
     private func setupCustomerCamera() { // temsilcimizin görüntüsünü ayarlar
         let remoteVideoView = manager.webRTCClient.remoteVideoView()
-        manager.webRTCClient.setupRemoteViewFrame(frame: CGRect(x: 0, y: 0, width: customerCam.frame.width, height: customerCam.frame.height))
-        remoteVideoView.roundCorners(corners: .allCorners, radius: 12)
+        manager.webRTCClient.setupRemoteViewFrame(frame: CGRect(x: 0, y: 0, width:self.manager.remoteCam().frame.width * 2, height: self.manager.remoteCam().frame.height))
+        customerCam.clipsToBounds = true
+        remoteVideoView.center = CGPoint(x: customerCam.frame.size.width  / 2, y: customerCam.frame.size.height / 2)
         self.customerCam.addSubview(remoteVideoView)
+        customerCam.roundCorners(corners: .allCorners, radius: 12)
         manager.webRTCClient.calculateLocalSize()
         self.setupCallScreen(inCall: true)
     }

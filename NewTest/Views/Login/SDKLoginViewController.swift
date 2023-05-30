@@ -46,12 +46,15 @@ class SDKLoginViewController: SDKViewOptionsController {
             self.jbView.isHidden = false
             print("cihazda jb tespit edildi, bu durumu yönetebilirsiniz.")
         }
-        self.selectedServer.apiUrl = "https://api.identify.com.tr/"
+//        self.selectedServer.apiUrl = "https://api.identify.com.tr/"
         self.selectedServer.turnUrl = "turn:185.32.14.165:3478"
         self.selectedServer.stunUrl = "stun:185.32.14.165:3478"
         self.selectedServer.turnUser = "itrturn"
         self.selectedServer.turnPassword = "itrpass"
-        self.selectedServer.websocketUrl = "wss://ws.identify.com.tr/"
+//        self.selectedServer.websocketUrl = "wss://ws.identify.com.tr/"
+        
+        self.selectedServer.apiUrl = "https://v2api.identify.com.tr/"
+        self.selectedServer.websocketUrl = "wss://v2ws.identify.com.tr/"
     }
     
     private func setupUI() {
@@ -80,6 +83,7 @@ class SDKLoginViewController: SDKViewOptionsController {
                 return
             }
         } else {
+            self.view.endEditing(true)
             if identIdArea.text == "xxx" {
                 self.transferControlDisabled = false
                 self.identIdArea.text = "ec20a18d72cb3b5f871fb83988b365de970519f8"
