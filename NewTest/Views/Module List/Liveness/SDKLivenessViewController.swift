@@ -41,6 +41,7 @@ class SDKLivenessViewController: SDKBaseViewController {
     var nextStep: LivenessTestStep?
     var takenPhotoCount = 0
     var totalStepsCount = 4
+    var currentLivenessType: OCRType? = .selfie
     
     override func viewDidLoad() {
         super.viewDidLoad()
