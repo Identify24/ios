@@ -142,7 +142,7 @@ class SDKLivenessViewController: SDKBaseViewController {
         DispatchQueue.main.async {
             self.showLoader()
         }
-        manager.uploadIdPhoto(idPhoto: image, selfieType: .signature) { uploadResp in
+        manager.uploadIdPhoto(idPhoto: image, selfieType: self.currentLivenessType ?? .signature) { uploadResp in
             self.hideLoader()
             if uploadResp.result == true {
                 self.takenPhotoCount += 1
@@ -183,6 +183,7 @@ extension SDKLivenessViewController: ARSCNViewDelegate {
     
     func checkTurnLeft(jawVal:Decimal) {
         appendInfoText(self.headLeftTxt)
+        self.currentLivenessType = .headToLeft
         if abs(jawVal) > 0.15 {
             self.pauseSession()
             sendScreenShot(uploaded: { resp in
@@ -194,6 +195,7 @@ extension SDKLivenessViewController: ARSCNViewDelegate {
     
     func checkTurnRight(jawVal:Decimal) {
         appendInfoText(self.headRightTxt)
+        self.currentLivenessType = .headToRight
         if abs(jawVal) > 0.15 {
             self.pauseSession()
             sendScreenShot(uploaded: { resp in
@@ -205,6 +207,7 @@ extension SDKLivenessViewController: ARSCNViewDelegate {
     
     func blinkEyes(leftEye: Decimal, rightEye: Decimal) {
         appendInfoText(self.blinkEyeTxt)
+        self.currentLivenessType = .blinking
         if abs(leftEye) > 0.35 && abs(rightEye) > 0.35 {
             self.pauseSession()
             sendScreenShot(uploaded: { resp in
@@ -216,6 +219,7 @@ extension SDKLivenessViewController: ARSCNViewDelegate {
     
     func detectSmile(smileLeft: Decimal, smileRight: Decimal) {
         appendInfoText(self.smileTxt)
+        self.currentLivenessType = .smiling
         if smileLeft + smileRight > 0.9 {
             self.pauseSession()
             sendScreenShot(uploaded: { resp in

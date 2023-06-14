@@ -85,8 +85,7 @@ class SDKLoginViewController: SDKViewOptionsController {
         } else {
             self.view.endEditing(true)
             if identIdArea.text == "xxx" {
-                self.transferControlDisabled = false
-                self.identIdArea.text = "ec20a18d72cb3b5f871fb83988b365de970519f8"
+                self.identIdArea.text = "eaebe29505c8c27ab68a626f8c0a8bb61e61d3f9"
             }
             self.showLoader()
 //            self.manager.selectedModuleList = ["addressConf"]

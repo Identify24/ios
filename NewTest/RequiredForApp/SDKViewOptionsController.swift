@@ -17,7 +17,6 @@ class SDKViewOptionsController: UIViewController {
     var onTap: VoidHandler?
     public typealias VoidHandler = () -> Void
     var isAlreadyShowingReConnectScreen = false // eğer socket bağlantısı koptuysa zaten reconnect ekranının açık & kapalı durumunu gösterir
-    var transferControlDisabled = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
