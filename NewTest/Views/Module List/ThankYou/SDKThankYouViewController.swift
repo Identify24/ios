@@ -22,6 +22,7 @@ class SDKThankYouViewController: SDKBaseViewController {
     }
     
     private func setupUI() {
+        self.manager.kycIsCompleted = true
         closeBtn.type = .submit
         closeBtn.setTitle(self.translate(text: .coreOk), for: .normal)
         closeBtn.onTap = {

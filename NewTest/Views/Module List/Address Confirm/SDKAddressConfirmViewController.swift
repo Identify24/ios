@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import WeScan
 import MobileCoreServices
 
 class SDKAddressConfirmViewController: SDKBaseViewController {

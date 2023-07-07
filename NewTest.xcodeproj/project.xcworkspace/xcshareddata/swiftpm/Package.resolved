@@ -125,15 +125,6 @@
         "revision" : "8ce70d799bc637be04489376ebae7334061a1db0",
         "version" : "94.0.0"
       }
-    },
-    {
-      "identity" : "wescan",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/WeTransfer/WeScan.git",
-      "state" : {
-        "revision" : "9787c79729823928277f02fb9c7cbb88d87926cd",
-        "version" : "1.8.1"
-      }
     }
   ],
   "version" : 2

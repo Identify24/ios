@@ -9,7 +9,6 @@ import UIKit
 import IdentifySDK
 import Vision
 import VisionKit
-import WeScan
 import QKMRZScanner
 
 protocol SDKPassportReaderDelegate {

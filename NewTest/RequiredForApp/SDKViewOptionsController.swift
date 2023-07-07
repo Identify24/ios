@@ -45,7 +45,7 @@ class SDKViewOptionsController: UIViewController {
     }
     
     func listenToSocketConnection(callCompleted: Bool) {
-        if self.manager.socket.isConnected == false {
+        if self.manager.socket.isConnected == false && manager.kycIsCompleted == false {
             self.openSocketDisconnect(callCompleted: callCompleted)
         } else {
             manager.socket.onDisconnect = { [weak self] errMsg in
