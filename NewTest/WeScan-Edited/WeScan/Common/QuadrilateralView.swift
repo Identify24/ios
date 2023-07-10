@@ -46,7 +46,7 @@ final class QuadrilateralView: UIView {
     public var editable = false {
         didSet {
             cornerViews(hidden: !editable)
-            quadLayer.fillColor = editable ? UIColor(white: 0.0, alpha: 0.6).cgColor : UIColor(white: 1.0, alpha: 0.5).cgColor
+            quadLayer.fillColor = editable ? UIColor(white: 0.0, alpha: 0.6).cgColor : UIColor(white: 1.0, alpha: 0.2).cgColor // buradan mask viewın opacitysi ayarlanıyor (0.2)
             guard let quad else {
                 return
             }

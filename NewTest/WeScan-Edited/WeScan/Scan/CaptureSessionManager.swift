@@ -210,7 +210,8 @@ final class CaptureSessionManager: NSObject, AVCaptureVideoDataOutputSampleBuffe
                 let shouldAutoScan = (result == .showAndAutoScan)
                 self.displayRectangleResult(rectangleResult: RectangleDetectorResult(rectangle: rectangle, imageSize: imageSize))
                 if shouldAutoScan, CaptureSession.current.isAutoScanEnabled, !CaptureSession.current.isEditing {
-                    capturePhoto()
+                    // otomatik foto çekmesini engelliyoruz
+//                    capturePhoto()
                 }
             }
 
