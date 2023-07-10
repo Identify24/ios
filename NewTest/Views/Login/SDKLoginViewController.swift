@@ -114,9 +114,7 @@ class SDKLoginViewController: SDKViewOptionsController {
                             self.manager.moduleStepOrder = 0
                             self.hideLoader()
                             self.manager.getNextModule { nextVC in
-                                if self.manager.subRejectedStatus {
-                                    self.showToast(type: .fail, title: self.translate(text: .coreError), subTitle: self.translate(text: .anotherUserInToTheRoom), attachTo: self.view) {}
-                                } else {
+                                if !self.subRejected {
                                     let navigationC = UINavigationController(rootViewController: nextVC)
                                     navigationC.isModalInPresentation = true
                                     self.showToast(title: self.translate(text: .coreSuccess), subTitle: self.translate(text: .loadingFirstModule), attachTo: self.view, callback: {
