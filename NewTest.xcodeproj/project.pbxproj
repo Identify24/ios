@@ -216,7 +216,6 @@
 		482D2BB02A547AC000F1344F /* CaptureSession+Focus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CaptureSession+Focus.swift"; sourceTree = "<group>"; };
 		483BDB0B28F459CC00635BCC /* NewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		483BDB0E28F459CC00635BCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		483BDB1528F459CC00635BCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		483BDB1728F459CC00635BCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		483BDB1A28F459CC00635BCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		483BDB1C28F459CC00635BCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -505,7 +504,6 @@
 				485C152F2907D2D7007B9ED0 /* Views */,
 				489CBB1A28F586D500D22CC1 /* NewTest.entitlements */,
 				483BDB0E28F459CC00635BCC /* AppDelegate.swift */,
-				483BDB1428F459CC00635BCC /* Main.storyboard */,
 				483BDB1728F459CC00635BCC /* Assets.xcassets */,
 				485C15632907F3FA007B9ED0 /* Colors.xcassets */,
 				483BDB1928F459CC00635BCC /* LaunchScreen.storyboard */,
@@ -928,14 +926,6 @@
 				482D2B7B2A547AC000F1344F /* pt-PT */,
 			);
 			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		483BDB1428F459CC00635BCC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				483BDB1528F459CC00635BCC /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		483BDB1928F459CC00635BCC /* LaunchScreen.storyboard */ = {
