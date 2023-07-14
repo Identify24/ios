@@ -101,7 +101,8 @@ class SDKLoginViewController: SDKViewOptionsController {
                 identCardType: [.idCard, .passport, .oldSchool], // destekleyeceğiniz kart tipleri
                 signLangSupport: false, // işitme engelliler için müşteri temsilcisi desteği
                 nfcMaxErrorCount: 3,
-                logLevel: .all) { socketStats, apiResp, webErr in
+                logLevel: .all,
+                bigCustomerCam: true) { socketStats, apiResp, webErr in
                     
                 print("socket resp : \(socketStats)")
                 if let err = webErr, err.errorMessages != "" { // web servisten hata gelirse

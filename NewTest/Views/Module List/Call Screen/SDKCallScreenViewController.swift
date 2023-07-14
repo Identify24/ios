@@ -76,29 +76,37 @@ class SDKCallScreenViewController: SDKBaseViewController {
         }
     }
     
-    private func setupMyCamera() { // kendi kameramızı ayarlar
+    private func setupCameras() {
+        let remoteVideoView = manager.webRTCClient.remoteVideoView()
         let localVideoView = manager.webRTCClient.localVideoView()
         localVideoView.tag = 100
-        manager.webRTCClient.setupLocalViewFrame(frame: CGRect(x: 0, y: 0, width: self.myCam.frame.width, height: self.myCam.frame.height))
-        self.myCam.addSubview(localVideoView)
-        self.myCam.bringSubviewToFront(self.qualityImg)
-    }
-    
-    private func setupCustomerCamera() { // temsilcimizin görüntüsünü ayarlar
-        let remoteVideoView = manager.webRTCClient.remoteVideoView()
-        manager.webRTCClient.setupRemoteViewFrame(frame: CGRect(x: 0, y: 0, width:self.manager.remoteCam().frame.width * 2, height: self.manager.remoteCam().frame.height))
-        customerCam.clipsToBounds = true
-        remoteVideoView.center = CGPoint(x: customerCam.frame.size.width  / 2, y: customerCam.frame.size.height / 2)
-        self.customerCam.addSubview(remoteVideoView)
+        if self.manager.showBigCustomerCam {
+            manager.webRTCClient.setupRemoteViewFrame(frame: CGRect(x: 0, y: 0, width:self.myCam.frame.width * 2, height: self.myCam.frame.height))
+            remoteVideoView.contentMode = .scaleToFill
+            manager.webRTCClient.setupLocalViewFrame(frame: CGRect(x: 0, y: 0, width: self.customerCam.frame.width, height: self.customerCam.frame.height))
+            remoteVideoView.center = CGPoint(x: myCam.frame.size.width  / 2, y: myCam.frame.size.height / 2)
+            customerCam.clipsToBounds = true
+            self.myCam.addSubview(remoteVideoView)
+            self.customerCam.addSubview(localVideoView)
+            manager.webRTCClient.calculateLocalSize()
+        } else {
+            manager.webRTCClient.setupRemoteViewFrame(frame: CGRect(x: 0, y: 0, width:self.manager.remoteCam().frame.width * 2, height: self.manager.remoteCam().frame.height))
+            customerCam.clipsToBounds = true
+            manager.webRTCClient.setupLocalViewFrame(frame: CGRect(x: 0, y: 0, width: self.myCam.frame.width, height: self.myCam.frame.height))
+            remoteVideoView.center = CGPoint(x: customerCam.frame.size.width  / 2, y: customerCam.frame.size.height / 2)
+            self.myCam.addSubview(localVideoView)
+            self.customerCam.addSubview(remoteVideoView)
+            manager.webRTCClient.calculateLocalSize()
+        }
+        self.myCam.backgroundColor = IdentifyTheme.blackBack
+        self.customerCam.backgroundColor = IdentifyTheme.blackBack
         customerCam.roundCorners(corners: .allCorners, radius: 12)
-        manager.webRTCClient.calculateLocalSize()
         self.setupCallScreen(inCall: true)
     }
     
     private func start2SideTransfer() {
         DispatchQueue.main.async {
-            self.setupMyCamera()
-            self.setupCustomerCamera()
+            self.setupCameras()
             self.hideLoader()
         }
     }
