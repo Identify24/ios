@@ -20,6 +20,8 @@
 		4820A4A22924CDAD004DB388 /* sample.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4820A4A12924CDAC004DB388 /* sample.mp4 */; };
 		48263C10292789C7005200A1 /* SDKThankYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48263C0E292789C7005200A1 /* SDKThankYouViewController.swift */; };
 		48263C11292789C7005200A1 /* SDKThankYouViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48263C0F292789C7005200A1 /* SDKThankYouViewController.xib */; };
+		482A08ED2A6E5D9900E33FD4 /* IdentifySDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 482A08EB2A6E5D9100E33FD4 /* IdentifySDK.xcframework */; };
+		482A08EE2A6E5D9900E33FD4 /* IdentifySDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 482A08EB2A6E5D9100E33FD4 /* IdentifySDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		482D2BB12A547AC000F1344F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 482D2B632A547AC000F1344F /* Localizable.strings */; };
 		482D2BB22A547AC000F1344F /* ImageScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482D2B652A547AC000F1344F /* ImageScannerController.swift */; };
 		482D2BB32A547AC000F1344F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 482D2B682A547AC000F1344F /* Localizable.strings */; };
@@ -96,8 +98,6 @@
 		485C157C2908190D007B9ED0 /* SDKNfcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C157A2908190D007B9ED0 /* SDKNfcViewController.swift */; };
 		485C157D2908190D007B9ED0 /* SDKNfcViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485C157B2908190D007B9ED0 /* SDKNfcViewController.xib */; };
 		4862133429B0C05F001428A0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4862133329B0C05F001428A0 /* Alamofire */; };
-		4864165E2A58475F00DE36A4 /* IdentifySDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4864165C2A58475900DE36A4 /* IdentifySDK.xcframework */; };
-		4864165F2A58475F00DE36A4 /* IdentifySDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4864165C2A58475900DE36A4 /* IdentifySDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4880596E291D0EBD0058C7CD /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 4880596D291D0EBD0058C7CD /* Toast */; settings = {ATTRIBUTES = (Required, ); }; };
 		4881A7FF29238CB400EB4072 /* SDKAddressConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4881A7FD29238CB400EB4072 /* SDKAddressConfirmViewController.swift */; };
 		4881A80029238CB400EB4072 /* SDKAddressConfirmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4881A7FE29238CB400EB4072 /* SDKAddressConfirmViewController.xib */; };
@@ -108,6 +108,8 @@
 		4881A8112923BF0000EB4072 /* SDKRingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4881A80F2923BF0000EB4072 /* SDKRingViewController.xib */; };
 		4887009A292CDA3500961218 /* SDKListenSocketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48870098292CDA3500961218 /* SDKListenSocketViewController.swift */; };
 		4887009B292CDA3500961218 /* SDKListenSocketViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48870099292CDA3500961218 /* SDKListenSocketViewController.xib */; };
+		4887EEEF2A6E99B600D51461 /* ExternalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4887EEED2A6E99B600D51461 /* ExternalViewController.swift */; };
+		4887EEF02A6E99B600D51461 /* ExternalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4887EEEE2A6E99B600D51461 /* ExternalViewController.xib */; };
 		48A151EB292B73BA005B376B /* SDKSignLangViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A151E9292B73BA005B376B /* SDKSignLangViewController.swift */; };
 		48A151EC292B73BA005B376B /* SDKSignLangViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A151EA292B73BA005B376B /* SDKSignLangViewController.xib */; };
 		48AB73FB291A75E200F591A4 /* SDKSignatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB73F9291A75E200F591A4 /* SDKSignatureViewController.swift */; };
@@ -131,7 +133,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4864165F2A58475F00DE36A4 /* IdentifySDK.xcframework in Embed Frameworks */,
+				482A08EE2A6E5D9900E33FD4 /* IdentifySDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,6 +150,7 @@
 		4820A4A12924CDAC004DB388 /* sample.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample.mp4; sourceTree = "<group>"; };
 		48263C0E292789C7005200A1 /* SDKThankYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKThankYouViewController.swift; sourceTree = "<group>"; };
 		48263C0F292789C7005200A1 /* SDKThankYouViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKThankYouViewController.xib; sourceTree = "<group>"; };
+		482A08EB2A6E5D9100E33FD4 /* IdentifySDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = IdentifySDK.xcframework; sourceTree = "<group>"; };
 		482D2B642A547AC000F1344F /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		482D2B652A547AC000F1344F /* ImageScannerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageScannerController.swift; sourceTree = "<group>"; };
 		482D2B692A547AC000F1344F /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -240,7 +243,6 @@
 		485C15672907FC69007B9ED0 /* SDKCardReaderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKCardReaderViewController.xib; sourceTree = "<group>"; };
 		485C157A2908190D007B9ED0 /* SDKNfcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKNfcViewController.swift; sourceTree = "<group>"; };
 		485C157B2908190D007B9ED0 /* SDKNfcViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKNfcViewController.xib; sourceTree = "<group>"; };
-		4864165C2A58475900DE36A4 /* IdentifySDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = IdentifySDK.xcframework; sourceTree = "<group>"; };
 		4881A7FD29238CB400EB4072 /* SDKAddressConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKAddressConfirmViewController.swift; sourceTree = "<group>"; };
 		4881A7FE29238CB400EB4072 /* SDKAddressConfirmViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKAddressConfirmViewController.xib; sourceTree = "<group>"; };
 		4881A8092923BEF400EB4072 /* SDKCallScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKCallScreenViewController.swift; sourceTree = "<group>"; };
@@ -249,6 +251,8 @@
 		4881A80F2923BF0000EB4072 /* SDKRingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKRingViewController.xib; sourceTree = "<group>"; };
 		48870098292CDA3500961218 /* SDKListenSocketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKListenSocketViewController.swift; sourceTree = "<group>"; };
 		48870099292CDA3500961218 /* SDKListenSocketViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKListenSocketViewController.xib; sourceTree = "<group>"; };
+		4887EEED2A6E99B600D51461 /* ExternalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalViewController.swift; sourceTree = "<group>"; };
+		4887EEEE2A6E99B600D51461 /* ExternalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExternalViewController.xib; sourceTree = "<group>"; };
 		489CBB1A28F586D500D22CC1 /* NewTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NewTest.entitlements; sourceTree = "<group>"; };
 		48A151E9292B73BA005B376B /* SDKSignLangViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKSignLangViewController.swift; sourceTree = "<group>"; };
 		48A151EA292B73BA005B376B /* SDKSignLangViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKSignLangViewController.xib; sourceTree = "<group>"; };
@@ -275,7 +279,7 @@
 				4880596E291D0EBD0058C7CD /* Toast in Frameworks */,
 				48AB73FF291A762100F591A4 /* SwiftSignatureView in Frameworks */,
 				4857BFF82902D621001FE850 /* OpenSSL in Frameworks */,
-				4864165E2A58475F00DE36A4 /* IdentifySDK.xcframework in Frameworks */,
+				482A08ED2A6E5D9900E33FD4 /* IdentifySDK.xcframework in Frameworks */,
 				4881A80729239A1100EB4072 /* IQKeyboardManagerSwift in Frameworks */,
 				48171405294716830095A64F /* netfox in Frameworks */,
 				48F0867829F7CA4E00FCA4BF /* QKMRZScanner in Frameworks */,
@@ -515,6 +519,7 @@
 		485C152F2907D2D7007B9ED0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4887EEEC2A6E99A300D51461 /* ExternalView */,
 				48870097292CDA2400961218 /* Internet Connection Check */,
 				48AB73F8291A75C800F591A4 /* Module List */,
 				485C154B2907DC0E007B9ED0 /* Login */,
@@ -609,6 +614,15 @@
 			path = "Internet Connection Check";
 			sourceTree = "<group>";
 		};
+		4887EEEC2A6E99A300D51461 /* ExternalView */ = {
+			isa = PBXGroup;
+			children = (
+				4887EEED2A6E99B600D51461 /* ExternalViewController.swift */,
+				4887EEEE2A6E99B600D51461 /* ExternalViewController.xib */,
+			);
+			path = ExternalView;
+			sourceTree = "<group>";
+		};
 		48A151E8292B73B0005B376B /* Sign Lang */ = {
 			isa = PBXGroup;
 			children = (
@@ -668,7 +682,7 @@
 		48ED5F0E2A0D2A8B0000C279 /* SDK */ = {
 			isa = PBXGroup;
 			children = (
-				4864165C2A58475900DE36A4 /* IdentifySDK.xcframework */,
+				482A08EB2A6E5D9100E33FD4 /* IdentifySDK.xcframework */,
 			);
 			path = SDK;
 			sourceTree = "<group>";
@@ -786,6 +800,7 @@
 				482D2BB82A547AC000F1344F /* flash@2x.png in Resources */,
 				4820A4A22924CDAD004DB388 /* sample.mp4 in Resources */,
 				485C154F2907DC19007B9ED0 /* SDKSelfieViewController.xib in Resources */,
+				4887EEF02A6E99B600D51461 /* ExternalViewController.xib in Resources */,
 				4881A80029238CB400EB4072 /* SDKAddressConfirmViewController.xib in Resources */,
 				48E8E43229266B8A0045C3F8 /* SDKSpeechRecViewController.xib in Resources */,
 				482D2BB52A547AC000F1344F /* rotate@3x.png in Resources */,
@@ -876,6 +891,7 @@
 				48E8E43129266B8A0045C3F8 /* SDKSpeechRecViewController.swift in Sources */,
 				485C155E2907F3A7007B9ED0 /* SDKUIStackView+.swift in Sources */,
 				482D2BC12A547AC000F1344F /* CaptureSessionManager.swift in Sources */,
+				4887EEEF2A6E99B600D51461 /* ExternalViewController.swift in Sources */,
 				482D2BD72A547AC000F1344F /* CIRectangleDetector.swift in Sources */,
 				482D2BCF2A547AC000F1344F /* UIImage+Utils.swift in Sources */,
 				485C15612907F3A7007B9ED0 /* SDKUIView+.swift in Sources */,
@@ -1061,7 +1077,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = NewTest/NewTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = TQUQ2HQ482;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1102,7 +1118,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = NewTest/NewTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = TQUQ2HQ482;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

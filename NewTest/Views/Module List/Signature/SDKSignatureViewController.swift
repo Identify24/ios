@@ -56,9 +56,12 @@ class SDKSignatureViewController: SDKBaseViewController {
         manager.uploadIdPhoto(idPhoto: signatureImg, selfieType: .signature) { webResp in
             self.hideLoader()
             if webResp.result == true {
-                self.manager.getNextModule { nextVC in
-                    self.navigationController?.pushViewController(nextVC, animated: true)
-                }
+                let nextVC = ExternalViewController() // Örnek amaçlı olarak burada, kendi projenize ait controllerı ekleyebilirsiniz
+                self.navigationController?.pushViewController(nextVC, animated: true)
+                
+//                self.manager.getNextModule { nextVC in
+//                    self.navigationController?.pushViewController(nextVC, animated: true)
+//                }
             }
         }
     }

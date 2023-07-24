@@ -135,7 +135,6 @@ extension SDKCallScreenViewController: CallScreenDelegate {
 extension SDKCallScreenViewController: SDKSocketListener {
     
     func listenSocketMessage(message: SDKCallActions) {
-        print("comin action: \(message)")
         switch message {
             case .incomingCall:
                 print("yeni bir çağrı geliyor")
@@ -148,6 +147,7 @@ extension SDKCallScreenViewController: SDKSocketListener {
             case .endCall:
                 manager.socket.disconnect()
                 print("görüşme tamamlandı, sonraki modüle geçebiliriz")
+            
             case .approveSms(let tanCode):
                 print("sms onaylandı :\(tanCode)")
             case .openWarningCircle:
@@ -160,7 +160,6 @@ extension SDKCallScreenViewController: SDKSocketListener {
                 print("kart çerçevesi kapatıldı")
             case .terminateCall:
                 self.listenToSocketConnection(callCompleted: true)
-//                manager.socket.disconnect()
                 setupCallScreen(inCall: false)
                 self.manager.getNextModule { nextVC in
                     self.navigationController?.pushViewController(nextVC, animated: true)
@@ -210,6 +209,8 @@ extension SDKCallScreenViewController: SDKSocketListener {
                             self.qualityImg.image = UIImage()
                         }
                 }
+            case .missedCall: // belirli süre boyunca telefon çaldı fakat müşteri açmadı veya temsilci aradı fakat telefon açılmadan aramayı sonlandırdı
+                self.dismiss(animated: true) // çağrı ekranını dismiss ettik
             @unknown default:
                 return
             }
