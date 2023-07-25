@@ -278,10 +278,8 @@ class SDKCardReaderViewController: SDKBaseViewController {
                                 return
                             }
                         } else {
-                            print("bu 1 :\(resp)")
-                            print("bu 2 \(self.manager.sdkFrontInfo.asDictionary())")
-                            print("bu 3 \(self.manager.sdkBackInfo.asDictionary())")
-                            print("bu 4 \(self.manager.sdkBackInfo.asDictionary())")
+                            print("Front OCR \(self.manager.sdkFrontInfo.asDictionary())")
+                            print("Back OCR \(self.manager.sdkBackInfo.asDictionary())")
                             self.manager.uploadIdPhoto(idPhoto: self.backIdPhoto.image ?? UIImage(), selfieType: .backId) { webResp in
                                 self.photoBackSide = true
                                 self.hideLoader()
