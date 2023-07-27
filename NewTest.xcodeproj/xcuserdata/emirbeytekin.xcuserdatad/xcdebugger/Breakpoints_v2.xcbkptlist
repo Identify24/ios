@@ -36,5 +36,85 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5C8DA595-5DB3-45B9-89B3-468291A4BB16"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewTest/Views/Login/SDKLoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
+            landmarkName = "loginSystem()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DA24632E-78F1-4EBB-8CA6-F23E5A7F7F9E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewTest/Views/Login/SDKLoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
+            landmarkName = "loginSystem()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E0B32A17-14D5-4CA9-99A0-8839E06972E1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewTest/Views/Login/SDKLoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
+            landmarkName = "loginSystem()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E0B32A17-14D5-4CA9-99A0-8839E06972E1 - 8718ca2d6d832673"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Starscream.WebSocket, IdentifySDK.RoomResponse, Swift.Optional&lt;IdentifySDK.SDKWebError&gt;) -&gt; () in NewTest.SDKLoginViewController.loginSystem() -&gt; ()"
+                  moduleName = "NewTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emirbeytekin/Documents/Identify/ios/NewTest/Views/Login/SDKLoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "112"
+                  endingLineNumber = "112"
+                  offsetFromSymbolStart = "480">
+               </Location>
+               <Location
+                  uuid = "E0B32A17-14D5-4CA9-99A0-8839E06972E1 - 8718ca2d6d832673"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Starscream.WebSocket, IdentifySDK.RoomResponse, Swift.Optional&lt;IdentifySDK.SDKWebError&gt;) -&gt; () in NewTest.SDKLoginViewController.loginSystem() -&gt; ()"
+                  moduleName = "NewTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emirbeytekin/Documents/Identify/ios/NewTest/Views/Login/SDKLoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "112"
+                  endingLineNumber = "112"
+                  offsetFromSymbolStart = "516">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

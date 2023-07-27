@@ -96,8 +96,8 @@
 		485C157C2908190D007B9ED0 /* SDKNfcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C157A2908190D007B9ED0 /* SDKNfcViewController.swift */; };
 		485C157D2908190D007B9ED0 /* SDKNfcViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485C157B2908190D007B9ED0 /* SDKNfcViewController.xib */; };
 		4862133429B0C05F001428A0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4862133329B0C05F001428A0 /* Alamofire */; };
-		486B68362A6EB1BE005C60EC /* IdentifySDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 486B68342A6EB1BA005C60EC /* IdentifySDK.xcframework */; };
-		486B68372A6EB1BE005C60EC /* IdentifySDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 486B68342A6EB1BA005C60EC /* IdentifySDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		48645B672A72482800D6CCF1 /* IdentifySDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48645B652A72481100D6CCF1 /* IdentifySDK.xcframework */; };
+		48645B682A72482800D6CCF1 /* IdentifySDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 48645B652A72481100D6CCF1 /* IdentifySDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4880596E291D0EBD0058C7CD /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 4880596D291D0EBD0058C7CD /* Toast */; settings = {ATTRIBUTES = (Required, ); }; };
 		4881A7FF29238CB400EB4072 /* SDKAddressConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4881A7FD29238CB400EB4072 /* SDKAddressConfirmViewController.swift */; };
 		4881A80029238CB400EB4072 /* SDKAddressConfirmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4881A7FE29238CB400EB4072 /* SDKAddressConfirmViewController.xib */; };
@@ -133,7 +133,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				486B68372A6EB1BE005C60EC /* IdentifySDK.xcframework in Embed Frameworks */,
+				48645B682A72482800D6CCF1 /* IdentifySDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,7 +242,7 @@
 		485C15672907FC69007B9ED0 /* SDKCardReaderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKCardReaderViewController.xib; sourceTree = "<group>"; };
 		485C157A2908190D007B9ED0 /* SDKNfcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKNfcViewController.swift; sourceTree = "<group>"; };
 		485C157B2908190D007B9ED0 /* SDKNfcViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKNfcViewController.xib; sourceTree = "<group>"; };
-		486B68342A6EB1BA005C60EC /* IdentifySDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = IdentifySDK.xcframework; sourceTree = "<group>"; };
+		48645B652A72481100D6CCF1 /* IdentifySDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = IdentifySDK.xcframework; sourceTree = "<group>"; };
 		4881A7FD29238CB400EB4072 /* SDKAddressConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKAddressConfirmViewController.swift; sourceTree = "<group>"; };
 		4881A7FE29238CB400EB4072 /* SDKAddressConfirmViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKAddressConfirmViewController.xib; sourceTree = "<group>"; };
 		4881A8092923BEF400EB4072 /* SDKCallScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKCallScreenViewController.swift; sourceTree = "<group>"; };
@@ -279,7 +279,7 @@
 				4880596E291D0EBD0058C7CD /* Toast in Frameworks */,
 				48AB73FF291A762100F591A4 /* SwiftSignatureView in Frameworks */,
 				4857BFF82902D621001FE850 /* OpenSSL in Frameworks */,
-				486B68362A6EB1BE005C60EC /* IdentifySDK.xcframework in Frameworks */,
+				48645B672A72482800D6CCF1 /* IdentifySDK.xcframework in Frameworks */,
 				4881A80729239A1100EB4072 /* IQKeyboardManagerSwift in Frameworks */,
 				48171405294716830095A64F /* netfox in Frameworks */,
 				48F0867829F7CA4E00FCA4BF /* QKMRZScanner in Frameworks */,
@@ -682,7 +682,7 @@
 		48ED5F0E2A0D2A8B0000C279 /* SDK */ = {
 			isa = PBXGroup;
 			children = (
-				486B68342A6EB1BA005C60EC /* IdentifySDK.xcframework */,
+				48645B652A72481100D6CCF1 /* IdentifySDK.xcframework */,
 			);
 			path = SDK;
 			sourceTree = "<group>";
