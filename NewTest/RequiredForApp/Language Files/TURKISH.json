@@ -124,7 +124,8 @@
   "NfcSerialNo" : "Kimlik Seri Numarası",
   "NfcBirthDate" : "Doğum Tarihi",
   "NfcExpDate" : "Son Geçerlilik Tarihi",
-  "NfcStart" : "Taramayı başlat"
+  "NfcStart" : "Taramayı başlat",
+  "CoreReconnecting" : "Bağlanıyor.."
 
   
   

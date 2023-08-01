@@ -38,5 +38,6 @@ class SDKThankYouViewController: SDKBaseViewController {
             self.desc1Lbl.text = self.translate(text: .selfieIdentInfo3)
             self.desc2Lbl.text = ""
         }
+        UIApplication.shared.isIdleTimerDisabled = false
     }
 }

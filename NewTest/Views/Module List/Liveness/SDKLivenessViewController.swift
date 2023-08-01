@@ -69,7 +69,6 @@ class SDKLivenessViewController: SDKBaseViewController {
             })
         }
         self.resumeSession()
-        
     }
     
     override func appMovedToBackground() {
@@ -87,15 +86,30 @@ class SDKLivenessViewController: SDKBaseViewController {
     }
     
     private func pauseSession() {
-        DispatchQueue.main.async {
-            self.myCam.session.pause()
+        if self.takenPhotoCount == self.totalStepsCount + 1 {
+            self.killArSession()
+        } else {
+            DispatchQueue.main.async {
+                self.myCam.session.pause()
+            }
         }
     }
     
     private func resumeSession() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3, execute: {
-            self.myCam.session.run(self.configuration)
-        })
+        if self.takenPhotoCount == self.totalStepsCount + 1 {
+            self.killArSession()
+        } else {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3, execute: {
+                self.hideLoader()
+                self.myCam.session.run(self.configuration)
+            })
+        }
+    }
+    
+    private func killArSession() {
+        myCam?.session.pause()
+        myCam?.removeFromSuperview()
+        myCam = nil
     }
     
     private func setupUI() {
@@ -129,7 +143,7 @@ class SDKLivenessViewController: SDKBaseViewController {
                     if self.takenPhotoCount == self.totalStepsCount + 1 {
                         self.manager.getNextModule { nextVC in
                             self.navigationController?.pushViewController(nextVC, animated: true)
-                            self.takenPhotoCount = 0
+//                            self.takenPhotoCount = 0
                             self.nextStep = .completed
                         }
                     }
@@ -145,13 +159,14 @@ class SDKLivenessViewController: SDKBaseViewController {
         }
         manager.uploadIdPhoto(idPhoto: image, selfieType: self.currentLivenessType ?? .signature) { uploadResp in
             self.hideLoader()
+            self.takenPhotoCount += 1
+            let generator = UIImpactFeedbackGenerator(style: .light)
+            generator.impactOccurred()
             if uploadResp.result == true {
-                self.takenPhotoCount += 1
                 uploaded(true)
                 self.resumeSession()
                 return
             } else {
-                self.hideLoader()
                 DispatchQueue.main.async {
                     self.showToast(type:.fail, title: self.translate(text: .coreError), subTitle: self.translate(text: .coreUploadError), attachTo: self.view) {
                         uploaded(false)

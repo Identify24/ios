@@ -79,7 +79,6 @@ class SDKCallScreenViewController: SDKBaseViewController {
     private func setupCameras() {
         let remoteVideoView = manager.webRTCClient.remoteVideoView()
         let localVideoView = manager.webRTCClient.localVideoView()
-        localVideoView.tag = 100
         if self.manager.showBigCustomerCam {
             manager.webRTCClient.setupRemoteViewFrame(frame: CGRect(x: 0, y: 0, width:self.myCam.frame.width * 2, height: self.myCam.frame.height))
             remoteVideoView.contentMode = .scaleToFill
@@ -105,10 +104,10 @@ class SDKCallScreenViewController: SDKBaseViewController {
     }
     
     private func start2SideTransfer() {
-        DispatchQueue.main.async {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.4, execute: {
             self.setupCameras()
             self.hideLoader()
-        }
+        })
     }
     
 }
@@ -116,13 +115,13 @@ class SDKCallScreenViewController: SDKBaseViewController {
 extension SDKCallScreenViewController: CallScreenDelegate {
     
     func acceptCall() { // temsilciden gelen  çağrı kabul edilince bu fonksiyon çalışır
-        manager.acceptCall { connected, errMsg, sdpHaveErr in
+        manager.acceptCall { connected, errMsg, sdpConnOk in
             if let _ = connected, !connected! {
                 self.showToast(title: self.translate(text: .coreError), subTitle: errMsg?.errorMessages ?? "", attachTo: self.view) {
                     return
                 }
             } else {
-                if sdpHaveErr! { // sdp bağlantısı kuruldu
+                if sdpConnOk! { // sdp bağlantısı kuruldu
                     DispatchQueue.main.async {
                         self.showLoader()
                     }

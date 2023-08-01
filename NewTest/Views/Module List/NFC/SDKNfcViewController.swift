@@ -72,20 +72,6 @@ class SDKNfcViewController: SDKBaseViewController {
         }
         datePicker.backgroundColor = IdentifyTheme.submitBlueColor
         datePicker.tintColor = IdentifyTheme.lightWhiteColor
-        
-//        manager.twoFacesCompare { degree, samePerson, err in
-//            print("benzerlik oranı : \(degree)")
-//            if degree == 999.0 {
-//                self.infoLbl.text = "Kıyaslama yapabilmek için nfc modülünden önce selfie modülünü çağırmanız gerekmektedir."
-//            } else {
-//                if samePerson {
-//                    self.infoLbl.text = "Aynı kişi"
-//                } else {
-//                    self.infoLbl.text = "Farklı kişi"
-//                }
-//            }
-//
-//        }
         errSaveBtn.type = .submit
         errSaveBtn.setTitle(self.translate(text: .coreUpdate), for: .normal)
         errSaveBtn.onTap = {
@@ -147,13 +133,15 @@ class SDKNfcViewController: SDKBaseViewController {
     }
     
     func startNFC() {
+        self.showLoader()
         self.manager.startNFC { idCard, identStatus, webResponse, err in
-            print(idCard?.asDictionary())
+            print(idCard?.asDictionary()) // kimlik kartının içindeki veriler
             print("#######")
             print(identStatus.asDictionary())
             print("#######")
             print(webResponse.asDictionary())
             print("#######")
+            self.hideLoader()
             if webResponse.result == false {
                 if webResponse.msg == "MAX_ERR_COUNT" {
                     self.goToNextPage()

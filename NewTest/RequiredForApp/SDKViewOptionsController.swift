@@ -161,6 +161,14 @@ class SDKBaseViewController: SDKViewOptionsController {
         super.viewDidLoad()
         nc.addObserver(self, selector: #selector(appMovedToBackground), name: UIApplication.didEnterBackgroundNotification, object: nil)
         nc.addObserver(self, selector: #selector(appMovedToForeground), name: UIApplication.willEnterForegroundNotification, object: nil)
+        nc.addObserver(self, selector: #selector(reActiveScreen), name: UIApplication.didBecomeActiveNotification, object: nil)
+    }
+    
+    @objc func reActiveScreen() { // wi-fi' dan lte' ye çekme gibi durumlarda socket kopması yaşanabilir, buna önlem olarak koptuğu zaman yeniden bağlan ekranı basıyoruz.
+        if manager.socket.isConnected == false {
+            manager.socket.disconnect()
+            self.openSocketDisconnect(callCompleted: false)
+        }
     }
     
     @objc func appMovedToBackground() { }

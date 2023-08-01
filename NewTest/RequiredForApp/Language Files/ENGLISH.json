@@ -124,5 +124,6 @@
   "NfcSerialNo" : "ID Card Serial Number",
   "NfcBirthDate" : "Date of birth",
   "NfcExpDate" : "Expiry Date",
-  "NfcStart" : "Start NFC"
+  "NfcStart" : "Start NFC",
+  "CoreReconnecting" : "Connecting.."
 }

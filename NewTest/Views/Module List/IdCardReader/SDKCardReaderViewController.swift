@@ -33,6 +33,7 @@ class SDKCardReaderViewController: SDKBaseViewController {
     private var cardSide: OCRType? = .frontId
     private var photoFrontSide = false
     private var photoBackSide = false
+    private var passportInfo = FrontIdInfo()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -289,19 +290,23 @@ class SDKCardReaderViewController: SDKBaseViewController {
                     }
                 }
                 
-            case .passport:
-                self.showLoader()
-                self.manager.uploadIdPhoto(idPhoto: self.frontIdPhoto.image ?? UIImage(), selfieType: .frontId) { webResp in
-                    if webResp.result == true {
-                        self.photoFrontSide = true
-                        self.hideLoader()
-                        self.checkButtonStatus()
-                    } else {
-                        self.showToast(title: self.translate(text: .coreError), subTitle: "\(webResp.msg ?? self.translate(text: .coreUploadError))", attachTo: self.view) {
+        case .passport:
+            self.showLoader()
+            self.manager.startPassportMrzKey(frontImg: self.frontIdPhoto.image ?? UIImage(), cominData: self.passportInfo) { idInfo, err in
+                if err == nil {
+                    self.manager.uploadIdPhoto(idPhoto: self.frontIdPhoto.image ?? UIImage(), selfieType: .frontId) { webResp in
+                        if webResp.result == true {
+                            self.photoFrontSide = true
                             self.hideLoader()
+                            self.checkButtonStatus()
+                        } else {
+                            self.showToast(title: self.translate(text: .coreError), subTitle: "\(webResp.msg ?? self.translate(text: .coreUploadError))", attachTo: self.view) {
+                                self.hideLoader()
+                            }
                         }
                     }
                 }
+            }
             
             default:
                 return

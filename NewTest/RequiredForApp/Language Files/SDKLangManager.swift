@@ -299,6 +299,8 @@ extension SDKLangManager {
                 return self.readKey(key: "NfcExpDate")
             case .nfcStart:
                 return self.readKey(key: "NfcStart")
+            case .coreReconnecting:
+                return self.readKey(key: "CoreReconnecting")
             }
     }
 }
@@ -429,4 +431,5 @@ public enum SDKKeywords {
     case nfcBirthDate
     case nfcExpDate
     case nfcStart
+    case coreReconnecting
 }

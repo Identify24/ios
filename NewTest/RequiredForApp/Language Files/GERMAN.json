@@ -124,7 +124,8 @@
   "NfcSerialNo" : "Ausweisnummer",
   "NfcBirthDate" : "Geburtsdatum",
   "NfcExpDate" : "Gültig bis",
-  "NfcStart" : "Starte NFC"
+  "NfcStart" : "Starte NFC",
+  "CoreReconnecting" : "Verbinden.."
 
 }
 
