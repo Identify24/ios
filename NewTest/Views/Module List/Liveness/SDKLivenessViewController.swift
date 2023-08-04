@@ -99,9 +99,9 @@ class SDKLivenessViewController: SDKBaseViewController {
         if self.takenPhotoCount == self.totalStepsCount + 1 {
             self.killArSession()
         } else {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3, execute: {
-                self.hideLoader()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
                 self.myCam.session.run(self.configuration)
+                self.hideLoader()
             })
         }
     }
@@ -158,7 +158,6 @@ class SDKLivenessViewController: SDKBaseViewController {
             self.showLoader()
         }
         manager.uploadIdPhoto(idPhoto: image, selfieType: self.currentLivenessType ?? .signature) { uploadResp in
-            self.hideLoader()
             self.takenPhotoCount += 1
             let generator = UIImpactFeedbackGenerator(style: .light)
             generator.impactOccurred()
