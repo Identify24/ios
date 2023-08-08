@@ -2,6 +2,9 @@
 
 Proje ile ilgili dökümantasyona https://docs.identify.com.tr/docs/ios/first-setup/ adresinden ulaşabilirsiniz.
 
+## version:1 build:6 // Bu sürümü sağlıklı kullanabilmek için SDK' yi mutlaka güncelleyin!
+- canlılık testi ekranına alert eklendi
+- gülümseme derecesi arttırıldı
 
 ## version:1 build:5
 - bazı kimliklerde gerçekleşen, MRZ alanından yanlış yorumlanan seri numarası hatası düzeltildi.

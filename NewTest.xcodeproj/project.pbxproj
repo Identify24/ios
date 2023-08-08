@@ -20,8 +20,6 @@
 		4820A4A22924CDAD004DB388 /* sample.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4820A4A12924CDAC004DB388 /* sample.mp4 */; };
 		48263C10292789C7005200A1 /* SDKThankYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48263C0E292789C7005200A1 /* SDKThankYouViewController.swift */; };
 		48263C11292789C7005200A1 /* SDKThankYouViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48263C0F292789C7005200A1 /* SDKThankYouViewController.xib */; };
-		48281EE22A79112C00B05C4D /* IdentifySDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48281EE02A79112700B05C4D /* IdentifySDK.xcframework */; };
-		48281EE32A79112C00B05C4D /* IdentifySDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 48281EE02A79112700B05C4D /* IdentifySDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		482D2BB12A547AC000F1344F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 482D2B632A547AC000F1344F /* Localizable.strings */; };
 		482D2BB22A547AC000F1344F /* ImageScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482D2B652A547AC000F1344F /* ImageScannerController.swift */; };
 		482D2BB32A547AC000F1344F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 482D2B682A547AC000F1344F /* Localizable.strings */; };
@@ -106,6 +104,8 @@
 		4881A80C2923BEF400EB4072 /* SDKCallScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4881A80A2923BEF400EB4072 /* SDKCallScreenViewController.xib */; };
 		4881A8102923BF0000EB4072 /* SDKRingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4881A80E2923BF0000EB4072 /* SDKRingViewController.swift */; };
 		4881A8112923BF0000EB4072 /* SDKRingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4881A80F2923BF0000EB4072 /* SDKRingViewController.xib */; };
+		4881B0F92A81218700665481 /* IdentifySDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4881B0F72A81218300665481 /* IdentifySDK.xcframework */; };
+		4881B0FA2A81218700665481 /* IdentifySDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4881B0F72A81218300665481 /* IdentifySDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4887009A292CDA3500961218 /* SDKListenSocketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48870098292CDA3500961218 /* SDKListenSocketViewController.swift */; };
 		4887009B292CDA3500961218 /* SDKListenSocketViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48870099292CDA3500961218 /* SDKListenSocketViewController.xib */; };
 		4887EEEF2A6E99B600D51461 /* ExternalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4887EEED2A6E99B600D51461 /* ExternalViewController.swift */; };
@@ -133,7 +133,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				48281EE32A79112C00B05C4D /* IdentifySDK.xcframework in Embed Frameworks */,
+				4881B0FA2A81218700665481 /* IdentifySDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,7 +150,6 @@
 		4820A4A12924CDAC004DB388 /* sample.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample.mp4; sourceTree = "<group>"; };
 		48263C0E292789C7005200A1 /* SDKThankYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKThankYouViewController.swift; sourceTree = "<group>"; };
 		48263C0F292789C7005200A1 /* SDKThankYouViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKThankYouViewController.xib; sourceTree = "<group>"; };
-		48281EE02A79112700B05C4D /* IdentifySDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = IdentifySDK.xcframework; sourceTree = "<group>"; };
 		482D2B642A547AC000F1344F /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		482D2B652A547AC000F1344F /* ImageScannerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageScannerController.swift; sourceTree = "<group>"; };
 		482D2B692A547AC000F1344F /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -249,6 +248,7 @@
 		4881A80A2923BEF400EB4072 /* SDKCallScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKCallScreenViewController.xib; sourceTree = "<group>"; };
 		4881A80E2923BF0000EB4072 /* SDKRingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKRingViewController.swift; sourceTree = "<group>"; };
 		4881A80F2923BF0000EB4072 /* SDKRingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKRingViewController.xib; sourceTree = "<group>"; };
+		4881B0F72A81218300665481 /* IdentifySDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = IdentifySDK.xcframework; sourceTree = "<group>"; };
 		48870098292CDA3500961218 /* SDKListenSocketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKListenSocketViewController.swift; sourceTree = "<group>"; };
 		48870099292CDA3500961218 /* SDKListenSocketViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKListenSocketViewController.xib; sourceTree = "<group>"; };
 		4887EEED2A6E99B600D51461 /* ExternalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalViewController.swift; sourceTree = "<group>"; };
@@ -279,7 +279,7 @@
 				4880596E291D0EBD0058C7CD /* Toast in Frameworks */,
 				48AB73FF291A762100F591A4 /* SwiftSignatureView in Frameworks */,
 				4857BFF82902D621001FE850 /* OpenSSL in Frameworks */,
-				48281EE22A79112C00B05C4D /* IdentifySDK.xcframework in Frameworks */,
+				4881B0F92A81218700665481 /* IdentifySDK.xcframework in Frameworks */,
 				4881A80729239A1100EB4072 /* IQKeyboardManagerSwift in Frameworks */,
 				48171405294716830095A64F /* netfox in Frameworks */,
 				48F0867829F7CA4E00FCA4BF /* QKMRZScanner in Frameworks */,
@@ -682,7 +682,7 @@
 		48ED5F0E2A0D2A8B0000C279 /* SDK */ = {
 			isa = PBXGroup;
 			children = (
-				48281EE02A79112700B05C4D /* IdentifySDK.xcframework */,
+				4881B0F72A81218300665481 /* IdentifySDK.xcframework */,
 			);
 			path = SDK;
 			sourceTree = "<group>";
@@ -1077,7 +1077,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = NewTest/NewTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 37;
+				CURRENT_PROJECT_VERSION = 41;
 				DEVELOPMENT_TEAM = TQUQ2HQ482;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1118,7 +1118,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = NewTest/NewTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 37;
+				CURRENT_PROJECT_VERSION = 41;
 				DEVELOPMENT_TEAM = TQUQ2HQ482;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

@@ -26,7 +26,6 @@ class SDKThankYouViewController: SDKBaseViewController {
         closeBtn.type = .submit
         closeBtn.setTitle(self.translate(text: .coreOk), for: .normal)
         closeBtn.onTap = {
-            self.manager.socket.disconnect()
             self.dismiss(animated: true)
         }
         closeBtn.populate()

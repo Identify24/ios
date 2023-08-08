@@ -46,10 +46,11 @@ class SDKViewOptionsController: UIViewController {
     }
     
     func listenToSocketConnection(callCompleted: Bool) {
-        if self.manager.socket.isConnected == false && manager.kycIsCompleted == false {
+        guard let socket = self.manager.socket else { return }
+        if socket.isConnected == false && manager.kycIsCompleted == false {
             self.openSocketDisconnect(callCompleted: callCompleted)
         } else {
-            manager.socket.onDisconnect = { [weak self] errMsg in
+            socket.onDisconnect = { [weak self] errMsg in
                 guard let self = self else { return }
                 self.openSocketDisconnect(callCompleted: callCompleted)
             }
@@ -165,8 +166,8 @@ class SDKBaseViewController: SDKViewOptionsController {
     }
     
     @objc func reActiveScreen() { // wi-fi' dan lte' ye çekme gibi durumlarda socket kopması yaşanabilir, buna önlem olarak koptuğu zaman yeniden bağlan ekranı basıyoruz.
-        if manager.socket.isConnected == false {
-            manager.socket.disconnect()
+        guard let socket = manager.socket else { return }
+        if socket.isConnected == false {
             self.openSocketDisconnect(callCompleted: false)
         }
     }
@@ -193,6 +194,28 @@ class SDKBaseViewController: SDKViewOptionsController {
         }
     }
     
+    func oneButtonAlertShow(appName: String, message: String, title1: String,  act1: @escaping () -> ()) {
+        var topController: UIViewController? = UIApplication.shared.keyWindow?.rootViewController
+        while ((topController?.presentedViewController) != nil) {
+            topController = topController?.presentedViewController
+        }
+        let alert = UIAlertController(title: appName, message: message, preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: title1, style: .default, handler: { [weak self] alert in
+            guard let self = self else { return }
+            act1()
+        }))
+        
+        topMostController().present(alert, animated: true, completion: nil)
+    }
+    
+    func topMostController() -> UIViewController {
+        var topController: UIViewController? = UIApplication.shared.keyWindow?.rootViewController
+        while ((topController?.presentedViewController) != nil) {
+            topController = topController?.presentedViewController
+        }
+        return topController!
+    }
    
     
 }

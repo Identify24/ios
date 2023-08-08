@@ -162,15 +162,17 @@ class SDKLivenessViewController: SDKBaseViewController {
             let generator = UIImpactFeedbackGenerator(style: .light)
             generator.impactOccurred()
             if uploadResp.result == true {
-                uploaded(true)
-                self.resumeSession()
-                return
+                self.oneButtonAlertShow(appName: "Identify", message: "Fotoğraf yüklendi, sonraki adıma geçiliyor.", title1: "Tamam") {
+                    uploaded(true)
+                    self.resumeSession()
+                }
             } else {
                 DispatchQueue.main.async {
                     self.showToast(type:.fail, title: self.translate(text: .coreError), subTitle: self.translate(text: .coreUploadError), attachTo: self.view) {
-                        uploaded(false)
-                        self.resumeSession()
-                        return
+                        self.oneButtonAlertShow(appName: "Identify", message: "Fotoğraf yüklenirken hata oluştu, sonraki adıma geçiliyor.", title1: "Tamam") {
+                            uploaded(false)
+                            self.resumeSession()
+                        }
                     }
                 }
             }
@@ -235,7 +237,7 @@ extension SDKLivenessViewController: ARSCNViewDelegate {
     func detectSmile(smileLeft: Decimal, smileRight: Decimal) {
         appendInfoText(self.smileTxt)
         self.currentLivenessType = .smiling
-        if smileLeft + smileRight > 0.9 {
+        if smileLeft + smileRight > 1.2 {
             self.pauseSession()
             sendScreenShot(uploaded: { resp in
                 self.getNextTest()
