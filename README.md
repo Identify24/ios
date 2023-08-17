@@ -2,6 +2,9 @@
 
 Proje ile ilgili dökümantasyona https://docs.identify.com.tr/docs/ios/first-setup/ adresinden ulaşabilirsiniz.
 
+## version: 1 build: 8.1
+- kimlik fotoğrafı net bir şekilde okunmasa, flaşlı ve flu olsa bile crash almasını sağlayan bir hatayı düzeltir.
+
 ## version:1 build:6 // Bu sürümü sağlıklı kullanabilmek için SDK' yi mutlaka güncelleyin!
 - canlılık testi ekranına alert eklendi
 - gülümseme derecesi arttırıldı
