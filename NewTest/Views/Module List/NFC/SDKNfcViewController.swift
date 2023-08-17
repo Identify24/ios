@@ -44,6 +44,12 @@ class SDKNfcViewController: SDKBaseViewController {
         setupUI()
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        self.showErrorScreen(needShow: false)
+        self.setupUI()
+    }
+    
     func goToNextPage() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.3, execute: {
             self.manager.getNextModule { nextVC in
@@ -166,6 +172,7 @@ class SDKNfcViewController: SDKBaseViewController {
             self.startNFCActBtn.populate()
             self.informationStackView.isHidden = needShow
             self.errorStackView.isHidden = !needShow
+            self.startNFCActBtn.isHidden = needShow
             if self.manager.useKpsData {
                 self.errSerialNo.text = self.manager.mrzDocNo
                 self.errBirthday.text = self.manager.mrzBirthDay.mrzToNormalDate()
