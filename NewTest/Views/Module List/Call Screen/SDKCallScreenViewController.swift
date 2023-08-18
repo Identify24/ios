@@ -88,6 +88,7 @@ class SDKCallScreenViewController: SDKBaseViewController {
             self.myCam.addSubview(remoteVideoView)
             self.customerCam.addSubview(localVideoView)
             manager.webRTCClient.calculateLocalSize()
+            manager.webRTCClient.calculateRemoteSize()
         } else {
             manager.webRTCClient.setupRemoteViewFrame(frame: CGRect(x: 0, y: 0, width:self.manager.remoteCam().frame.width * 2, height: self.manager.remoteCam().frame.height))
             customerCam.clipsToBounds = true
@@ -96,6 +97,7 @@ class SDKCallScreenViewController: SDKBaseViewController {
             self.myCam.addSubview(localVideoView)
             self.customerCam.addSubview(remoteVideoView)
             manager.webRTCClient.calculateLocalSize()
+            manager.webRTCClient.calculateRemoteSize()
         }
         self.myCam.backgroundColor = IdentifyTheme.blackBack
         self.customerCam.backgroundColor = IdentifyTheme.blackBack

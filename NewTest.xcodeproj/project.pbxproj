@@ -14,6 +14,8 @@
 		4810659A2922646600053004 /* SDKLivenessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 481065982922646600053004 /* SDKLivenessViewController.xib */; };
 		4813037E29221E1300E66D73 /* SDKVideoRecorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4813037C29221E1300E66D73 /* SDKVideoRecorderViewController.swift */; };
 		4813037F29221E1300E66D73 /* SDKVideoRecorderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4813037D29221E1300E66D73 /* SDKVideoRecorderViewController.xib */; };
+		48149BDB2A8F7B4400CAF0B8 /* IdentifySDK-1-9.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48149BD92A8F7B4100CAF0B8 /* IdentifySDK-1-9.xcframework */; };
+		48149BDC2A8F7B4400CAF0B8 /* IdentifySDK-1-9.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 48149BD92A8F7B4100CAF0B8 /* IdentifySDK-1-9.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		48171405294716830095A64F /* netfox in Frameworks */ = {isa = PBXBuildFile; productRef = 48171404294716830095A64F /* netfox */; settings = {ATTRIBUTES = (Required, ); }; };
 		48171422294734FA0095A64F /* SDKPassportReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48171420294734FA0095A64F /* SDKPassportReaderViewController.swift */; };
 		48171423294734FA0095A64F /* SDKPassportReaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48171421294734FA0095A64F /* SDKPassportReaderViewController.xib */; };
@@ -68,10 +70,10 @@
 		482D2BDE2A547AC000F1344F /* CaptureSession+Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482D2BAE2A547AC000F1344F /* CaptureSession+Orientation.swift */; };
 		482D2BDF2A547AC000F1344F /* CaptureSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482D2BAF2A547AC000F1344F /* CaptureSession.swift */; };
 		482D2BE02A547AC000F1344F /* CaptureSession+Focus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482D2BB02A547AC000F1344F /* CaptureSession+Focus.swift */; };
-		4831506729F7E87400FDEB3B /* WebRTC in Frameworks */ = {isa = PBXBuildFile; productRef = 4831506629F7E87400FDEB3B /* WebRTC */; };
 		483BDB0F28F459CC00635BCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483BDB0E28F459CC00635BCC /* AppDelegate.swift */; };
 		483BDB1828F459CC00635BCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 483BDB1728F459CC00635BCC /* Assets.xcassets */; };
 		483BDB1B28F459CC00635BCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 483BDB1928F459CC00635BCC /* LaunchScreen.storyboard */; };
+		48420BA72A8B61840005250F /* WebRTC in Frameworks */ = {isa = PBXBuildFile; productRef = 48420BA62A8B61840005250F /* WebRTC */; };
 		48549ADA2A41800E00F6838B /* SDKLivenessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48549AD82A41800D00F6838B /* SDKLivenessViewController.swift */; };
 		48549ADB2A41800E00F6838B /* SDKLivenessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48549AD92A41800D00F6838B /* SDKLivenessViewController.xib */; };
 		4857BFF82902D621001FE850 /* OpenSSL in Frameworks */ = {isa = PBXBuildFile; productRef = 4857BFF72902D621001FE850 /* OpenSSL */; settings = {ATTRIBUTES = (Required, ); }; };
@@ -104,8 +106,6 @@
 		4881A80C2923BEF400EB4072 /* SDKCallScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4881A80A2923BEF400EB4072 /* SDKCallScreenViewController.xib */; };
 		4881A8102923BF0000EB4072 /* SDKRingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4881A80E2923BF0000EB4072 /* SDKRingViewController.swift */; };
 		4881A8112923BF0000EB4072 /* SDKRingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4881A80F2923BF0000EB4072 /* SDKRingViewController.xib */; };
-		4881B0F92A81218700665481 /* IdentifySDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4881B0F72A81218300665481 /* IdentifySDK.xcframework */; };
-		4881B0FA2A81218700665481 /* IdentifySDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4881B0F72A81218300665481 /* IdentifySDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4887009A292CDA3500961218 /* SDKListenSocketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48870098292CDA3500961218 /* SDKListenSocketViewController.swift */; };
 		4887009B292CDA3500961218 /* SDKListenSocketViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48870099292CDA3500961218 /* SDKListenSocketViewController.xib */; };
 		4887EEEF2A6E99B600D51461 /* ExternalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4887EEED2A6E99B600D51461 /* ExternalViewController.swift */; };
@@ -133,7 +133,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4881B0FA2A81218700665481 /* IdentifySDK.xcframework in Embed Frameworks */,
+				48149BDC2A8F7B4400CAF0B8 /* IdentifySDK-1-9.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,6 +145,7 @@
 		481065982922646600053004 /* SDKLivenessViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKLivenessViewController.xib; sourceTree = "<group>"; };
 		4813037C29221E1300E66D73 /* SDKVideoRecorderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKVideoRecorderViewController.swift; sourceTree = "<group>"; };
 		4813037D29221E1300E66D73 /* SDKVideoRecorderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKVideoRecorderViewController.xib; sourceTree = "<group>"; };
+		48149BD92A8F7B4100CAF0B8 /* IdentifySDK-1-9.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = "IdentifySDK-1-9.xcframework"; sourceTree = "<group>"; };
 		48171420294734FA0095A64F /* SDKPassportReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKPassportReaderViewController.swift; sourceTree = "<group>"; };
 		48171421294734FA0095A64F /* SDKPassportReaderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKPassportReaderViewController.xib; sourceTree = "<group>"; };
 		4820A4A12924CDAC004DB388 /* sample.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample.mp4; sourceTree = "<group>"; };
@@ -248,7 +249,6 @@
 		4881A80A2923BEF400EB4072 /* SDKCallScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKCallScreenViewController.xib; sourceTree = "<group>"; };
 		4881A80E2923BF0000EB4072 /* SDKRingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKRingViewController.swift; sourceTree = "<group>"; };
 		4881A80F2923BF0000EB4072 /* SDKRingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKRingViewController.xib; sourceTree = "<group>"; };
-		4881B0F72A81218300665481 /* IdentifySDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = IdentifySDK.xcframework; sourceTree = "<group>"; };
 		48870098292CDA3500961218 /* SDKListenSocketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKListenSocketViewController.swift; sourceTree = "<group>"; };
 		48870099292CDA3500961218 /* SDKListenSocketViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKListenSocketViewController.xib; sourceTree = "<group>"; };
 		4887EEED2A6E99B600D51461 /* ExternalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalViewController.swift; sourceTree = "<group>"; };
@@ -275,16 +275,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4831506729F7E87400FDEB3B /* WebRTC in Frameworks */,
 				4880596E291D0EBD0058C7CD /* Toast in Frameworks */,
 				48AB73FF291A762100F591A4 /* SwiftSignatureView in Frameworks */,
+				48420BA72A8B61840005250F /* WebRTC in Frameworks */,
 				4857BFF82902D621001FE850 /* OpenSSL in Frameworks */,
-				4881B0F92A81218700665481 /* IdentifySDK.xcframework in Frameworks */,
 				4881A80729239A1100EB4072 /* IQKeyboardManagerSwift in Frameworks */,
 				48171405294716830095A64F /* netfox in Frameworks */,
 				48F0867829F7CA4E00FCA4BF /* QKMRZScanner in Frameworks */,
 				4857BFFB2902D636001FE850 /* Starscream in Frameworks */,
 				48D802292924F6B000B9BB83 /* CHIOTPField in Frameworks */,
+				48149BDB2A8F7B4400CAF0B8 /* IdentifySDK-1-9.xcframework in Frameworks */,
 				4862133429B0C05F001428A0 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -682,7 +682,7 @@
 		48ED5F0E2A0D2A8B0000C279 /* SDK */ = {
 			isa = PBXGroup;
 			children = (
-				4881B0F72A81218300665481 /* IdentifySDK.xcframework */,
+				48149BD92A8F7B4100CAF0B8 /* IdentifySDK-1-9.xcframework */,
 			);
 			path = SDK;
 			sourceTree = "<group>";
@@ -714,7 +714,7 @@
 				48171404294716830095A64F /* netfox */,
 				4862133329B0C05F001428A0 /* Alamofire */,
 				48F0867729F7CA4E00FCA4BF /* QKMRZScanner */,
-				4831506629F7E87400FDEB3B /* WebRTC */,
+				48420BA62A8B61840005250F /* WebRTC */,
 			);
 			productName = NewTest;
 			productReference = 483BDB0B28F459CC00635BCC /* NewTest.app */;
@@ -773,7 +773,7 @@
 				48171403294716830095A64F /* XCRemoteSwiftPackageReference "netfox" */,
 				4862133229B0C05F001428A0 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				48F0867629F7CA4E00FCA4BF /* XCRemoteSwiftPackageReference "QKMRZScanner" */,
-				4831506529F7E87400FDEB3B /* XCRemoteSwiftPackageReference "WebRTC" */,
+				48420BA52A8B61840005250F /* XCRemoteSwiftPackageReference "WebRTC" */,
 			);
 			productRefGroup = 483BDB0C28F459CC00635BCC /* Products */;
 			projectDirPath = "";
@@ -1077,7 +1077,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = NewTest/NewTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 41;
+				CURRENT_PROJECT_VERSION = 48;
 				DEVELOPMENT_TEAM = TQUQ2HQ482;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1118,7 +1118,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = NewTest/NewTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 41;
+				CURRENT_PROJECT_VERSION = 48;
 				DEVELOPMENT_TEAM = TQUQ2HQ482;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1183,12 +1183,12 @@
 				minimumVersion = 1.0.0;
 			};
 		};
-		4831506529F7E87400FDEB3B /* XCRemoteSwiftPackageReference "WebRTC" */ = {
+		48420BA52A8B61840005250F /* XCRemoteSwiftPackageReference "WebRTC" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/stasel/WebRTC.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 94.0.0;
+				kind = exactVersion;
+				version = 94.0.0;
 			};
 		};
 		4857BFF62902D621001FE850 /* XCRemoteSwiftPackageReference "OpenSSL" */ = {
@@ -1263,9 +1263,9 @@
 			package = 48171403294716830095A64F /* XCRemoteSwiftPackageReference "netfox" */;
 			productName = netfox;
 		};
-		4831506629F7E87400FDEB3B /* WebRTC */ = {
+		48420BA62A8B61840005250F /* WebRTC */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 4831506529F7E87400FDEB3B /* XCRemoteSwiftPackageReference "WebRTC" */;
+			package = 48420BA52A8B61840005250F /* XCRemoteSwiftPackageReference "WebRTC" */;
 			productName = WebRTC;
 		};
 		4857BFF72902D621001FE850 /* OpenSSL */ = {
