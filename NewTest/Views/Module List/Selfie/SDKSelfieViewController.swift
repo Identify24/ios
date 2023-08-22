@@ -13,6 +13,8 @@ class SDKSelfieViewController: SDKBaseViewController {
     @IBOutlet weak var selfieView: UIImageView!
     @IBOutlet weak var submitBtn: IdentifyButton!
     @IBOutlet weak var informationLbl: UILabel!
+    let vc = UIImagePickerController()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +23,7 @@ class SDKSelfieViewController: SDKBaseViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        self.resetCache()
+//        self.resetCache()
     }
     
     private func resetCache() {
@@ -66,6 +68,7 @@ class SDKSelfieViewController: SDKBaseViewController {
                 self.hideLoader()
                 self.showToast(title: self.translate(text: .coreSuccess), subTitle: self.translate(text: .coreSuccess), attachTo: self.view) {
                     print("Foto upload tamam")
+                    self.vc.delegate = nil
                 }
                 self.isEnableSubmit(enabled: true)
             } else {
@@ -81,14 +84,13 @@ class SDKSelfieViewController: SDKBaseViewController {
 extension SDKSelfieViewController: UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     
     func openCamera() {
-        let vc = UIImagePickerController()
-        vc.sourceType = .camera
-        vc.cameraDevice = .front
-        vc.cameraFlashMode = .off
-        vc.allowsEditing = false
-        vc.delegate = self
+        self.vc.sourceType = .camera
+        self.vc.cameraDevice = .front
+        self.vc.cameraFlashMode = .off
+        self.vc.allowsEditing = false
+        self.vc.delegate = self
         DispatchQueue.main.async {
-            self.present(vc, animated: true)
+            self.present(self.vc, animated: true)
         }
     }
     

@@ -17,6 +17,11 @@ class SDKLivenessViewController: SDKBaseViewController {
     let configuration = ARFaceTrackingConfiguration()
     @IBOutlet weak var pauseView: UIView!
     
+    var allowBlink = true
+    var allowSmile = true
+    var allowLeft = true
+    var allowRight = true
+    
     private var lookCamTxt: String {
         return languageManager.translate(key: .livenessLookCam)
     }
@@ -39,19 +44,18 @@ class SDKLivenessViewController: SDKBaseViewController {
     
     @IBOutlet weak var stepInfoLbl: UILabel!
     var nextStep: LivenessTestStep?
-    var takenPhotoCount = 0
-    var totalStepsCount = 4
+    
     var currentLivenessType: OCRType? = .selfie
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        self.totalStepsCount = (self.manager.livenessRandomOrder?.count ?? 4)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         self.pauseSession()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -60,13 +64,7 @@ class SDKLivenessViewController: SDKBaseViewController {
             self.getNextTest()
         } else if nextStep == .completed {
             self.pauseSession()
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
-                self.showToast(type: .success, title: self.translate(text: .coreSuccess), subTitle: "Bu modül zaten tamamlandı", attachTo: self.view) {
-                    self.manager.getNextModule { nextVC in
-                        self.navigationController?.pushViewController(nextVC, animated: true)
-                    }
-                }
-            })
+            self.getNextModule()
         }
         self.resumeSession()
     }
@@ -86,9 +84,7 @@ class SDKLivenessViewController: SDKBaseViewController {
     }
     
     private func pauseSession() {
-        if self.takenPhotoCount == self.totalStepsCount + 1 {
-            self.killArSession()
-        } else {
+        if self.nextStep != .completed {
             DispatchQueue.main.async {
                 self.myCam.session.pause()
             }
@@ -96,9 +92,7 @@ class SDKLivenessViewController: SDKBaseViewController {
     }
     
     private func resumeSession() {
-        if self.takenPhotoCount == self.totalStepsCount + 1 {
-            self.killArSession()
-        } else {
+        if self.nextStep != .completed {
             DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
                 self.myCam.session.run(self.configuration)
                 self.hideLoader()
@@ -113,15 +107,17 @@ class SDKLivenessViewController: SDKBaseViewController {
     }
     
     private func setupUI() {
-        myCam.delegate = self
-        self.getNextTest()
         if ARFaceTrackingConfiguration.isSupported {
             self.resumeSession()
         } else {
             self.showToast(type:.fail, title: self.translate(text: .coreError), subTitle: "Cihazınız ARFace Desteklemiyor", attachTo: self.view) {
-                self.skipModuleAct()
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.3, execute: {
+                    self.skipModuleAct()
+                })
             }
         }
+        self.getNextTest()
+        myCam.delegate = self
         self.resetCamBtn.onTap = {
             if self.nextStep == nil {
                 self.getNextTest()
@@ -136,20 +132,23 @@ class SDKLivenessViewController: SDKBaseViewController {
     
     private func getNextTest() {
         manager.getNextLivenessTest { nextStep, completed in
-            self.nextStep = nextStep
             if completed ?? false {
+                self.nextStep = .completed
                 self.pauseSession()
-                DispatchQueue.main.async {
-                    if self.takenPhotoCount == self.totalStepsCount + 1 {
-                        self.manager.getNextModule { nextVC in
-                            self.navigationController?.pushViewController(nextVC, animated: true)
-//                            self.takenPhotoCount = 0
-                            self.nextStep = .completed
-                        }
-                    }
-                }
+                self.getNextModule() 
+            } else {
+                self.nextStep = nextStep
             }
         }
+    }
+    
+    private func getNextModule() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
+            self.manager.getNextModule { nextVC in
+                self.killArSession()
+                self.navigationController?.pushViewController(nextVC, animated: true)
+            }
+        })
     }
     
     private func sendScreenShot(uploaded: @escaping(Bool) -> ()) {
@@ -157,15 +156,21 @@ class SDKLivenessViewController: SDKBaseViewController {
         DispatchQueue.main.async {
             self.showLoader()
         }
+        self.pauseSession()
+        
         manager.uploadIdPhoto(idPhoto: image, selfieType: self.currentLivenessType ?? .signature) { uploadResp in
-            self.takenPhotoCount += 1
             let generator = UIImpactFeedbackGenerator(style: .light)
             generator.impactOccurred()
             if uploadResp.result == true {
-                self.oneButtonAlertShow(appName: "Identify", message: "Fotoğraf yüklendi, sonraki adıma geçiliyor.", title1: "Tamam") {
-                    uploaded(true)
+                uploaded(true)
+                if self.nextStep == .completed {
                     self.resumeSession()
+                } else {
+                    self.oneButtonAlertShow(appName: "Identify", message: "Fotoğraf yüklendi, sonraki adıma geçiliyor.", title1: "Tamam") {
+                        self.resumeSession()
+                    }
                 }
+                
             } else {
                 DispatchQueue.main.async {
                     self.showToast(type:.fail, title: self.translate(text: .coreError), subTitle: self.translate(text: .coreUploadError), attachTo: self.view) {
@@ -200,49 +205,53 @@ extension SDKLivenessViewController: ARSCNViewDelegate {
     
     func checkTurnLeft(jawVal:Decimal) {
         appendInfoText(self.headLeftTxt)
+        hideLoader()
         self.currentLivenessType = .headToLeft
         if abs(jawVal) > 0.15 {
             self.pauseSession()
+            self.allowLeft = false
             sendScreenShot(uploaded: { resp in
                 self.getNextTest()
             })
-            return
         }
     }
     
     func checkTurnRight(jawVal:Decimal) {
         appendInfoText(self.headRightTxt)
+        hideLoader()
         self.currentLivenessType = .headToRight
         if abs(jawVal) > 0.15 {
             self.pauseSession()
+            self.allowRight = false
             sendScreenShot(uploaded: { resp in
                 self.getNextTest()
             })
-            return
         }
     }
     
     func blinkEyes(leftEye: Decimal, rightEye: Decimal) {
         appendInfoText(self.blinkEyeTxt)
+        hideLoader()
         self.currentLivenessType = .blinking
         if abs(leftEye) > 0.35 && abs(rightEye) > 0.35 {
             self.pauseSession()
+            self.allowBlink = false
             sendScreenShot(uploaded: { resp in
                 self.getNextTest()
             })
-            return
         }
     }
     
     func detectSmile(smileLeft: Decimal, smileRight: Decimal) {
         appendInfoText(self.smileTxt)
+        hideLoader()
         self.currentLivenessType = .smiling
         if smileLeft + smileRight > 1.2 {
             self.pauseSession()
+            self.allowSmile = false
             sendScreenShot(uploaded: { resp in
                 self.getNextTest()
             })
-            return
         }
     }
     
@@ -256,16 +265,24 @@ extension SDKLivenessViewController: ARSCNViewDelegate {
         
         switch self.nextStep {
             case .turnLeft:
-                self.checkTurnLeft(jawVal: jawLeft ?? 0)
+                if allowLeft {
+                    self.checkTurnLeft(jawVal: jawLeft ?? 0)
+                }
                 break
             case .turnRight:
-                self.checkTurnRight(jawVal: jawRight ?? 0)
+                if allowRight {
+                    self.checkTurnRight(jawVal: jawRight ?? 0)
+                }
                 break
             case .smile:
-                self.detectSmile(smileLeft: smileLeft ?? 0, smileRight: smileRight ?? 0)
+                if allowSmile {
+                    self.detectSmile(smileLeft: smileLeft ?? 0, smileRight: smileRight ?? 0)
+                }
                 break
             case .blinkEyes:
-                self.blinkEyes(leftEye: leftEyeOpen ?? 0, rightEye: rightEyeOpen ?? 0)
+                if allowBlink {
+                    self.blinkEyes(leftEye: leftEyeOpen ?? 0, rightEye: rightEyeOpen ?? 0)
+                }
                 break
             default:
                 return

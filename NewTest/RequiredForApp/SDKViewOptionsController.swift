@@ -47,7 +47,7 @@ class SDKViewOptionsController: UIViewController {
     
     func listenToSocketConnection(callCompleted: Bool) {
         guard let socket = self.manager.socket else { return }
-        if socket.isConnected == false && manager.kycIsCompleted == false {
+        if socket.isConnected == false && manager.kycIsCompleted == false && self.isAlreadyShowingReConnectScreen == false {
             self.openSocketDisconnect(callCompleted: callCompleted)
         } else {
             socket.onDisconnect = { [weak self] errMsg in
@@ -58,19 +58,19 @@ class SDKViewOptionsController: UIViewController {
     }
     
     func openSocketDisconnect(callCompleted: Bool) {
-        if callCompleted == false && isAlreadyShowingReConnectScreen == false {
-            let nextVC = SDKListenSocketViewController()
-            nextVC.delegate = self
-            isAlreadyShowingReConnectScreen = true
-            nextVC.modalPresentationStyle = .fullScreen
-            nextVC.modalTransitionStyle = .crossDissolve
-            if callCompleted == false {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
+            if callCompleted == false && self.isAlreadyShowingReConnectScreen == false {
+                let nextVC = SDKListenSocketViewController()
+                nextVC.delegate = self
+                self.isAlreadyShowingReConnectScreen = true
+                nextVC.modalPresentationStyle = .fullScreen
+                nextVC.modalTransitionStyle = .crossDissolve
                 let controller = UIApplication.topViewController()
                 DispatchQueue.main.async {
                     controller?.present(nextVC, animated: true)
                 }
             }
-        }
+        })
     }
     
     func addBackPhoto(view: UIView) {
@@ -167,7 +167,7 @@ class SDKBaseViewController: SDKViewOptionsController {
     
     @objc func reActiveScreen() { // wi-fi' dan lte' ye çekme gibi durumlarda socket kopması yaşanabilir, buna önlem olarak koptuğu zaman yeniden bağlan ekranı basıyoruz.
         guard let socket = manager.socket else { return }
-        if socket.isConnected == false {
+        if socket.isConnected == false && isAlreadyShowingReConnectScreen == false {
             self.openSocketDisconnect(callCompleted: false)
         }
     }
@@ -176,7 +176,7 @@ class SDKBaseViewController: SDKViewOptionsController {
 
     @objc func appMovedToForeground() {
         if let socket = manager.socket {
-            if socket.isConnected == false {
+            if socket.isConnected == false  && isAlreadyShowingReConnectScreen == false {
                 self.listenToSocketConnection(callCompleted: false)
             }
         }

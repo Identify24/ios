@@ -29,6 +29,7 @@ class SDKListenSocketViewController: SDKBaseViewController {
             self.manager.reconnectToSocket { [weak self] resp in
                 guard let self = `self` else { return }
                 if resp.isConnected {
+                    self.manager.sendStep()
                     self.delegate?.reconnectCompleted()
                     print("tekrar bağlantı kuruldu")
                     self.dismiss(animated: true)

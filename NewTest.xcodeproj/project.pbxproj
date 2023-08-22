@@ -14,8 +14,6 @@
 		4810659A2922646600053004 /* SDKLivenessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 481065982922646600053004 /* SDKLivenessViewController.xib */; };
 		4813037E29221E1300E66D73 /* SDKVideoRecorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4813037C29221E1300E66D73 /* SDKVideoRecorderViewController.swift */; };
 		4813037F29221E1300E66D73 /* SDKVideoRecorderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4813037D29221E1300E66D73 /* SDKVideoRecorderViewController.xib */; };
-		48149BDB2A8F7B4400CAF0B8 /* IdentifySDK-1-9.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48149BD92A8F7B4100CAF0B8 /* IdentifySDK-1-9.xcframework */; };
-		48149BDC2A8F7B4400CAF0B8 /* IdentifySDK-1-9.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 48149BD92A8F7B4100CAF0B8 /* IdentifySDK-1-9.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		48171405294716830095A64F /* netfox in Frameworks */ = {isa = PBXBuildFile; productRef = 48171404294716830095A64F /* netfox */; settings = {ATTRIBUTES = (Required, ); }; };
 		48171422294734FA0095A64F /* SDKPassportReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48171420294734FA0095A64F /* SDKPassportReaderViewController.swift */; };
 		48171423294734FA0095A64F /* SDKPassportReaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48171421294734FA0095A64F /* SDKPassportReaderViewController.xib */; };
@@ -98,6 +96,8 @@
 		485C157C2908190D007B9ED0 /* SDKNfcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C157A2908190D007B9ED0 /* SDKNfcViewController.swift */; };
 		485C157D2908190D007B9ED0 /* SDKNfcViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485C157B2908190D007B9ED0 /* SDKNfcViewController.xib */; };
 		4862133429B0C05F001428A0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4862133329B0C05F001428A0 /* Alamofire */; };
+		4865E17A2A927C070015099A /* IdentifySDK-1-9-2.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4865E1782A927C020015099A /* IdentifySDK-1-9-2.xcframework */; };
+		4865E17B2A927C070015099A /* IdentifySDK-1-9-2.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4865E1782A927C020015099A /* IdentifySDK-1-9-2.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4880596E291D0EBD0058C7CD /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 4880596D291D0EBD0058C7CD /* Toast */; settings = {ATTRIBUTES = (Required, ); }; };
 		4881A7FF29238CB400EB4072 /* SDKAddressConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4881A7FD29238CB400EB4072 /* SDKAddressConfirmViewController.swift */; };
 		4881A80029238CB400EB4072 /* SDKAddressConfirmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4881A7FE29238CB400EB4072 /* SDKAddressConfirmViewController.xib */; };
@@ -133,7 +133,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				48149BDC2A8F7B4400CAF0B8 /* IdentifySDK-1-9.xcframework in Embed Frameworks */,
+				4865E17B2A927C070015099A /* IdentifySDK-1-9-2.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,7 +145,6 @@
 		481065982922646600053004 /* SDKLivenessViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKLivenessViewController.xib; sourceTree = "<group>"; };
 		4813037C29221E1300E66D73 /* SDKVideoRecorderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKVideoRecorderViewController.swift; sourceTree = "<group>"; };
 		4813037D29221E1300E66D73 /* SDKVideoRecorderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKVideoRecorderViewController.xib; sourceTree = "<group>"; };
-		48149BD92A8F7B4100CAF0B8 /* IdentifySDK-1-9.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = "IdentifySDK-1-9.xcframework"; sourceTree = "<group>"; };
 		48171420294734FA0095A64F /* SDKPassportReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKPassportReaderViewController.swift; sourceTree = "<group>"; };
 		48171421294734FA0095A64F /* SDKPassportReaderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKPassportReaderViewController.xib; sourceTree = "<group>"; };
 		4820A4A12924CDAC004DB388 /* sample.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample.mp4; sourceTree = "<group>"; };
@@ -243,6 +242,7 @@
 		485C15672907FC69007B9ED0 /* SDKCardReaderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKCardReaderViewController.xib; sourceTree = "<group>"; };
 		485C157A2908190D007B9ED0 /* SDKNfcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKNfcViewController.swift; sourceTree = "<group>"; };
 		485C157B2908190D007B9ED0 /* SDKNfcViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKNfcViewController.xib; sourceTree = "<group>"; };
+		4865E1782A927C020015099A /* IdentifySDK-1-9-2.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = "IdentifySDK-1-9-2.xcframework"; sourceTree = "<group>"; };
 		4881A7FD29238CB400EB4072 /* SDKAddressConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKAddressConfirmViewController.swift; sourceTree = "<group>"; };
 		4881A7FE29238CB400EB4072 /* SDKAddressConfirmViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKAddressConfirmViewController.xib; sourceTree = "<group>"; };
 		4881A8092923BEF400EB4072 /* SDKCallScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKCallScreenViewController.swift; sourceTree = "<group>"; };
@@ -282,9 +282,9 @@
 				4881A80729239A1100EB4072 /* IQKeyboardManagerSwift in Frameworks */,
 				48171405294716830095A64F /* netfox in Frameworks */,
 				48F0867829F7CA4E00FCA4BF /* QKMRZScanner in Frameworks */,
+				4865E17A2A927C070015099A /* IdentifySDK-1-9-2.xcframework in Frameworks */,
 				4857BFFB2902D636001FE850 /* Starscream in Frameworks */,
 				48D802292924F6B000B9BB83 /* CHIOTPField in Frameworks */,
-				48149BDB2A8F7B4400CAF0B8 /* IdentifySDK-1-9.xcframework in Frameworks */,
 				4862133429B0C05F001428A0 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -682,7 +682,7 @@
 		48ED5F0E2A0D2A8B0000C279 /* SDK */ = {
 			isa = PBXGroup;
 			children = (
-				48149BD92A8F7B4100CAF0B8 /* IdentifySDK-1-9.xcframework */,
+				4865E1782A927C020015099A /* IdentifySDK-1-9-2.xcframework */,
 			);
 			path = SDK;
 			sourceTree = "<group>";
@@ -1077,7 +1077,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = NewTest/NewTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 48;
+				CURRENT_PROJECT_VERSION = 54;
 				DEVELOPMENT_TEAM = TQUQ2HQ482;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1118,7 +1118,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = NewTest/NewTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 48;
+				CURRENT_PROJECT_VERSION = 54;
 				DEVELOPMENT_TEAM = TQUQ2HQ482;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
