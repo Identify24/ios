@@ -11,3 +11,7 @@ NewTest/Views/Login/SDKLoginViewController.swift
 NewTest/Views/Login/SDKLoginViewController.xib
 NewTest/Views/Login/New Group/ServerSettingsViewController.xib
 NewTest/Views/Login/New Group/ServerSettingsViewController.swift
+NewTest/Views/Login/Servers/Add New/ServerSettingsViewController.swift
+NewTest/Views/Login/Servers/Add New/ServerSettingsViewController.xib
+NewTest/Views/Login/Servers/List/EnvListViewController.swift
+NewTest/Views/Login/Servers/List/EnvListViewController.xib
