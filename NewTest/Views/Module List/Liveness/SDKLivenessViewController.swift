@@ -229,11 +229,11 @@ extension SDKLivenessViewController: ARSCNViewDelegate {
         }
     }
     
-    func blinkEyes(leftEye: Decimal, rightEye: Decimal) {
+    func blinkEyes(leftEye: Decimal, rightEye: Decimal, jawLeft: Decimal, jawRight: Decimal) {
         appendInfoText(self.blinkEyeTxt)
         hideLoader()
         self.currentLivenessType = .blinking
-        if abs(leftEye) > 0.35 && abs(rightEye) > 0.35 {
+        if abs(leftEye) > 0.35 && abs(rightEye) > 0.35 && abs(jawLeft) < 0.03 && abs(jawRight) < 0.03 {
             self.pauseSession()
             self.allowBlink = false
             sendScreenShot(uploaded: { resp in
@@ -242,11 +242,11 @@ extension SDKLivenessViewController: ARSCNViewDelegate {
         }
     }
     
-    func detectSmile(smileLeft: Decimal, smileRight: Decimal) {
+    func detectSmile(smileLeft: Decimal, smileRight: Decimal, jawLeft: Decimal, jawRight: Decimal) {
         appendInfoText(self.smileTxt)
         hideLoader()
         self.currentLivenessType = .smiling
-        if smileLeft + smileRight > 1.2 {
+        if smileLeft + smileRight > 1.2 && abs(jawLeft) < 0.03 && abs(jawRight) < 0.03 {
             self.pauseSession()
             self.allowSmile = false
             sendScreenShot(uploaded: { resp in
@@ -262,6 +262,7 @@ extension SDKLivenessViewController: ARSCNViewDelegate {
         let jawRight = anchor.blendShapes[.jawRight]?.decimalValue
         let leftEyeOpen = anchor.blendShapes[.eyeBlinkLeft]?.decimalValue
         let rightEyeOpen = anchor.blendShapes[.eyeBlinkRight]?.decimalValue
+       
         
         switch self.nextStep {
             case .turnLeft:
@@ -276,12 +277,12 @@ extension SDKLivenessViewController: ARSCNViewDelegate {
                 break
             case .smile:
                 if allowSmile {
-                    self.detectSmile(smileLeft: smileLeft ?? 0, smileRight: smileRight ?? 0)
+                    self.detectSmile(smileLeft: smileLeft ?? 0, smileRight: smileRight ?? 0, jawLeft: jawLeft ?? 0, jawRight: jawRight ?? 0)
                 }
                 break
             case .blinkEyes:
                 if allowBlink {
-                    self.blinkEyes(leftEye: leftEyeOpen ?? 0, rightEye: rightEyeOpen ?? 0)
+                    self.blinkEyes(leftEye: leftEyeOpen ?? 0, rightEye: rightEyeOpen ?? 0, jawLeft: jawLeft ?? 0, jawRight: jawRight ?? 0)
                 }
                 break
             default:
