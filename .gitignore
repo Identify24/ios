@@ -1,20 +1,10 @@
 NewTest/SDK/*
 NewTest/.DS_Store
+NewTest/Views/Login/*
 .DS_Store
 NewTest/.DS_Store
 .DS_Store
 NewTest.xcodeproj/xcuserdata/emirbeytekin.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
 NewTest/Views/Login/SDKLoginViewController.swift
 NewTest.xcodeproj/xcuserdata/emirbeytekin.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
-NewTest/Views/Login/SDKLoginViewController.swift
-NewTest/Views/Login/SDKLoginViewController.swift
-NewTest/Views/Login/SDKLoginViewController.xib
-NewTest/Views/Login/New Group/ServerSettingsViewController.xib
-NewTest/Views/Login/New Group/ServerSettingsViewController.swift
-NewTest/Views/Login/Servers/Add New/ServerSettingsViewController.swift
-NewTest/Views/Login/Servers/Add New/ServerSettingsViewController.xib
-NewTest/Views/Login/Servers/List/EnvListViewController.swift
-NewTest/Views/Login/Servers/List/EnvListViewController.xib
-NewTest/Views/Login/SDKLoginViewController.xib
-NewTest/Views/Login/SDKLoginViewController.swift
 NewTest/AppDelegate.swift

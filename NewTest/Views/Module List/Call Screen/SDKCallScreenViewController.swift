@@ -184,6 +184,13 @@ extension SDKCallScreenViewController: SDKSocketListener {
             case .openNfcRemote(let birthDate, let validDate, let serialNo):
                 manager.startRemoteNFC(birthDate: birthDate, validDate: validDate, docNo: serialNo)
                 print("uzaktan nfc başlatıldı")
+        
+            case .editNfcProcess:
+                print("kullanıcıya mrz datalarını düzeltme ekranı açıyoruz")
+                let editVC = SDKNfcViewController()
+                editVC.showOnlyEditScreen = true
+                self.present(editVC, animated: true)
+                
             case .startTransfer:
                 self.showToast(title: "Kameranız ayarlanıyor, lütfen bekleyin", attachTo: self.view) {
                     self.start2SideTransfer()

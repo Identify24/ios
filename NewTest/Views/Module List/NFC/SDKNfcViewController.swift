@@ -32,6 +32,8 @@ class SDKNfcViewController: SDKBaseViewController {
     @IBOutlet weak var birtdateLbl: UILabel!
     @IBOutlet weak var expDateLbl: UILabel!
     
+    var showOnlyEditScreen = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         if manager.selectedCardType == .oldSchool {
@@ -95,6 +97,16 @@ class SDKNfcViewController: SDKBaseViewController {
 
         self.errBirthday.addGestureRecognizer(tap)
         self.errValidDate.addGestureRecognizer(tap2)
+        
+        if showOnlyEditScreen {
+            errorStackView.isHidden = false
+            startNFCActBtn.isHidden = true
+            let cachedKeys = self.manager.sdkBackInfo
+            self.errSerialNo.text = cachedKeys.idDocumentNumberMRZ
+            self.errBirthday.text = cachedKeys.idBirthDateMRZ?.mrzToNormalDate()
+            self.errValidDate.text = cachedKeys.idValidDateMRZ?.mrzToNormalDate()
+            self.infoLbl.isHidden = true
+        }
 
     }
     
@@ -142,24 +154,31 @@ class SDKNfcViewController: SDKBaseViewController {
         self.showLoader()
         self.manager.startNFC { idCard, identStatus, webResponse, err in
             print(idCard?.asDictionary()) // kimlik kartının içindeki veriler
-            print("#######")
-            print(identStatus.asDictionary())
-            print("#######")
-            print(webResponse.asDictionary())
-            print("#######")
             self.hideLoader()
-            if webResponse.result == false {
-                if webResponse.msg == "MAX_ERR_COUNT" {
-                    self.goToNextPage()
+            if self.showOnlyEditScreen {
+                DispatchQueue.main.async {
+                    self.dismiss(animated: true)
                 }
             } else {
-                self.goToNextPage()
-            }
-            if let error = err {
-                DispatchQueue.main.async {
-                    self.showLoader()
-                    print(err?.localizedDescription)
-                    self.showErrorScreen(needShow: true)
+                if webResponse.result == false {
+                    if webResponse.msg == "MAX_ERR_COUNT" {
+                        self.goToNextPage()
+                    }
+                } else {
+                    self.goToNextPage()
+                }
+                if let error = err {
+                    DispatchQueue.main.async {
+                        self.showLoader()
+                        print(err?.localizedDescription)
+                        if self.showOnlyEditScreen {
+                            DispatchQueue.main.async {
+                                self.hideLoader()
+                                self.dismiss(animated: true)
+                            }
+                        }
+                        self.showErrorScreen(needShow: true)
+                    }
                 }
             }
         }
