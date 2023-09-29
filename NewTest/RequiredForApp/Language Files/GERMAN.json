@@ -58,7 +58,7 @@
   "CoreNfcDeviceError":"Ihr Gerät unterstützt nicht den NFC Vorgang, in Bearbeitung...",
   "SoundRecogOk":"Wortlesung erfolgreich",
   "SoundRecogFail":"Wortlesung gescheitert, Wort gesprochen: ",
-  "FaceNotFound":"Kein Gesicht gefunden, bitte erneut versuchen.",
+  "FaceNotFound":"Kein Gesicht gefunden oder mehr als ein Gesicht gefunden, bitte erneut versuchen.",
   "SmilingFaceNotFound":"Kein lächelndes Gesicht gefunden, bitte erneut versuchen.",
   "CoreUploadError":"Fehler beim Hochladen, bitte erneut versuchen.",
   "NfcInfoTitle":"",

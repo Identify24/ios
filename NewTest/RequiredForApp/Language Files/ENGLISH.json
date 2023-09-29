@@ -58,7 +58,7 @@
   "CoreNfcDeviceError":"Your device does not support NFC, in progress.",
   "SoundRecogOk":"Word reading successful",
   "SoundRecogFail":"Word reading failed, word spoken: ",
-  "FaceNotFound":"No faces found, try again",
+  "FaceNotFound":"No faces found or more than 1 faces found, try again",
   "SmilingFaceNotFound":"No smiling faces found, try again",
   "CoreUploadError":"Error uploading, please try again",
   "NfcInfoTitle":"",

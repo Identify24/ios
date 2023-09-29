@@ -58,7 +58,7 @@
   "CoreNfcDeviceError":"Cihazınızda NFC desteği bulunmamaktadır, sıradaki işleme geçiliyor.",
   "SoundRecogOk":"Kelime okuma başarılı",
   "SoundRecogFail":"Kelime okuma başarısız, söylenen kelime: ",
-  "FaceNotFound":"Yüz bulunamadı, tekrar deneyin",
+  "FaceNotFound":"Yüz bulunamadı veya birden fazla yüz bulundu, tekrar deneyin",
   "SmilingFaceNotFound":"Gülümseyen bir yüz bulunamadı, tekrar deneyin",
   "CoreUploadError":"Yükleme sırasında hata oluştu, lütfen tekrar deneyin",
   "NfcInfoTitle":"",

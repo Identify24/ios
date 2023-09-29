@@ -96,8 +96,13 @@
 		485C157C2908190D007B9ED0 /* SDKNfcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C157A2908190D007B9ED0 /* SDKNfcViewController.swift */; };
 		485C157D2908190D007B9ED0 /* SDKNfcViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485C157B2908190D007B9ED0 /* SDKNfcViewController.xib */; };
 		4862133429B0C05F001428A0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4862133329B0C05F001428A0 /* Alamofire */; };
-		4865E17A2A927C070015099A /* IdentifySDK-1-9-2.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4865E1782A927C020015099A /* IdentifySDK-1-9-2.xcframework */; };
-		4865E17B2A927C070015099A /* IdentifySDK-1-9-2.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4865E1782A927C020015099A /* IdentifySDK-1-9-2.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		48622A022AA9A8C900B5CFC2 /* ServerSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48622A002AA9A8C900B5CFC2 /* ServerSettingsViewController.swift */; };
+		48622A032AA9A8C900B5CFC2 /* ServerSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48622A012AA9A8C900B5CFC2 /* ServerSettingsViewController.xib */; };
+		48622A062AA9BE7D00B5CFC2 /* Env.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 48622A042AA9BE7D00B5CFC2 /* Env.xcdatamodeld */; };
+		48622A0B2AA9C8E800B5CFC2 /* EnvListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48622A092AA9C8E800B5CFC2 /* EnvListViewController.swift */; };
+		48622A0C2AA9C8E800B5CFC2 /* EnvListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48622A0A2AA9C8E800B5CFC2 /* EnvListViewController.xib */; };
+		487D71AA2AC5C5750043A0E7 /* IdentifySDK-1.9.3.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 487D71A82AC5C5710043A0E7 /* IdentifySDK-1.9.3.xcframework */; };
+		487D71AB2AC5C5750043A0E7 /* IdentifySDK-1.9.3.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 487D71A82AC5C5710043A0E7 /* IdentifySDK-1.9.3.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4880596E291D0EBD0058C7CD /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 4880596D291D0EBD0058C7CD /* Toast */; settings = {ATTRIBUTES = (Required, ); }; };
 		4881A7FF29238CB400EB4072 /* SDKAddressConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4881A7FD29238CB400EB4072 /* SDKAddressConfirmViewController.swift */; };
 		4881A80029238CB400EB4072 /* SDKAddressConfirmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4881A7FE29238CB400EB4072 /* SDKAddressConfirmViewController.xib */; };
@@ -121,6 +126,7 @@
 		48DE147B290A6C1900057EAD /* SDKColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DE147A290A6C1900057EAD /* SDKColorManager.swift */; };
 		48DE147D290A6C3E00057EAD /* SDKButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DE147C290A6C3E00057EAD /* SDKButtonExtension.swift */; };
 		48DE1485290A7D3A00057EAD /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DE1484290A7D3A00057EAD /* UIViewController+.swift */; };
+		48E157002AAB3A1000CDB30D /* sdkPassportList.pem in Resources */ = {isa = PBXBuildFile; fileRef = 4869E3642AAA09C100BD62FC /* sdkPassportList.pem */; };
 		48E8E43129266B8A0045C3F8 /* SDKSpeechRecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E8E42F29266B8A0045C3F8 /* SDKSpeechRecViewController.swift */; };
 		48E8E43229266B8A0045C3F8 /* SDKSpeechRecViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48E8E43029266B8A0045C3F8 /* SDKSpeechRecViewController.xib */; };
 		48F0867829F7CA4E00FCA4BF /* QKMRZScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 48F0867729F7CA4E00FCA4BF /* QKMRZScanner */; };
@@ -133,7 +139,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4865E17B2A927C070015099A /* IdentifySDK-1-9-2.xcframework in Embed Frameworks */,
+				487D71AB2AC5C5750043A0E7 /* IdentifySDK-1.9.3.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,7 +248,13 @@
 		485C15672907FC69007B9ED0 /* SDKCardReaderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKCardReaderViewController.xib; sourceTree = "<group>"; };
 		485C157A2908190D007B9ED0 /* SDKNfcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKNfcViewController.swift; sourceTree = "<group>"; };
 		485C157B2908190D007B9ED0 /* SDKNfcViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKNfcViewController.xib; sourceTree = "<group>"; };
-		4865E1782A927C020015099A /* IdentifySDK-1-9-2.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = "IdentifySDK-1-9-2.xcframework"; sourceTree = "<group>"; };
+		48622A002AA9A8C900B5CFC2 /* ServerSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerSettingsViewController.swift; sourceTree = "<group>"; };
+		48622A012AA9A8C900B5CFC2 /* ServerSettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServerSettingsViewController.xib; sourceTree = "<group>"; };
+		48622A052AA9BE7D00B5CFC2 /* Env.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Env.xcdatamodel; sourceTree = "<group>"; };
+		48622A092AA9C8E800B5CFC2 /* EnvListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvListViewController.swift; sourceTree = "<group>"; };
+		48622A0A2AA9C8E800B5CFC2 /* EnvListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnvListViewController.xib; sourceTree = "<group>"; };
+		4869E3642AAA09C100BD62FC /* sdkPassportList.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sdkPassportList.pem; sourceTree = "<group>"; };
+		487D71A82AC5C5710043A0E7 /* IdentifySDK-1.9.3.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = "IdentifySDK-1.9.3.xcframework"; sourceTree = "<group>"; };
 		4881A7FD29238CB400EB4072 /* SDKAddressConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKAddressConfirmViewController.swift; sourceTree = "<group>"; };
 		4881A7FE29238CB400EB4072 /* SDKAddressConfirmViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKAddressConfirmViewController.xib; sourceTree = "<group>"; };
 		4881A8092923BEF400EB4072 /* SDKCallScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKCallScreenViewController.swift; sourceTree = "<group>"; };
@@ -275,6 +287,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				487D71AA2AC5C5750043A0E7 /* IdentifySDK-1.9.3.xcframework in Frameworks */,
 				4880596E291D0EBD0058C7CD /* Toast in Frameworks */,
 				48AB73FF291A762100F591A4 /* SwiftSignatureView in Frameworks */,
 				48420BA72A8B61840005250F /* WebRTC in Frameworks */,
@@ -282,7 +295,6 @@
 				4881A80729239A1100EB4072 /* IQKeyboardManagerSwift in Frameworks */,
 				48171405294716830095A64F /* netfox in Frameworks */,
 				48F0867829F7CA4E00FCA4BF /* QKMRZScanner in Frameworks */,
-				4865E17A2A927C070015099A /* IdentifySDK-1-9-2.xcframework in Frameworks */,
 				4857BFFB2902D636001FE850 /* Starscream in Frameworks */,
 				48D802292924F6B000B9BB83 /* CHIOTPField in Frameworks */,
 				4862133429B0C05F001428A0 /* Alamofire in Frameworks */,
@@ -501,6 +513,7 @@
 		483BDB0D28F459CC00635BCC /* NewTest */ = {
 			isa = PBXGroup;
 			children = (
+				4869E3642AAA09C100BD62FC /* sdkPassportList.pem */,
 				482D2B612A547A8600F1344F /* WeScan-Edited */,
 				48ED5F0E2A0D2A8B0000C279 /* SDK */,
 				4820A4A12924CDAC004DB388 /* sample.mp4 */,
@@ -512,6 +525,7 @@
 				485C15632907F3FA007B9ED0 /* Colors.xcassets */,
 				483BDB1928F459CC00635BCC /* LaunchScreen.storyboard */,
 				483BDB1C28F459CC00635BCC /* Info.plist */,
+				48622A042AA9BE7D00B5CFC2 /* Env.xcdatamodeld */,
 			);
 			path = NewTest;
 			sourceTree = "<group>";
@@ -539,6 +553,7 @@
 		485C154B2907DC0E007B9ED0 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				486229FF2AA9A8AF00B5CFC2 /* Servers */,
 				485C15302907D2E8007B9ED0 /* SDKLoginViewController.swift */,
 				485C15312907D2E8007B9ED0 /* SDKLoginViewController.xib */,
 			);
@@ -584,6 +599,33 @@
 				485C157B2908190D007B9ED0 /* SDKNfcViewController.xib */,
 			);
 			path = NFC;
+			sourceTree = "<group>";
+		};
+		486229FF2AA9A8AF00B5CFC2 /* Servers */ = {
+			isa = PBXGroup;
+			children = (
+				48622A082AA9C8DC00B5CFC2 /* List */,
+				48622A072AA9C8C000B5CFC2 /* Add New */,
+			);
+			path = Servers;
+			sourceTree = "<group>";
+		};
+		48622A072AA9C8C000B5CFC2 /* Add New */ = {
+			isa = PBXGroup;
+			children = (
+				48622A002AA9A8C900B5CFC2 /* ServerSettingsViewController.swift */,
+				48622A012AA9A8C900B5CFC2 /* ServerSettingsViewController.xib */,
+			);
+			path = "Add New";
+			sourceTree = "<group>";
+		};
+		48622A082AA9C8DC00B5CFC2 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				48622A092AA9C8E800B5CFC2 /* EnvListViewController.swift */,
+				48622A0A2AA9C8E800B5CFC2 /* EnvListViewController.xib */,
+			);
+			path = List;
 			sourceTree = "<group>";
 		};
 		4881A8082923BEDD00EB4072 /* Call Screen */ = {
@@ -682,7 +724,7 @@
 		48ED5F0E2A0D2A8B0000C279 /* SDK */ = {
 			isa = PBXGroup;
 			children = (
-				4865E1782A927C020015099A /* IdentifySDK-1-9-2.xcframework */,
+				487D71A82AC5C5710043A0E7 /* IdentifySDK-1.9.3.xcframework */,
 			);
 			path = SDK;
 			sourceTree = "<group>";
@@ -790,6 +832,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				482D2BB62A547AC000F1344F /* rotate.png in Resources */,
+				48622A032AA9A8C900B5CFC2 /* ServerSettingsViewController.xib in Resources */,
 				48263C11292789C7005200A1 /* SDKThankYouViewController.xib in Resources */,
 				483BDB1B28F459CC00635BCC /* LaunchScreen.storyboard in Resources */,
 				482D2BB42A547AC000F1344F /* flash.png in Resources */,
@@ -818,11 +861,13 @@
 				485C15642907F3FA007B9ED0 /* Colors.xcassets in Resources */,
 				482D2BBE2A547AC000F1344F /* enhance@2x.png in Resources */,
 				4810659A2922646600053004 /* SDKLivenessViewController.xib in Resources */,
+				48622A0C2AA9C8E800B5CFC2 /* EnvListViewController.xib in Resources */,
 				483BDB1828F459CC00635BCC /* Assets.xcassets in Resources */,
 				482D2BBA2A547AC000F1344F /* flashUnavailable.png in Resources */,
 				485C15692907FC69007B9ED0 /* SDKCardReaderViewController.xib in Resources */,
 				480E76A9297A868E0071B049 /* GERMAN.json in Resources */,
 				48171423294734FA0095A64F /* SDKPassportReaderViewController.xib in Resources */,
+				48E157002AAB3A1000CDB30D /* sdkPassportList.pem in Resources */,
 				48A151EC292B73BA005B376B /* SDKSignLangViewController.xib in Resources */,
 				48549ADB2A41800E00F6838B /* SDKLivenessViewController.xib in Resources */,
 				482D2BBD2A547AC000F1344F /* enhance@3x.png in Resources */,
@@ -837,6 +882,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48622A022AA9A8C900B5CFC2 /* ServerSettingsViewController.swift in Sources */,
 				48DE147D290A6C3E00057EAD /* SDKButtonExtension.swift in Sources */,
 				4881A7FF29238CB400EB4072 /* SDKAddressConfirmViewController.swift in Sources */,
 				482D2BDA2A547AC000F1344F /* ReviewViewController.swift in Sources */,
@@ -855,6 +901,7 @@
 				482D2BC62A547AC000F1344F /* AVCaptureVideoOrientation+Utils.swift in Sources */,
 				482D2BC52A547AC000F1344F /* ScannerViewController.swift in Sources */,
 				482D2BD62A547AC000F1344F /* VisionRectangleDetector.swift in Sources */,
+				48622A062AA9BE7D00B5CFC2 /* Env.xcdatamodeld in Sources */,
 				482D2BD82A547AC000F1344F /* QuadrilateralView.swift in Sources */,
 				482D2BD42A547AC000F1344F /* EditScanCornerView.swift in Sources */,
 				482D2BD12A547AC000F1344F /* EditImageViewController.swift in Sources */,
@@ -877,6 +924,7 @@
 				48DE1485290A7D3A00057EAD /* UIViewController+.swift in Sources */,
 				48DE147B290A6C1900057EAD /* SDKColorManager.swift in Sources */,
 				48171422294734FA0095A64F /* SDKPassportReaderViewController.swift in Sources */,
+				48622A0B2AA9C8E800B5CFC2 /* EnvListViewController.swift in Sources */,
 				48A151EB292B73BA005B376B /* SDKSignLangViewController.swift in Sources */,
 				485C15322907D2E8007B9ED0 /* SDKLoginViewController.swift in Sources */,
 				482D2BC92A547AC000F1344F /* CGImagePropertyOrientation.swift in Sources */,
@@ -1077,7 +1125,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = NewTest/NewTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 54;
+				CURRENT_PROJECT_VERSION = 61;
 				DEVELOPMENT_TEAM = TQUQ2HQ482;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1118,7 +1166,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = NewTest/NewTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 54;
+				CURRENT_PROJECT_VERSION = 61;
 				DEVELOPMENT_TEAM = TQUQ2HQ482;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1309,6 +1357,19 @@
 			productName = QKMRZScanner;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		48622A042AA9BE7D00B5CFC2 /* Env.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				48622A052AA9BE7D00B5CFC2 /* Env.xcdatamodel */,
+			);
+			currentVersion = 48622A052AA9BE7D00B5CFC2 /* Env.xcdatamodel */;
+			path = Env.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 483BDB0328F459CC00635BCC /* Project object */;
 }
