@@ -44,6 +44,7 @@ class SDKNfcViewController: SDKBaseViewController {
             })
         }
         setupUI()
+        setupNFCMessages()
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -107,7 +108,6 @@ class SDKNfcViewController: SDKBaseViewController {
             self.errValidDate.text = cachedKeys.idValidDateMRZ?.mrzToNormalDate()
             self.infoLbl.isHidden = true
         }
-
     }
     
     private func showHidePickerStack() {
@@ -150,35 +150,66 @@ class SDKNfcViewController: SDKBaseViewController {
         datePicker.date = selectedDate ?? Date()
     }
     
-    func startNFC() {
-        self.showLoader()
-        self.manager.startNFC { idCard, identStatus, webResponse, err in
-            print(idCard?.asDictionary()) // kimlik kartının içindeki veriler
-            self.hideLoader()
-            if self.showOnlyEditScreen {
-                DispatchQueue.main.async {
-                    self.dismiss(animated: true)
+    func setupNFCMessages() {
+        let customMessageHandler : ((NFCViewDisplayMessage) -> String)? = { displayMessage in
+            switch displayMessage {
+                case .requestPresentPassport:
+                    return "Lütfen belgenizi ön kameranın üzerine getirin ve oynatmadan bekleyin"
+                case .authenticatingWithPassport(let progress):
+                    let progressString = self.handleProgress(percentualProgress: progress)
+                    return "Kimliğiniz doğrulanıyor.....\n\n\(progressString)"
+                case .readingDataGroupProgress(let dataGroup, let progress):
+                    let progressString = self.handleProgress(percentualProgress: progress)
+                    return "Veriler okunuyor \(dataGroup).....\n\n\(progressString)"
+                case .error(let tagError):
+                    switch tagError {
+                        case NFCPassportReaderError.TagNotValid:
+                            return "Tag geçerli değil."
+                        case NFCPassportReaderError.MoreThanOneTagFound:
+                            return "Birden fazla nesne bulundu, lütfen tek nesne ile deneyin."
+                        case NFCPassportReaderError.ConnectionError:
+                            return "Bağlantı hatası, tekrar deneyin"
+                        case NFCPassportReaderError.InvalidMRZKey:
+                            return "MRZ Key doğrulanamadı"
+                        case NFCPassportReaderError.ResponseError(let description, let sw1, let sw2):
+                            return "Üzgünüz, okuma sırasında hatalar alındı. \(description) - (0x\(sw1), 0x\(sw2)"
+                        default:
+                            return "Okuma sırasında hata alındı, lütfen tekrar dene"
                 }
-            } else {
-                if webResponse.result == false {
-                    if webResponse.msg == "MAX_ERR_COUNT" {
-                        self.goToNextPage()
-                    }
-                } else {
+            case .successfulRead:
+                return "Belge başarıyla okundu"
+            }
+        }
+        self.manager.nfcMsgHandler = customMessageHandler
+    }
+    
+    func handleProgress(percentualProgress: Int) -> String {
+        let p = (percentualProgress/20)
+        let full = String(repeating: "🟢 ", count: p)
+        let empty = String(repeating: "⚪️ ", count: 5-p)
+        return "\(full)\(empty)"
+    }
+    
+    func startNFC() {
+        self.manager.startNFC { idCard, identStatus, webResponse, err in
+            print(idCard?.asDictionary())
+            print("#######")
+            print(identStatus.asDictionary())
+            print("#######")
+            print(webResponse.asDictionary())
+            print("#######")
+            if webResponse.result == false {
+                if webResponse.msg == "MAX_ERR_COUNT" {
                     self.goToNextPage()
                 }
-                if let error = err {
-                    DispatchQueue.main.async {
-                        self.showLoader()
-                        print(err?.localizedDescription)
-                        if self.showOnlyEditScreen {
-                            DispatchQueue.main.async {
-                                self.hideLoader()
-                                self.dismiss(animated: true)
-                            }
-                        }
-                        self.showErrorScreen(needShow: true)
-                    }
+            } else {
+                self.goToNextPage()
+            }
+            if let error = err {
+                DispatchQueue.main.async {
+                    self.showLoader()
+                    print(err?.localizedDescription)
+                    self.showErrorScreen(needShow: true)
                 }
             }
         }
@@ -202,7 +233,6 @@ class SDKNfcViewController: SDKBaseViewController {
                 self.errBirthday.text = cachedKeys.idBirthDateMRZ?.mrzToNormalDate()
                 self.errValidDate.text = cachedKeys.idValidDateMRZ?.mrzToNormalDate()
             }
-            
         }
     }
     
