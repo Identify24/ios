@@ -191,29 +191,40 @@ class SDKNfcViewController: SDKBaseViewController {
     }
     
     func startNFC() {
+        self.showLoader()
         self.manager.startNFC { idCard, identStatus, webResponse, err in
-            print(idCard?.asDictionary())
-            print("#######")
-            print(identStatus.asDictionary())
-            print("#######")
-            print(webResponse.asDictionary())
-            print("#######")
-            if webResponse.result == false {
-                if webResponse.msg == "MAX_ERR_COUNT" {
-                    self.goToNextPage()
+            print(idCard?.asDictionary()) // kimlik kartının içindeki veriler
+            self.hideLoader()
+            if self.showOnlyEditScreen {
+                DispatchQueue.main.async {
+                    self.dismiss(animated: true)
                 }
             } else {
-                self.goToNextPage()
-            }
-            if let error = err {
-                DispatchQueue.main.async {
-                    self.showLoader()
-                    print(err?.localizedDescription)
-                    self.showErrorScreen(needShow: true)
+                if webResponse.result == false {
+                    if webResponse.msg == "MAX_ERR_COUNT" {
+                        self.goToNextPage()
+                    }
+                } else {
+                    self.goToNextPage()
+                }
+                if let error = err {
+                    DispatchQueue.main.async {
+                        self.showLoader()
+                        print(err?.localizedDescription)
+                        if self.showOnlyEditScreen {
+                            DispatchQueue.main.async {
+                                self.hideLoader()
+                                self.dismiss(animated: true)
+                            }
+                        }
+                        self.showErrorScreen(needShow: true)
+                    }
                 }
             }
         }
     }
+    
+    
     
     private func showErrorScreen(needShow:Bool) {
         DispatchQueue.main.async {
@@ -233,6 +244,7 @@ class SDKNfcViewController: SDKBaseViewController {
                 self.errBirthday.text = cachedKeys.idBirthDateMRZ?.mrzToNormalDate()
                 self.errValidDate.text = cachedKeys.idValidDateMRZ?.mrzToNormalDate()
             }
+            
         }
     }
     
