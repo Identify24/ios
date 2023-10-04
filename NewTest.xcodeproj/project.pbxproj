@@ -99,8 +99,6 @@
 		48622A022AA9A8C900B5CFC2 /* ServerSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48622A002AA9A8C900B5CFC2 /* ServerSettingsViewController.swift */; };
 		48622A032AA9A8C900B5CFC2 /* ServerSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48622A012AA9A8C900B5CFC2 /* ServerSettingsViewController.xib */; };
 		48622A062AA9BE7D00B5CFC2 /* Env.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 48622A042AA9BE7D00B5CFC2 /* Env.xcdatamodeld */; };
-		48622A0B2AA9C8E800B5CFC2 /* EnvListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48622A092AA9C8E800B5CFC2 /* EnvListViewController.swift */; };
-		48622A0C2AA9C8E800B5CFC2 /* EnvListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48622A0A2AA9C8E800B5CFC2 /* EnvListViewController.xib */; };
 		4880596E291D0EBD0058C7CD /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 4880596D291D0EBD0058C7CD /* Toast */; settings = {ATTRIBUTES = (Required, ); }; };
 		4881A7FF29238CB400EB4072 /* SDKAddressConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4881A7FD29238CB400EB4072 /* SDKAddressConfirmViewController.swift */; };
 		4881A80029238CB400EB4072 /* SDKAddressConfirmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4881A7FE29238CB400EB4072 /* SDKAddressConfirmViewController.xib */; };
@@ -861,7 +859,6 @@
 				485C15642907F3FA007B9ED0 /* Colors.xcassets in Resources */,
 				482D2BBE2A547AC000F1344F /* enhance@2x.png in Resources */,
 				4810659A2922646600053004 /* SDKLivenessViewController.xib in Resources */,
-				48622A0C2AA9C8E800B5CFC2 /* EnvListViewController.xib in Resources */,
 				483BDB1828F459CC00635BCC /* Assets.xcassets in Resources */,
 				482D2BBA2A547AC000F1344F /* flashUnavailable.png in Resources */,
 				485C15692907FC69007B9ED0 /* SDKCardReaderViewController.xib in Resources */,
@@ -924,7 +921,6 @@
 				48DE1485290A7D3A00057EAD /* UIViewController+.swift in Sources */,
 				48DE147B290A6C1900057EAD /* SDKColorManager.swift in Sources */,
 				48171422294734FA0095A64F /* SDKPassportReaderViewController.swift in Sources */,
-				48622A0B2AA9C8E800B5CFC2 /* EnvListViewController.swift in Sources */,
 				48A151EB292B73BA005B376B /* SDKSignLangViewController.swift in Sources */,
 				485C15322907D2E8007B9ED0 /* SDKLoginViewController.swift in Sources */,
 				482D2BC92A547AC000F1344F /* CGImagePropertyOrientation.swift in Sources */,
