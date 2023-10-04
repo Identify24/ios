@@ -125,7 +125,8 @@
   "NfcBirthDate" : "Geburtsdatum",
   "NfcExpDate" : "Gültig bis",
   "NfcStart" : "Starte NFC",
-  "CoreReconnecting" : "Verbinden.."
-
+  "CoreReconnecting" : "Verbinden..",
+  "WrongFrontSide" : "Die Vorderseite des Personalausweises ist ungültig",
+  "WrongBackSide" : "Die Rückseite des Personalausweises ist ungültig"
 }
 

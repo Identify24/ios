@@ -125,5 +125,7 @@
   "NfcBirthDate" : "Date of birth",
   "NfcExpDate" : "Expiry Date",
   "NfcStart" : "Start NFC",
-  "CoreReconnecting" : "Connecting.."
+  "CoreReconnecting" : "Connecting..",
+  "WrongFrontSide" : "The front of the identity card is invalid",
+  "WrongBackSide" : "The back of the identity card is invalid"
 }

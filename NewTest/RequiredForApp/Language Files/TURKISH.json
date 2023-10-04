@@ -125,9 +125,7 @@
   "NfcBirthDate" : "Doğum Tarihi",
   "NfcExpDate" : "Son Geçerlilik Tarihi",
   "NfcStart" : "Taramayı başlat",
-  "CoreReconnecting" : "Bağlanıyor.."
-
-  
-  
-  
+  "CoreReconnecting" : "Bağlanıyor..",
+  "WrongFrontSide" : "Kimlik ön yüzü geçerli değil",
+  "WrongBackSide" : "Kimlik arka yüzü geçerli değil"
 }

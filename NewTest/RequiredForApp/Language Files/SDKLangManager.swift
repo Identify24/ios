@@ -301,6 +301,10 @@ extension SDKLangManager {
                 return self.readKey(key: "NfcStart")
             case .coreReconnecting:
                 return self.readKey(key: "CoreReconnecting")
+            case .wrongFrontSide:
+                return self.readKey(key: "WrongFrontSide")
+            case .wrongBackSide:
+                return self.readKey(key: "WrongBackSide")
             }
     }
 }
@@ -432,4 +436,7 @@ public enum SDKKeywords {
     case nfcExpDate
     case nfcStart
     case coreReconnecting
+    case wrongFrontSide
+    case wrongBackSide
+
 }
