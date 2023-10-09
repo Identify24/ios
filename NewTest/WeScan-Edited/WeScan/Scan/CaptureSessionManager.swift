@@ -64,8 +64,19 @@ final class CaptureSessionManager: NSObject, AVCaptureVideoDataOutputSampleBuffe
 
     /// The minimum number of time required by `noRectangleCount` to validate that no rectangles have been found.
     private let noRectangleThreshold = 3
+    
+    var newDevice: AVCaptureDevice?
 
     // MARK: Life Cycle
+    
+    func deviceName() -> String {
+        var systemInfo = utsname()
+        uname(&systemInfo)
+        let str = withUnsafePointer(to: &systemInfo.machine.0) { ptr in
+            return String(cString: ptr)
+        }
+        return str
+    }
 
     init?(videoPreviewLayer: AVCaptureVideoPreviewLayer, delegate: RectangleDetectionDelegateProtocol? = nil) {
         self.videoPreviewLayer = videoPreviewLayer
@@ -75,12 +86,14 @@ final class CaptureSessionManager: NSObject, AVCaptureVideoDataOutputSampleBuffe
         }
 
         super.init()
-
-        guard let device = AVCaptureDevice.default(for: AVMediaType.video) else {
-            let error = ImageScannerControllerError.inputDevice
-            delegate?.captureSessionManager(self, didFailWithError: error)
-            return nil
+        
+        
+        if (deviceName() == "iPhone15,2" || deviceName() ==  "iPhone15,3" || deviceName() == "iPhone16,1" || deviceName() == "iPhone16,2") {
+            self.newDevice = AVCaptureDevice.default(.builtInDualWideCamera, for: AVMediaType.video, position: .back)
+        } else {
+            self.newDevice = AVCaptureDevice.default(for: AVMediaType.video)
         }
+        
 
         captureSession.beginConfiguration()
 
@@ -90,11 +103,11 @@ final class CaptureSessionManager: NSObject, AVCaptureVideoDataOutputSampleBuffe
         videoOutput.alwaysDiscardsLateVideoFrames = true
 
         defer {
-            device.unlockForConfiguration()
+            newDevice?.unlockForConfiguration()
             captureSession.commitConfiguration()
         }
 
-        guard let deviceInput = try? AVCaptureDeviceInput(device: device),
+        guard let deviceInput = try? AVCaptureDeviceInput(device: self.newDevice!),
             captureSession.canAddInput(deviceInput),
             captureSession.canAddOutput(photoOutput),
             captureSession.canAddOutput(videoOutput) else {
@@ -104,14 +117,14 @@ final class CaptureSessionManager: NSObject, AVCaptureVideoDataOutputSampleBuffe
         }
 
         do {
-            try device.lockForConfiguration()
+            try newDevice?.lockForConfiguration()
         } catch {
             let error = ImageScannerControllerError.inputDevice
             delegate?.captureSessionManager(self, didFailWithError: error)
             return
         }
 
-        device.isSubjectAreaChangeMonitoringEnabled = true
+        newDevice?.isSubjectAreaChangeMonitoringEnabled = true
 
         captureSession.addInput(deviceInput)
         captureSession.addOutput(photoOutput)
