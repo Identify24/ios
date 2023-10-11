@@ -2,7 +2,7 @@
 
 Proje ile ilgili dökümantasyona https://docs.identify.com.tr/docs/ios/first-setup/ adresinden ulaşabilirsiniz.
 
-## 1.9.4
+## 1.9.4
 - network timeout süreleri eklendi
 - webrtc kamera setup, sadece görüşme modülüne geçince aktif hale getirildi
 - 14 pro ve üstü cihazlar için kamera ayarları düzenlendi, bu cihazlarda oluşan netleme sorunu düzeltildi
