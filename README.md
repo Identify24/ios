@@ -1,6 +1,6 @@
-# Identify SDK
+# Identify SDK Sample App
 
-Proje ile ilgili dökümantasyona https://docs.identify.com.tr/docs/ios/first-setup/ adresinden ulaşabilirsiniz.
+Proje ile ilgili dökümantasyona ve sdk download linkine https://docs.identify.com.tr/docs/ios/first-setup/ adresinden ulaşabilirsiniz.
 
 ## 1.9.4
 - network timeout süreleri eklendi
