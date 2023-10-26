@@ -2,6 +2,15 @@
 
 Proje ile ilgili dökümantasyona ve sdk download linkine https://docs.identify.com.tr/docs/ios/first-setup/ adresinden ulaşabilirsiniz.
 
+## 1.9.5
+- manuel modül yönetimi eklendi
+- webrtc ile ilgili güncelleme yapıldı
+- nfc güncellemeleri yapıldı
+- kimlik ön yüzde kimlik numarası okunamazsa hata vermesi eklendi
+- id portrait alanı büyütüldü
+- canlı görüşmenin düşük kalitede başlatılıp bağlantı kalitesine göre arttırılması güncellendi
+
+
 ## 1.9.4
 - network timeout süreleri eklendi
 - webrtc kamera setup, sadece görüşme modülüne geçince aktif hale getirildi

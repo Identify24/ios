@@ -79,7 +79,9 @@ final class EditScanViewController: UIViewController {
 
     override public func viewDidLoad() {
         super.viewDidLoad()
-
+        DispatchQueue.main.async {
+            self.pushReviewController()
+        }
         setupViews()
         setupConstraints()
         title = NSLocalizedString("wescan.edit.title",
@@ -189,7 +191,7 @@ final class EditScanViewController: UIViewController {
         )
 
         let reviewViewController = ReviewViewController(results: results)
-        navigationController?.pushViewController(reviewViewController, animated: true)
+        navigationController?.pushViewController(reviewViewController, animated: false)
     }
 
     private func displayQuad() {
