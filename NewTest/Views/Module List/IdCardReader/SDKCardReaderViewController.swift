@@ -191,7 +191,7 @@ class SDKCardReaderViewController: SDKBaseViewController {
     }
     
     func takeCardPhoto() {
-        let scannerViewController = ImageScannerController()
+        let scannerViewController = ImageScannerController(enabledAutoCapture: true)
         scannerViewController.imageScannerDelegate = self
         scannerViewController.navigationBar.backgroundColor = IdentifyTheme.blueColor
         scannerViewController.navigationBar.tintColor = IdentifyTheme.whiteColor
@@ -199,6 +199,7 @@ class SDKCardReaderViewController: SDKBaseViewController {
         scannerViewController.toolbar.tintColor = IdentifyTheme.grayColor
         
         DispatchQueue.main.async {
+            scannerViewController.view.backgroundColor = IdentifyTheme.blackBack
             scannerViewController.modalPresentationStyle = .fullScreen
             scannerViewController.isModalInPresentation = true
             self.present(scannerViewController, animated: true)

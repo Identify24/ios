@@ -11,6 +11,8 @@ import UIKit
 
 /// The `EditScanViewController` offers an interface for the user to edit the detected quadrilateral.
 final class EditScanViewController: UIViewController {
+    
+    var enabledAutoCapture = false
 
     private lazy var imageView: UIImageView = {
         let imageView = UIImageView()
@@ -79,8 +81,10 @@ final class EditScanViewController: UIViewController {
 
     override public func viewDidLoad() {
         super.viewDidLoad()
-        DispatchQueue.main.async {
-            self.pushReviewController()
+        if !enabledAutoCapture {
+            DispatchQueue.main.async {
+                self.pushReviewController()
+            }
         }
         setupViews()
         setupConstraints()
@@ -191,7 +195,7 @@ final class EditScanViewController: UIViewController {
         )
 
         let reviewViewController = ReviewViewController(results: results)
-        navigationController?.pushViewController(reviewViewController, animated: false)
+        navigationController?.pushViewController(reviewViewController, animated: self.enabledAutoCapture)
     }
 
     private func displayQuad() {

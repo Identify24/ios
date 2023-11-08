@@ -110,7 +110,7 @@ final class ReviewViewController: UIViewController {
 
         let fixedSpace = UIBarButtonItem(barButtonSystemItem: .fixedSpace, target: nil, action: nil)
         let flexibleSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
-        toolbarItems = [fixedSpace, enhanceButton, flexibleSpace, rotateButton, fixedSpace]
+        toolbarItems = [fixedSpace, flexibleSpace, rotateButton, fixedSpace]
     }
 
     private func setupConstraints() {

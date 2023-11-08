@@ -72,6 +72,13 @@ public final class ScannerViewController: UIViewController {
     private let maximumZoom: CGFloat = 3.0
     private var lastZoomFactor: CGFloat = 1.0
     
+    
+    /// dikdörtgen gördüğü zaman görünen bilgilendirme label' ı
+    
+    private var countLabel = UILabel()
+    
+    var enabledAutoCapture = false
+    
 
     // MARK: - Life Cycle
 
@@ -86,10 +93,18 @@ public final class ScannerViewController: UIViewController {
         setupConstraints()
 
         captureSessionManager = CaptureSessionManager(videoPreviewLayer: videoPreviewLayer, delegate: self)
+        captureSessionManager?.enableAutoCapture = self.enabledAutoCapture
 
         originalBarStyle = navigationController?.navigationBar.barStyle
-
         NotificationCenter.default.addObserver(self, selector: #selector(subjectAreaDidChange), name: Notification.Name.AVCaptureDeviceSubjectAreaDidChange, object: nil)
+        
+        countLabel.text = ""
+        countLabel.textAlignment = .center
+        countLabel.center = view.center
+        view.addSubview(countLabel)
+        self.countLabel.isHidden = true
+        
+        shutterButton.isHidden = enabledAutoCapture // eğer otomatik çekim açıksa butonu gizleyebiliriz
     }
 
     override public func viewWillAppear(_ animated: Bool) {
@@ -99,7 +114,7 @@ public final class ScannerViewController: UIViewController {
         CaptureSession.current.isEditing = false
         quadView.removeQuadrilateral()
         captureSessionManager?.start()
-//        UIApplication.shared.isIdleTimerDisabled = true
+        UIApplication.shared.isIdleTimerDisabled = true
 
         navigationController?.navigationBar.barStyle = .blackTranslucent
     }
@@ -112,7 +127,7 @@ public final class ScannerViewController: UIViewController {
 
     override public func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-//        UIApplication.shared.isIdleTimerDisabled = false
+        UIApplication.shared.isIdleTimerDisabled = false
 
         navigationController?.navigationBar.isTranslucent = false
         navigationController?.navigationBar.barStyle = originalBarStyle ?? .default
@@ -331,6 +346,7 @@ extension ScannerViewController: RectangleDetectionDelegateProtocol {
         activityIndicator.stopAnimating()
 
         let editVC = EditScanViewController(image: picture, quad: quad)
+        editVC.enabledAutoCapture = self.enabledAutoCapture
         navigationController?.pushViewController(editVC, animated: false)
 
         shutterButton.isUserInteractionEnabled = true
@@ -339,6 +355,7 @@ extension ScannerViewController: RectangleDetectionDelegateProtocol {
     func captureSessionManager(_ captureSessionManager: CaptureSessionManager, didDetectQuad quad: Quadrilateral?, _ imageSize: CGSize) {
         guard let quad else {
             // If no quad has been detected, we remove the currently displayed on on the quadView.
+            self.countLabel.isHidden = true
             quadView.removeQuadrilateral()
             return
         }
@@ -359,6 +376,25 @@ extension ScannerViewController: RectangleDetectionDelegateProtocol {
         let transformedQuad = quad.applyTransforms(transforms)
 
         quadView.drawQuadrilateral(quad: transformedQuad, animated: true)
+        
+        if enabledAutoCapture {
+            addInfoLabels()
+        }
+    }
+    
+    func addInfoLabels() {
+        self.countLabel.isHidden = false
+        // Auto Layout kullanarak label'ı alt güvenli alandan 24 pt uzakta yerleştir
+        countLabel.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            countLabel.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 24),
+            countLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 12),
+            countLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -12)
+        ])
+        self.countLabel.text = "Lütfen telefonu sabit tutunuz"
+        self.countLabel.backgroundColor = .black
+        self.countLabel.textColor = .yellow
+        self.countLabel.translatesAutoresizingMaskIntoConstraints = false
     }
 
 }

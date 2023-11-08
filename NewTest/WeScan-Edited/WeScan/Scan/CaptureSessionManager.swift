@@ -66,6 +66,8 @@ final class CaptureSessionManager: NSObject, AVCaptureVideoDataOutputSampleBuffe
     private let noRectangleThreshold = 3
     
     var newDevice: AVCaptureDevice? = AVCaptureDevice.default(for: AVMediaType.video)
+    
+    var enableAutoCapture:Bool? = false
 
     // MARK: Life Cycle
     
@@ -222,10 +224,9 @@ final class CaptureSessionManager: NSObject, AVCaptureVideoDataOutputSampleBuffe
 
                 let shouldAutoScan = (result == .showAndAutoScan)
                 self.displayRectangleResult(rectangleResult: RectangleDetectorResult(rectangle: rectangle, imageSize: imageSize))
-                if shouldAutoScan, CaptureSession.current.isAutoScanEnabled, !CaptureSession.current.isEditing {
-                    // otomatik foto çekmesini engelliyoruz
-//                    capturePhoto()
-                }
+                    if shouldAutoScan, CaptureSession.current.isAutoScanEnabled, !CaptureSession.current.isEditing, enableAutoCapture! {
+                        capturePhoto()
+                    }
             }
 
         } else {
