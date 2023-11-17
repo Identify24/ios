@@ -25,6 +25,8 @@ class SDKListenSocketViewController: SDKBaseViewController {
         reConnectBtn.setTitle(self.translate(text: .coreReConnect), for: .normal)
         reConnectBtn.type = .submit
         reConnectBtn.onTap = {
+            self.reConnectBtn.type = .loader
+            self.reConnectBtn.populate()
             self.disableConnButton(setDisable: true)
             self.manager.reconnectToSocket { [weak self] resp in
                 guard let self = `self` else { return }
@@ -32,9 +34,11 @@ class SDKListenSocketViewController: SDKBaseViewController {
                     self.manager.sendStep()
                     self.delegate?.reconnectCompleted()
                     print("tekrar bağlantı kuruldu")
-                    self.dismiss(animated: true)
+                    self.dismiss(animated: resp.isConnected)
                 } else {
-                    self.disableConnButton(setDisable: false)
+                    self.disableConnButton(setDisable: resp.isConnected)
+                    self.reConnectBtn.type = .submit
+                    self.reConnectBtn.populate()
                 }
             }
         }
@@ -45,7 +49,7 @@ class SDKListenSocketViewController: SDKBaseViewController {
         self.reConnectBtn.isEnabled = !setDisable
         if setDisable {
             self.reConnectBtn.setTitle(self.translate(text: .coreReconnecting), for: .normal)
-            self.reConnectBtn.alpha = 0.3
+            self.reConnectBtn.alpha = 1.0
             self.reConnectBtn.populate()
         } else {
             self.reConnectBtn.setTitle(self.translate(text: .coreReConnect), for: .normal)

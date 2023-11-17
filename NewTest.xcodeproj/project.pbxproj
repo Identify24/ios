@@ -18,6 +18,8 @@
 		48171422294734FA0095A64F /* SDKPassportReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48171420294734FA0095A64F /* SDKPassportReaderViewController.swift */; };
 		48171423294734FA0095A64F /* SDKPassportReaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48171421294734FA0095A64F /* SDKPassportReaderViewController.xib */; };
 		4820A4A22924CDAD004DB388 /* sample.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4820A4A12924CDAC004DB388 /* sample.mp4 */; };
+		4825316C2B02632900B0472C /* SDKPrepareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4825316A2B02632900B0472C /* SDKPrepareViewController.swift */; };
+		4825316D2B02632900B0472C /* SDKPrepareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4825316B2B02632900B0472C /* SDKPrepareViewController.xib */; };
 		48263C10292789C7005200A1 /* SDKThankYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48263C0E292789C7005200A1 /* SDKThankYouViewController.swift */; };
 		48263C11292789C7005200A1 /* SDKThankYouViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48263C0F292789C7005200A1 /* SDKThankYouViewController.xib */; };
 		482D2BB12A547AC000F1344F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 482D2B632A547AC000F1344F /* Localizable.strings */; };
@@ -113,6 +115,9 @@
 		48AB73FF291A762100F591A4 /* SwiftSignatureView in Frameworks */ = {isa = PBXBuildFile; productRef = 48AB73FE291A762100F591A4 /* SwiftSignatureView */; settings = {ATTRIBUTES = (Required, ); }; };
 		48BFE3CB2AEA994200980684 /* ExternalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4887EEED2A6E99B600D51461 /* ExternalViewController.swift */; };
 		48BFE3CC2AEA994200980684 /* ExternalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4887EEEE2A6E99B600D51461 /* ExternalViewController.xib */; };
+		48BFE3D12AEAA09100980684 /* Env.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 48622A042AA9BE7D00B5CFC2 /* Env.xcdatamodeld */; };
+		48C87B322B07A8170062E936 /* IdentifySDK-1.9.7.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C87B242B075C1C0062E936 /* IdentifySDK-1.9.7.xcframework */; };
+		48C87B332B07A8170062E936 /* IdentifySDK-1.9.7.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 48C87B242B075C1C0062E936 /* IdentifySDK-1.9.7.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		48CD8CFF29792C8F008573F8 /* SDKIdentifyColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CD8CFE29792C8F008573F8 /* SDKIdentifyColorTheme.swift */; };
 		48CD8D0129792D5A008573F8 /* SDKLangManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CD8D0029792D5A008573F8 /* SDKLangManager.swift */; };
 		48D802292924F6B000B9BB83 /* CHIOTPField in Frameworks */ = {isa = PBXBuildFile; productRef = 48D802282924F6B000B9BB83 /* CHIOTPField */; settings = {ATTRIBUTES = (Required, ); }; };
@@ -126,12 +131,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		48E8319329B1D717000E5556 /* Embed Frameworks */ = {
+		481000332AFA7D9200EBA869 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				48C87B332B07A8170062E936 /* IdentifySDK-1.9.7.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,6 +152,8 @@
 		48171420294734FA0095A64F /* SDKPassportReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKPassportReaderViewController.swift; sourceTree = "<group>"; };
 		48171421294734FA0095A64F /* SDKPassportReaderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKPassportReaderViewController.xib; sourceTree = "<group>"; };
 		4820A4A12924CDAC004DB388 /* sample.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample.mp4; sourceTree = "<group>"; };
+		4825316A2B02632900B0472C /* SDKPrepareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKPrepareViewController.swift; sourceTree = "<group>"; };
+		4825316B2B02632900B0472C /* SDKPrepareViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKPrepareViewController.xib; sourceTree = "<group>"; };
 		48263C0E292789C7005200A1 /* SDKThankYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKThankYouViewController.swift; sourceTree = "<group>"; };
 		48263C0F292789C7005200A1 /* SDKThankYouViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKThankYouViewController.xib; sourceTree = "<group>"; };
 		482D2B642A547AC000F1344F /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -240,11 +248,7 @@
 		485C15672907FC69007B9ED0 /* SDKCardReaderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKCardReaderViewController.xib; sourceTree = "<group>"; };
 		485C157A2908190D007B9ED0 /* SDKNfcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKNfcViewController.swift; sourceTree = "<group>"; };
 		485C157B2908190D007B9ED0 /* SDKNfcViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKNfcViewController.xib; sourceTree = "<group>"; };
-		48622A002AA9A8C900B5CFC2 /* ServerSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerSettingsViewController.swift; sourceTree = "<group>"; };
-		48622A012AA9A8C900B5CFC2 /* ServerSettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServerSettingsViewController.xib; sourceTree = "<group>"; };
 		48622A052AA9BE7D00B5CFC2 /* Env.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Env.xcdatamodel; sourceTree = "<group>"; };
-		48622A092AA9C8E800B5CFC2 /* EnvListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvListViewController.swift; sourceTree = "<group>"; };
-		48622A0A2AA9C8E800B5CFC2 /* EnvListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnvListViewController.xib; sourceTree = "<group>"; };
 		4869E3642AAA09C100BD62FC /* sdkPassportList.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sdkPassportList.pem; sourceTree = "<group>"; };
 		4881A7FD29238CB400EB4072 /* SDKAddressConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKAddressConfirmViewController.swift; sourceTree = "<group>"; };
 		4881A7FE29238CB400EB4072 /* SDKAddressConfirmViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKAddressConfirmViewController.xib; sourceTree = "<group>"; };
@@ -261,7 +265,7 @@
 		48A151EA292B73BA005B376B /* SDKSignLangViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKSignLangViewController.xib; sourceTree = "<group>"; };
 		48AB73F9291A75E200F591A4 /* SDKSignatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKSignatureViewController.swift; sourceTree = "<group>"; };
 		48AB73FA291A75E200F591A4 /* SDKSignatureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKSignatureViewController.xib; sourceTree = "<group>"; };
-		48BFE3C72AEA8A8000980684 /* IdentifySDK-1.9.5.xx.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = "IdentifySDK-1.9.5.xx.xcframework"; sourceTree = "<group>"; };
+		48C87B242B075C1C0062E936 /* IdentifySDK-1.9.7.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = "IdentifySDK-1.9.7.xcframework"; sourceTree = "<group>"; };
 		48CD8CFE29792C8F008573F8 /* SDKIdentifyColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKIdentifyColorTheme.swift; sourceTree = "<group>"; };
 		48CD8D0029792D5A008573F8 /* SDKLangManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKLangManager.swift; sourceTree = "<group>"; };
 		48CD8D0229792E25008573F8 /* ENGLISH.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ENGLISH.json; sourceTree = "<group>"; };
@@ -285,6 +289,7 @@
 				4857BFF82902D621001FE850 /* OpenSSL in Frameworks */,
 				4881A80729239A1100EB4072 /* IQKeyboardManagerSwift in Frameworks */,
 				48171405294716830095A64F /* netfox in Frameworks */,
+				48C87B322B07A8170062E936 /* IdentifySDK-1.9.7.xcframework in Frameworks */,
 				48F0867829F7CA4E00FCA4BF /* QKMRZScanner in Frameworks */,
 				4857BFFB2902D636001FE850 /* Starscream in Frameworks */,
 				48D802292924F6B000B9BB83 /* CHIOTPField in Frameworks */,
@@ -322,6 +327,15 @@
 				48171421294734FA0095A64F /* SDKPassportReaderViewController.xib */,
 			);
 			path = Passport;
+			sourceTree = "<group>";
+		};
+		482531692B02631F00B0472C /* Prepare */ = {
+			isa = PBXGroup;
+			children = (
+				4825316A2B02632900B0472C /* SDKPrepareViewController.swift */,
+				4825316B2B02632900B0472C /* SDKPrepareViewController.xib */,
+			);
+			path = Prepare;
 			sourceTree = "<group>";
 		};
 		4825517729238BEB00C4C75E /* Address Confirm */ = {
@@ -544,7 +558,7 @@
 		485C154B2907DC0E007B9ED0 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				486229FF2AA9A8AF00B5CFC2 /* Servers */,
+				48C87B262B075D300062E936 /* IdentifyApp */,
 				485C15302907D2E8007B9ED0 /* SDKLoginViewController.swift */,
 				485C15312907D2E8007B9ED0 /* SDKLoginViewController.xib */,
 			);
@@ -604,8 +618,6 @@
 		48622A072AA9C8C000B5CFC2 /* Add New */ = {
 			isa = PBXGroup;
 			children = (
-				48622A002AA9A8C900B5CFC2 /* ServerSettingsViewController.swift */,
-				48622A012AA9A8C900B5CFC2 /* ServerSettingsViewController.xib */,
 			);
 			path = "Add New";
 			sourceTree = "<group>";
@@ -613,8 +625,6 @@
 		48622A082AA9C8DC00B5CFC2 /* List */ = {
 			isa = PBXGroup;
 			children = (
-				48622A092AA9C8E800B5CFC2 /* EnvListViewController.swift */,
-				48622A0A2AA9C8E800B5CFC2 /* EnvListViewController.xib */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -677,6 +687,7 @@
 		48AB73F8291A75C800F591A4 /* Module List */ = {
 			isa = PBXGroup;
 			children = (
+				482531692B02631F00B0472C /* Prepare */,
 				48A151E8292B73B0005B376B /* Sign Lang */,
 				48263C0D292789BB005200A1 /* ThankYou */,
 				48E8E42E29266B7C0045C3F8 /* Speech Recognition */,
@@ -688,6 +699,30 @@
 				485C15652907FC57007B9ED0 /* IdCardReader */,
 				485C1579290818EA007B9ED0 /* NFC */,
 				48AB73F7291A75C300F591A4 /* Signature */,
+			);
+			path = "Module List";
+			sourceTree = "<group>";
+		};
+		48C87B262B075D300062E936 /* IdentifyApp */ = {
+			isa = PBXGroup;
+			children = (
+				486229FF2AA9A8AF00B5CFC2 /* Servers */,
+				48C87B2C2B075E520062E936 /* Module List */,
+				48C87B2B2B075E4E0062E936 /* Login */,
+			);
+			path = IdentifyApp;
+			sourceTree = "<group>";
+		};
+		48C87B2B2B075E4E0062E936 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		48C87B2C2B075E520062E936 /* Module List */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = "Module List";
 			sourceTree = "<group>";
@@ -715,7 +750,7 @@
 		48ED5F0E2A0D2A8B0000C279 /* SDK */ = {
 			isa = PBXGroup;
 			children = (
-				48BFE3C72AEA8A8000980684 /* IdentifySDK-1.9.5.xx.xcframework */,
+				48C87B242B075C1C0062E936 /* IdentifySDK-1.9.7.xcframework */,
 			);
 			path = SDK;
 			sourceTree = "<group>";
@@ -730,7 +765,7 @@
 				483BDB0728F459CC00635BCC /* Sources */,
 				483BDB0828F459CC00635BCC /* Frameworks */,
 				483BDB0928F459CC00635BCC /* Resources */,
-				48E8319329B1D717000E5556 /* Embed Frameworks */,
+				481000332AFA7D9200EBA869 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -846,6 +881,7 @@
 				480E76AA297A868E0071B049 /* ENGLISH.json in Resources */,
 				482D2BB12A547AC000F1344F /* Localizable.strings in Resources */,
 				4887009B292CDA3500961218 /* SDKListenSocketViewController.xib in Resources */,
+				4825316D2B02632900B0472C /* SDKPrepareViewController.xib in Resources */,
 				4881A8112923BF0000EB4072 /* SDKRingViewController.xib in Resources */,
 				485C15642907F3FA007B9ED0 /* Colors.xcassets in Resources */,
 				482D2BBE2A547AC000F1344F /* enhance@2x.png in Resources */,
@@ -877,6 +913,7 @@
 				482D2BDF2A547AC000F1344F /* CaptureSession.swift in Sources */,
 				485C155C2907F3A7007B9ED0 /* SDKBundle+.swift in Sources */,
 				482D2BD52A547AC000F1344F /* Error.swift in Sources */,
+				4825316C2B02632900B0472C /* SDKPrepareViewController.swift in Sources */,
 				481065992922646600053004 /* SDKLivenessViewController.swift in Sources */,
 				482D2BD02A547AC000F1344F /* UIImage+SFSymbol.swift in Sources */,
 				48549ADA2A41800E00F6838B /* SDKLivenessViewController.swift in Sources */,
@@ -901,6 +938,7 @@
 				48AB73FB291A75E200F591A4 /* SDKSignatureViewController.swift in Sources */,
 				4881A80B2923BEF400EB4072 /* SDKCallScreenViewController.swift in Sources */,
 				4887009A292CDA3500961218 /* SDKListenSocketViewController.swift in Sources */,
+				48BFE3D12AEAA09100980684 /* Env.xcdatamodeld in Sources */,
 				482D2BC42A547AC000F1344F /* FocusRectangleView.swift in Sources */,
 				482D2BDB2A547AC000F1344F /* CaptureDevice.swift in Sources */,
 				485C155A2907F3A7007B9ED0 /* SDKUITableViewCell+.swift in Sources */,
@@ -1111,7 +1149,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = NewTest/NewTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 69;
+				CURRENT_PROJECT_VERSION = 73;
 				DEVELOPMENT_TEAM = TQUQ2HQ482;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1152,7 +1190,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = NewTest/NewTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 69;
+				CURRENT_PROJECT_VERSION = 73;
 				DEVELOPMENT_TEAM = TQUQ2HQ482;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

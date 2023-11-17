@@ -40,19 +40,18 @@ class SDKLoginViewController: SDKViewOptionsController {
         self.manager.liveStreamModuleController = SDKCallScreenViewController.instantiate()
         self.manager.speechModuleController = SDKSpeechRecViewController.instantiate()
         self.manager.thankYouViewController = SDKThankYouViewController.instantiate()
+        self.manager.prepareViewController = SDKPrepareViewController.instantiate()
         self.manager.socketMessageListener = self // eğer odada farklı bir kişi varsa listener sayesinde detect edebiliyoruz.
         self.setupUI()
         if manager.jailBreakStatus {
             self.jbView.isHidden = false
             print("cihazda jb tespit edildi, bu durumu yönetebilirsiniz.")
         }
-//        self.selectedServer.apiUrl = "https://api.identify.com.tr/"
+        
         self.selectedServer.turnUrl = "turn:185.32.14.165:3478"
         self.selectedServer.stunUrl = "stun:185.32.14.165:3478"
         self.selectedServer.turnUser = "itrturn"
         self.selectedServer.turnPassword = "itrpass"
-//        self.selectedServer.websocketUrl = "wss://ws.identify.com.tr/"
-        
         self.selectedServer.apiUrl = "https://v2api.identify.com.tr/"
         self.selectedServer.websocketUrl = "wss://v2ws.identify.com.tr/"
     }
@@ -83,55 +82,68 @@ class SDKLoginViewController: SDKViewOptionsController {
                 return
             }
         } else {
-            self.view.endEditing(true)
-            if identIdArea.text == "xxx" {
-                self.identIdArea.text = "eaebe29505c8c27ab68a626f8c0a8bb61e61d3f9"
-            }
-            self.showLoader()
-//            self.manager.selectedModuleList = ["addressConf"]
-            self.manager.setupSDK(
-                identId: identIdArea.text!,
-                baseApiUrl: self.selectedServer.apiUrl,
-                stunServers: [self.selectedServer.stunUrl, self.selectedServer.turnUrl],
-                stunUser: self.selectedServer.turnUser, stunPass: self.selectedServer.turnPassword,
-                webSocketUrl: self.selectedServer.websocketUrl,
-                networkOptions: SDKNetworkOptions(timeoutIntervalForRequest: 60, timeoutIntervalForResource: 60, useSslPinning: false),
-                kpsData: nil, // EĞER ELİNİZDE KPS DEN GELEN KİMLİK DATALARI VARSA ALTTAKİ KODU AKTİF EDİP BU SATIRI SİLEBİLİRSİNİZ.
+            self.connectSDK()
+        }
+    }
+    
+    private func connectSDK() {
+        self.view.endEditing(true)
+        if identIdArea.text == "xxx" {
+            self.identIdArea.text = "eaebe29505c8c27ab68a626f8c0a8bb61e61d3f9"
+        } else if identIdArea.text == "x" {
+            self.identIdArea.text = "46ecfdf9d2650e7c4a3f99f5e3d65a9ca2891dce"
+        } else if identIdArea.text == "y" {
+            self.identIdArea.text = "7fc133f53bb05aa7547b671db589dff994c62fcc"
+        } else if identIdArea.text == "oo" {
+            self.identIdArea.text = "87b9dc12bc003f80ab47c8d80d500349e6a31c5a"
+        }
+        self.showLoader()
+        self.manager.setupSDK(
+            identId: identIdArea.text!,
+            baseApiUrl: self.selectedServer.apiUrl,
+            stunServers: [self.selectedServer.stunUrl, self.selectedServer.turnUrl],
+            stunUser: self.selectedServer.turnUser, stunPass: self.selectedServer.turnPassword,
+            webSocketUrl: self.selectedServer.websocketUrl,
+            networkOptions: SDKNetworkOptions(timeoutIntervalForRequest: 10, timeoutIntervalForResource: 10, useSslPinning: false),
+            kpsData: nil, // EĞER ELİNİZDE KPS DEN GELEN KİMLİK DATALARI VARSA ALTTAKİ KODU AKTİF EDİP BU SATIRI SİLEBİLİRSİNİZ.
 //                kpsData: SDKKpsData(birthDate: "890103", validDate: "300303", serialNo: "B25F24190"),
-                identCardType: [.idCard, .passport, .oldSchool], // destekleyeceğiniz kart tipleri
-                signLangSupport: false, // işitme engelliler için müşteri temsilcisi desteği
-                nfcMaxErrorCount: 3,
-                logLevel: .all,
-                bigCustomerCam: true) { socketStats, apiResp, webErr in
-                    
-                print("socket resp : \(socketStats)")
-                if let err = webErr, err.errorMessages != "" { // web servisten hata gelirse
-                    self.showToast(type:. fail, title: self.translate(text: .coreError), subTitle: err.errorMessages, attachTo: self.view) {
+            identCardType: [.idCard, .passport, .oldSchool], // destekleyeceğiniz kart tipleri
+            signLangSupport: false, // işitme engelliler için müşteri temsilcisi desteği
+            nfcMaxErrorCount: 3,
+            logLevel: .all,
+            bigCustomerCam: true,
+            selectedModules: []
+        ) { socketStats, apiResp, webErr in
+                
+            print("socket resp : \(socketStats)")
+            if let err = webErr, err.errorMessages != "" { // web servisten hata gelirse
+                self.showToast(type:. fail, title: self.translate(text: .coreError), subTitle: err.errorMessages, attachTo: self.view) {
+                    self.hideLoader()
+                }
+            } else { // hata yoksa işlemlere devam ediyoruz
+                if socketStats.isConnected {
+                    if apiResp.result ?? false {
+                        self.manager.moduleStepOrder = 0
                         self.hideLoader()
-                    }
-                } else { // hata yoksa işlemlere devam ediyoruz
-                    if socketStats.isConnected {
-                        if apiResp.result ?? false {
-                            self.manager.moduleStepOrder = 0
-                            self.hideLoader()
-                            self.manager.getNextModule { nextVC in
-                                if !self.subRejected {
-                                    let navigationC = UINavigationController(rootViewController: nextVC)
-                                    navigationC.isModalInPresentation = true
-                                    self.showToast(title: self.translate(text: .coreSuccess), subTitle: self.translate(text: .loadingFirstModule), attachTo: self.view, callback: {
+                        self.manager.getNextModule { nextVC in
+                            if !self.subRejected {
+                                let navigationC = UINavigationController(rootViewController: nextVC)
+                                navigationC.isModalInPresentation = true
+                                self.showToast(title: self.translate(text: .coreSuccess), subTitle: self.translate(text: .loadingFirstModule), attachTo: self.view, callback: {
+                                    DispatchQueue.main.async {
                                         self.navigationController?.present(navigationC, animated: true) // İlk modül başlıyor
-                                    })
-                                }
+                                    }
+                                })
                             }
-                        } else if (socketStats.isConnected == false) {
-                            self.showToast(title: "Socket not connected", attachTo: self.view) {
-                                self.hideLoader()
-                            }
-                            print("socket down")
                         }
-                    } else {
-                        self.hideLoader()
+                    } else if (socketStats.isConnected == false) {
+                        self.showToast(title: "Socket not connected", attachTo: self.view) {
+                            self.hideLoader()
+                        }
+                        print("socket down")
                     }
+                } else {
+                    self.hideLoader()
                 }
             }
         }
@@ -190,7 +202,7 @@ extension SDKLoginViewController { // Dil seçme & değiştirme işlemleri
 
 struct SelectedServerSettings {
     
-    var apiUrl, turnUrl, stunUrl, turnUser, turnPassword, websocketUrl: String
+    var apiUrl, turnUrl, stunUrl, turnUser, turnPassword, websocketUrl, envTitle: String
     
     init() {
         self.apiUrl = ""
@@ -199,15 +211,17 @@ struct SelectedServerSettings {
         self.turnUser = ""
         self.turnPassword = ""
         self.websocketUrl = ""
+        self.envTitle = ""
     }
     
-    init(apiUrl: String, turnUrl: String, stunUrl: String, turnUser: String, turnPassword: String, websocketUrl: String) {
+    init(apiUrl: String, turnUrl: String, stunUrl: String, turnUser: String, turnPassword: String, websocketUrl: String, envTitle: String) {
         self.apiUrl = apiUrl
         self.turnUrl = turnUrl
         self.stunUrl = stunUrl
         self.turnUser = turnUser
         self.turnPassword = turnPassword
         self.websocketUrl = websocketUrl
+        self.envTitle = envTitle
     }
     
 }

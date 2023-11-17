@@ -219,6 +219,9 @@ extension SDKCallScreenViewController: SDKSocketListener {
                 }
             case .missedCall: // belirli süre boyunca telefon çaldı fakat müşteri açmadı veya temsilci aradı fakat telefon açılmadan aramayı sonlandırdı
                 self.dismiss(animated: true) // çağrı ekranını dismiss ettik
+            case .connectionErr:  // socket kopması durumunda tetiklenir
+                setupCallScreen(inCall: false) // kameraları kapatıp bekleme ekranı görüntüsünü aktif eder
+                openSocketDisconnect(callCompleted: false) // bağlantı koptuğuna dair disconnect penceresini present eder
             @unknown default:
                 return
             }

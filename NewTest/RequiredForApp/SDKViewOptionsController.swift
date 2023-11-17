@@ -16,7 +16,7 @@ class SDKViewOptionsController: UIViewController {
     let languageManager = SDKLangManager.shared
     var onTap: VoidHandler?
     public typealias VoidHandler = () -> Void
-    var isAlreadyShowingReConnectScreen = false // eğer socket bağlantısı koptuysa zaten reconnect ekranının açık & kapalı durumunu gösterir
+//    var isAlreadyShowingReConnectScreen: Bool
     var isExternalScreen = false
     
     override func viewDidLoad() {
@@ -46,28 +46,35 @@ class SDKViewOptionsController: UIViewController {
     }
     
     func listenToSocketConnection(callCompleted: Bool) {
+        if callCompleted {
+            self.manager.kycIsCompleted = true
+        }
         guard let socket = self.manager.socket else { return }
-        if socket.isConnected == false && manager.kycIsCompleted == false && self.isAlreadyShowingReConnectScreen == false {
+        if socket.isConnected == false && manager.kycIsCompleted == false && self.manager.isAlreadyShowingReConnectScreen == false {
             self.openSocketDisconnect(callCompleted: callCompleted)
         } else {
             socket.onDisconnect = { [weak self] errMsg in
                 guard let self = self else { return }
-                self.openSocketDisconnect(callCompleted: callCompleted)
+                if !self.manager.kycIsCompleted {
+                    self.openSocketDisconnect(callCompleted: callCompleted)
+                }
             }
         }
     }
     
     func openSocketDisconnect(callCompleted: Bool) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
-            if callCompleted == false && self.isAlreadyShowingReConnectScreen == false {
-                let nextVC = SDKListenSocketViewController()
-                nextVC.delegate = self
-                self.isAlreadyShowingReConnectScreen = true
-                nextVC.modalPresentationStyle = .fullScreen
-                nextVC.modalTransitionStyle = .crossDissolve
-                let controller = UIApplication.topViewController()
-                DispatchQueue.main.async {
-                    controller?.present(nextVC, animated: true)
+            if !self.manager.kycIsCompleted { // eğer kyc işlemleri bitmediyse
+                if callCompleted == false && self.manager.isAlreadyShowingReConnectScreen == false {
+                    let nextVC = SDKListenSocketViewController()
+                    nextVC.delegate = self
+                    self.manager.isAlreadyShowingReConnectScreen = true
+                    nextVC.modalPresentationStyle = .fullScreen
+                    nextVC.modalTransitionStyle = .crossDissolve
+                    let controller = UIApplication.topViewController()
+                    DispatchQueue.main.async {
+                        controller?.present(nextVC, animated: true)
+                    }
                 }
             }
         })
@@ -167,7 +174,7 @@ class SDKBaseViewController: SDKViewOptionsController {
     
     @objc func reActiveScreen() { // wi-fi' dan lte' ye çekme gibi durumlarda socket kopması yaşanabilir, buna önlem olarak koptuğu zaman yeniden bağlan ekranı basıyoruz.
         guard let socket = manager.socket else { return }
-        if socket.isConnected == false && isAlreadyShowingReConnectScreen == false {
+        if socket.isConnected == false && self.manager.isAlreadyShowingReConnectScreen == false {
             self.openSocketDisconnect(callCompleted: false)
         }
     }
@@ -176,7 +183,7 @@ class SDKBaseViewController: SDKViewOptionsController {
 
     @objc func appMovedToForeground() {
         if let socket = manager.socket {
-            if socket.isConnected == false  && isAlreadyShowingReConnectScreen == false {
+            if socket.isConnected == false  && self.manager.isAlreadyShowingReConnectScreen == false {
                 self.listenToSocketConnection(callCompleted: false)
             }
         }
@@ -184,7 +191,7 @@ class SDKBaseViewController: SDKViewOptionsController {
     
     override func didMove(toParent parent: UIViewController?) {
         super.didMove(toParent: parent)
-//        self.navigationItem.hidesBackButton = true
+//        self.navigationItem.hidesBackButton = true // geri tuşu buradan engelleyebiliriz
         if isExternalScreen == false {
             if parent == nil {
                 self.manager.moduleStepOrder -= 1
@@ -255,7 +262,7 @@ public enum ToastType: String {
 extension SDKViewOptionsController: SDKNoConnectionDelegate {
     
     func reconnectCompleted() { // bağlantı koptu, no internet ekranı geldi, sonra bağlantı yeniden kurulduysa
-        self.isAlreadyShowingReConnectScreen = false // üst üste ekran açmasını engellemek için ekledik
+        self.manager.isAlreadyShowingReConnectScreen = false // üst üste ekran açmasını engellemek için ekledik
     }
     
     

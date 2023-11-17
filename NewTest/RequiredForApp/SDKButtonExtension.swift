@@ -12,11 +12,13 @@ class IdentifyButton: UIButton {
         case submit
         case cancel
         case info
+        case loader
     }
     
     public typealias VoidHandler = () -> Void
     
     var onTap: VoidHandler?
+    var loader: UIActivityIndicatorView!
     public var type: ButtonType? = .submit
     public var newTitle: String? = ""
     
@@ -60,7 +62,15 @@ class IdentifyButton: UIButton {
                 backgroundColor = IdentifyTheme.grayColor
                 setTitleColor(IdentifyTheme.lightWhiteColor, for: .normal)
                 dropShadow(color: .black, opacity: 0.3, offSet: CGSize(width: -1, height: 1), radius: 9, scale: true)
-                
+        
+            case .loader:
+                setTitle("", for: .normal)
+                loader = UIActivityIndicatorView(style: .medium)
+                loader.hidesWhenStopped = true
+                loader.startAnimating()
+                loader.color = IdentifyTheme.darkGrayColor
+                loader.center = CGPoint(x: self.bounds.width / 2, y: self.bounds.height / 2)
+                addSubview(loader)
             default:
                 return
         }
