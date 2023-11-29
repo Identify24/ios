@@ -98,6 +98,9 @@
 		485C157C2908190D007B9ED0 /* SDKNfcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485C157A2908190D007B9ED0 /* SDKNfcViewController.swift */; };
 		485C157D2908190D007B9ED0 /* SDKNfcViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485C157B2908190D007B9ED0 /* SDKNfcViewController.xib */; };
 		4862133429B0C05F001428A0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4862133329B0C05F001428A0 /* Alamofire */; };
+		486A111E2B07BED000A34623 /* CameraPermission in Frameworks */ = {isa = PBXBuildFile; productRef = 486A111D2B07BED000A34623 /* CameraPermission */; };
+		486A11202B07BED000A34623 /* MicrophonePermission in Frameworks */ = {isa = PBXBuildFile; productRef = 486A111F2B07BED000A34623 /* MicrophonePermission */; };
+		486A11222B07BED000A34623 /* SpeechRecognizerPermission in Frameworks */ = {isa = PBXBuildFile; productRef = 486A11212B07BED000A34623 /* SpeechRecognizerPermission */; };
 		4880596E291D0EBD0058C7CD /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 4880596D291D0EBD0058C7CD /* Toast */; settings = {ATTRIBUTES = (Required, ); }; };
 		4881A7FF29238CB400EB4072 /* SDKAddressConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4881A7FD29238CB400EB4072 /* SDKAddressConfirmViewController.swift */; };
 		4881A80029238CB400EB4072 /* SDKAddressConfirmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4881A7FE29238CB400EB4072 /* SDKAddressConfirmViewController.xib */; };
@@ -116,8 +119,6 @@
 		48BFE3CB2AEA994200980684 /* ExternalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4887EEED2A6E99B600D51461 /* ExternalViewController.swift */; };
 		48BFE3CC2AEA994200980684 /* ExternalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4887EEEE2A6E99B600D51461 /* ExternalViewController.xib */; };
 		48BFE3D12AEAA09100980684 /* Env.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 48622A042AA9BE7D00B5CFC2 /* Env.xcdatamodeld */; };
-		48C87B322B07A8170062E936 /* IdentifySDK-1.9.7.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C87B242B075C1C0062E936 /* IdentifySDK-1.9.7.xcframework */; };
-		48C87B332B07A8170062E936 /* IdentifySDK-1.9.7.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 48C87B242B075C1C0062E936 /* IdentifySDK-1.9.7.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		48CD8CFF29792C8F008573F8 /* SDKIdentifyColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CD8CFE29792C8F008573F8 /* SDKIdentifyColorTheme.swift */; };
 		48CD8D0129792D5A008573F8 /* SDKLangManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CD8D0029792D5A008573F8 /* SDKLangManager.swift */; };
 		48D802292924F6B000B9BB83 /* CHIOTPField in Frameworks */ = {isa = PBXBuildFile; productRef = 48D802282924F6B000B9BB83 /* CHIOTPField */; settings = {ATTRIBUTES = (Required, ); }; };
@@ -137,7 +138,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				48C87B332B07A8170062E936 /* IdentifySDK-1.9.7.xcframework in Embed Frameworks */,
+				4808F8922B174ADE00F95653 /* IdentifySDK-1.9.8.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,7 +266,6 @@
 		48A151EA292B73BA005B376B /* SDKSignLangViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKSignLangViewController.xib; sourceTree = "<group>"; };
 		48AB73F9291A75E200F591A4 /* SDKSignatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKSignatureViewController.swift; sourceTree = "<group>"; };
 		48AB73FA291A75E200F591A4 /* SDKSignatureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKSignatureViewController.xib; sourceTree = "<group>"; };
-		48C87B242B075C1C0062E936 /* IdentifySDK-1.9.7.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = "IdentifySDK-1.9.7.xcframework"; sourceTree = "<group>"; };
 		48CD8CFE29792C8F008573F8 /* SDKIdentifyColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKIdentifyColorTheme.swift; sourceTree = "<group>"; };
 		48CD8D0029792D5A008573F8 /* SDKLangManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKLangManager.swift; sourceTree = "<group>"; };
 		48CD8D0229792E25008573F8 /* ENGLISH.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ENGLISH.json; sourceTree = "<group>"; };
@@ -284,12 +284,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				4880596E291D0EBD0058C7CD /* Toast in Frameworks */,
+				486A11222B07BED000A34623 /* SpeechRecognizerPermission in Frameworks */,
+				486A11202B07BED000A34623 /* MicrophonePermission in Frameworks */,
 				48AB73FF291A762100F591A4 /* SwiftSignatureView in Frameworks */,
+				486A111E2B07BED000A34623 /* CameraPermission in Frameworks */,
 				48420BA72A8B61840005250F /* WebRTC in Frameworks */,
 				4857BFF82902D621001FE850 /* OpenSSL in Frameworks */,
 				4881A80729239A1100EB4072 /* IQKeyboardManagerSwift in Frameworks */,
 				48171405294716830095A64F /* netfox in Frameworks */,
-				48C87B322B07A8170062E936 /* IdentifySDK-1.9.7.xcframework in Frameworks */,
+				4808F8912B174ADE00F95653 /* IdentifySDK-1.9.8.xcframework in Frameworks */,
 				48F0867829F7CA4E00FCA4BF /* QKMRZScanner in Frameworks */,
 				4857BFFB2902D636001FE850 /* Starscream in Frameworks */,
 				48D802292924F6B000B9BB83 /* CHIOTPField in Frameworks */,
@@ -750,7 +753,7 @@
 		48ED5F0E2A0D2A8B0000C279 /* SDK */ = {
 			isa = PBXGroup;
 			children = (
-				48C87B242B075C1C0062E936 /* IdentifySDK-1.9.7.xcframework */,
+				4808F88F2B174AD900F95653 /* IdentifySDK-1.9.8.xcframework */,
 			);
 			path = SDK;
 			sourceTree = "<group>";
@@ -783,6 +786,9 @@
 				4862133329B0C05F001428A0 /* Alamofire */,
 				48F0867729F7CA4E00FCA4BF /* QKMRZScanner */,
 				48420BA62A8B61840005250F /* WebRTC */,
+				486A111D2B07BED000A34623 /* CameraPermission */,
+				486A111F2B07BED000A34623 /* MicrophonePermission */,
+				486A11212B07BED000A34623 /* SpeechRecognizerPermission */,
 			);
 			productName = NewTest;
 			productReference = 483BDB0B28F459CC00635BCC /* NewTest.app */;
@@ -842,6 +848,7 @@
 				4862133229B0C05F001428A0 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				48F0867629F7CA4E00FCA4BF /* XCRemoteSwiftPackageReference "QKMRZScanner" */,
 				48420BA52A8B61840005250F /* XCRemoteSwiftPackageReference "WebRTC" */,
+				486A111C2B07BED000A34623 /* XCRemoteSwiftPackageReference "PermissionsKit" */,
 			);
 			productRefGroup = 483BDB0C28F459CC00635BCC /* Products */;
 			projectDirPath = "";
@@ -947,6 +954,7 @@
 				482D2BB22A547AC000F1344F /* ImageScannerController.swift in Sources */,
 				482D2BCC2A547AC000F1344F /* CGRect+Utils.swift in Sources */,
 				4813037E29221E1300E66D73 /* SDKVideoRecorderViewController.swift in Sources */,
+				480099C52B175C9100325ED0 /* ServerSettingsViewController.swift in Sources */,
 				48DE1485290A7D3A00057EAD /* UIViewController+.swift in Sources */,
 				48DE147B290A6C1900057EAD /* SDKColorManager.swift in Sources */,
 				48171422294734FA0095A64F /* SDKPassportReaderViewController.swift in Sources */,
@@ -1149,7 +1157,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = NewTest/NewTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 73;
+				CURRENT_PROJECT_VERSION = 75;
 				DEVELOPMENT_TEAM = TQUQ2HQ482;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1159,9 +1167,9 @@
 				INFOPLIST_FILE = NewTest/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_NFCReaderUsageDescription = "NFC Kullanım izni";
-				INFOPLIST_KEY_NSCameraUsageDescription = "Belge taramak için izin";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Kısa video çekimi için mikrafon izni gerekmektedir";
-				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Konuşma tanıma izni";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Görüntülü görüşme yapmak ve diğer modülleri kullanabilmek için izniniz gerekmektedir";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Kısa video çekimi için mikrofon izni gerekmektedir";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Konuşma testi modülünü kullanabilmeniz için izniniz gerekmektedir";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -1190,7 +1198,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = NewTest/NewTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 73;
+				CURRENT_PROJECT_VERSION = 75;
 				DEVELOPMENT_TEAM = TQUQ2HQ482;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1200,9 +1208,9 @@
 				INFOPLIST_FILE = NewTest/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_NFCReaderUsageDescription = "NFC Kullanım izni";
-				INFOPLIST_KEY_NSCameraUsageDescription = "Belge taramak için izin";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Kısa video çekimi için mikrafon izni gerekmektedir";
-				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Konuşma tanıma izni";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Görüntülü görüşme yapmak ve diğer modülleri kullanabilmek için izniniz gerekmektedir";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Kısa video çekimi için mikrofon izni gerekmektedir";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Konuşma testi modülünü kullanabilmeniz için izniniz gerekmektedir";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -1287,6 +1295,14 @@
 				kind = branch;
 			};
 		};
+		486A111C2B07BED000A34623 /* XCRemoteSwiftPackageReference "PermissionsKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparrowcode/PermissionsKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.1;
+			};
+		};
 		4880596C291D0EBD0058C7CD /* XCRemoteSwiftPackageReference "Toast" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hengyu/Toast.git";
@@ -1354,6 +1370,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4862133229B0C05F001428A0 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		486A111D2B07BED000A34623 /* CameraPermission */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 486A111C2B07BED000A34623 /* XCRemoteSwiftPackageReference "PermissionsKit" */;
+			productName = CameraPermission;
+		};
+		486A111F2B07BED000A34623 /* MicrophonePermission */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 486A111C2B07BED000A34623 /* XCRemoteSwiftPackageReference "PermissionsKit" */;
+			productName = MicrophonePermission;
+		};
+		486A11212B07BED000A34623 /* SpeechRecognizerPermission */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 486A111C2B07BED000A34623 /* XCRemoteSwiftPackageReference "PermissionsKit" */;
+			productName = SpeechRecognizerPermission;
 		};
 		4880596D291D0EBD0058C7CD /* Toast */ = {
 			isa = XCSwiftPackageProductDependency;

@@ -191,7 +191,7 @@ class SDKCardReaderViewController: SDKBaseViewController {
     }
     
     func takeCardPhoto() {
-        let scannerViewController = ImageScannerController(enabledAutoCapture: true)
+        let scannerViewController = ImageScannerController(enabledAutoCapture: true, scannerMode: .idCard)
         scannerViewController.imageScannerDelegate = self
         scannerViewController.navigationBar.backgroundColor = IdentifyTheme.blueColor
         scannerViewController.navigationBar.tintColor = IdentifyTheme.whiteColor

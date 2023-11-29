@@ -100,7 +100,7 @@ class SDKAddressConfirmViewController: SDKBaseViewController {
     
     private func openScanner() {
         DispatchQueue.main.async {
-            let scannerViewController = ImageScannerController()
+            let scannerViewController = ImageScannerController(enabledAutoCapture: false, scannerMode: .addressScan)
             scannerViewController.imageScannerDelegate = self
             scannerViewController.navigationBar.backgroundColor = IdentifyTheme.grayColor
             scannerViewController.navigationBar.tintColor = IdentifyTheme.whiteColor

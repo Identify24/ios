@@ -112,6 +112,16 @@ class SDKCallScreenViewController: SDKBaseViewController {
         })
     }
     
+    private func callIsDone(doneStatus: CallStatus) {
+        self.manager.getNextModule { nextVC in
+            if nextVC == self.manager.thankYouViewController {
+                let x  = SDKThankYouViewController()
+                x.completeStatus = doneStatus
+                self.navigationController?.pushViewController(x, animated: true)
+            }
+        }
+    }
+    
 }
 
 extension SDKCallScreenViewController: CallScreenDelegate {
@@ -162,9 +172,8 @@ extension SDKCallScreenViewController: SDKSocketListener {
             case .terminateCall:
                 self.listenToSocketConnection(callCompleted: true)
                 setupCallScreen(inCall: false)
-                self.manager.getNextModule { nextVC in
-                    self.navigationController?.pushViewController(nextVC, animated: true)
-                }
+                self.callIsDone(doneStatus: .completed)
+                
                 print("görüşme kapandı")
             case .imOffline:
                 print("bağlantı kopartıldı - panelde sayfa yenilendi - browser kapatıldı")
@@ -218,7 +227,10 @@ extension SDKCallScreenViewController: SDKSocketListener {
                         }
                 }
             case .missedCall: // belirli süre boyunca telefon çaldı fakat müşteri açmadı veya temsilci aradı fakat telefon açılmadan aramayı sonlandırdı
-                self.dismiss(animated: true) // çağrı ekranını dismiss ettik
+            self.dismiss(animated: true) {
+                self.callIsDone(doneStatus: .missedCall)
+            }
+            
             case .connectionErr:  // socket kopması durumunda tetiklenir
                 setupCallScreen(inCall: false) // kameraları kapatıp bekleme ekranı görüntüsünü aktif eder
                 openSocketDisconnect(callCompleted: false) // bağlantı koptuğuna dair disconnect penceresini present eder

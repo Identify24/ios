@@ -2,6 +2,14 @@
 Proje ile ilgili dökümantasyona ve SDK download linkine https://docs.identify.com.tr/docs/ios/first-setup/ adresinden ulaşabilirsiniz.
 
 ### Sample App 
+
+## Build 75:
+- Scanner ve onu çağıran ekranlar güncellendi
+- Prepare modülü için örnek ekran eklendi
+- Missed Call için yeni status eklendi
+- Teşekkür ekranı güncellendi
+
+
 ## Build 73:
 - prepare modülünün örnek tasarımı eklendi
 - socketListener tarafına connectionErr eklendi

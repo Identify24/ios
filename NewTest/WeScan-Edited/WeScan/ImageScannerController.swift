@@ -60,9 +60,10 @@ public final class ImageScannerController: UINavigationController {
         return .portrait
     }
 
-    public required init(image: UIImage? = nil, delegate: ImageScannerControllerDelegate? = nil, enabledAutoCapture: Bool? = false) {
+    public required init(image: UIImage? = nil, delegate: ImageScannerControllerDelegate? = nil, enabledAutoCapture: Bool? = false, scannerMode: ScannerMode? = .idCard) {
         let scannerVC = ScannerViewController()
         scannerVC.enabledAutoCapture = enabledAutoCapture!
+        scannerVC.scanMode = scannerMode
         super.init(rootViewController: scannerVC)
 
         self.imageScannerDelegate = delegate

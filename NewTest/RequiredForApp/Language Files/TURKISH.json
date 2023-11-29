@@ -127,5 +127,21 @@
   "NfcStart" : "Taramayı başlat",
   "CoreReconnecting" : "Bağlanıyor..",
   "WrongFrontSide" : "Kimlik ön yüzü geçerli değil",
-  "WrongBackSide" : "Kimlik arka yüzü geçerli değil"
+  "WrongBackSide" : "Kimlik arka yüzü geçerli değil",
+  "MissedCallTitle" : "Size Ulaşamadık",
+  "MissedCallSubTitle" : "Üzgünüz, video görüşmeye bağlanabilmek için sizden yanıt alamadık.",
+  "CheckMyConn": "Bağlantı kalitemi ölç ve devam et",
+  "IdNear" : "Kimliğim yanımda",
+  "OwnAuth" : "Kimlik doğrulama için tek başımayım",
+  "LightSoundCont" : "Uygun ışık ve ses koşullarındayım",
+  "ConnectionGood" : "İnternet hızım uygun",
+  "ConnectionSpeedSuccess" : "Bağlantı kalitesi uygun",
+  "PrepareCam" : "Canlı görüşme için kamera izni",
+  "PrepareMic" : "Mikrofon izni",
+  "PrepareSpeech" : "Ses tanıma izni",
+  "ScanHoldOn" : "Lütfen telefonu sabit tutun",
+  "ScanCloser" : "Lütfen kimliğe yaklaşın",
+  "ScanGoAway" : "Lütfen kimlikten uzaklaşın",
+  "ScanPrepareList" : "Hazırlık Listesi"
+  
 }

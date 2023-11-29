@@ -27,6 +27,8 @@ public final class ScannerViewController: UIViewController {
 
     /// The original bar style that was set by the host app
     private var originalBarStyle: UIBarStyle?
+    
+    private var langManager = SDKLangManager()
 
     private lazy var shutterButton: ShutterButton = {
         let button = ShutterButton()
@@ -79,6 +81,13 @@ public final class ScannerViewController: UIViewController {
     
     var enabledAutoCapture = false
     
+    var scanMode: ScannerMode? = .idCard
+    
+    enum InfoLabelChabge: Codable {
+        case wait
+        case needCloser
+        case needGetAway
+    }
 
     // MARK: - Life Cycle
 
@@ -114,7 +123,7 @@ public final class ScannerViewController: UIViewController {
         CaptureSession.current.isEditing = false
         quadView.removeQuadrilateral()
         captureSessionManager?.start()
-        UIApplication.shared.isIdleTimerDisabled = true
+//        UIApplication.shared.isIdleTimerDisabled = true
 
         navigationController?.navigationBar.barStyle = .blackTranslucent
     }
@@ -127,7 +136,7 @@ public final class ScannerViewController: UIViewController {
 
     override public func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        UIApplication.shared.isIdleTimerDisabled = false
+//        UIApplication.shared.isIdleTimerDisabled = false
 
         navigationController?.navigationBar.isTranslucent = false
         navigationController?.navigationBar.barStyle = originalBarStyle ?? .default
@@ -185,7 +194,7 @@ public final class ScannerViewController: UIViewController {
 
     private func setupNavigationBar() {
         navigationItem.setLeftBarButton(flashButton, animated: false)
-        navigationItem.setRightBarButton(autoScanButton, animated: false)
+//        navigationItem.setRightBarButton(autoScanButton, animated: false)
 
         if UIImagePickerController.isFlashAvailable(for: .rear) == false {
             let flashOffImage = UIImage(systemName: "bolt.slash.fill", named: "flashUnavailable", in: Bundle(for: ScannerViewController.self), compatibleWith: nil)
@@ -359,6 +368,8 @@ extension ScannerViewController: RectangleDetectionDelegateProtocol {
             quadView.removeQuadrilateral()
             return
         }
+        
+        CaptureSession.current.isAutoScanEnabled = true
 
         let portraitImageSize = CGSize(width: imageSize.height, height: imageSize.width)
 
@@ -377,24 +388,66 @@ extension ScannerViewController: RectangleDetectionDelegateProtocol {
 
         quadView.drawQuadrilateral(quad: transformedQuad, animated: true)
         
-        if enabledAutoCapture {
-            addInfoLabels()
+        if scanMode == .idCard {
+            if transformedQuad.perimeter >= 1000 && transformedQuad.perimeter <= 1200 {
+                quadView.strokeColor = UIColor.green.withAlphaComponent(1).cgColor
+                if captureSessionManager.enableAutoCapture ?? true {
+                    addInfoLabels(state: .wait)
+                }
+                enabledAutoCapture = true
+                CaptureSession.current.isAutoScanEnabled = true
+            } else if transformedQuad.perimeter < 1000 {
+                quadView.strokeColor = UIColor.red.withAlphaComponent(0.2).cgColor
+                if captureSessionManager.enableAutoCapture ?? true {
+                    addInfoLabels(state: .needCloser)
+                }
+                enabledAutoCapture = false
+                CaptureSession.current.isAutoScanEnabled = false
+            } else if transformedQuad.perimeter > 1200 {
+                quadView.strokeColor = UIColor.red.withAlphaComponent(0.2).cgColor
+                if captureSessionManager.enableAutoCapture ?? true {
+                    addInfoLabels(state: .needGetAway)
+                }
+                enabledAutoCapture = false
+                CaptureSession.current.isAutoScanEnabled = false
+            }
         }
     }
     
-    func addInfoLabels() {
+    func addInfoLabels(state: InfoLabelChabge) {
         self.countLabel.isHidden = false
-        // Auto Layout kullanarak label'ı alt güvenli alandan 24 pt uzakta yerleştir
-        countLabel.translatesAutoresizingMaskIntoConstraints = false
+
+        quadView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            countLabel.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 24),
-            countLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 12),
-            countLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -12)
+            countLabel.bottomAnchor.constraint(equalTo: quadView.bottomAnchor, constant: -48),
+            countLabel.leadingAnchor.constraint(equalTo: quadView.leadingAnchor, constant: 12),
+            countLabel.trailingAnchor.constraint(equalTo: quadView.trailingAnchor, constant: -12),
+            countLabel.heightAnchor.constraint(equalToConstant: 36)
         ])
-        self.countLabel.text = "Lütfen telefonu sabit tutunuz"
+        
+        var statusText = ""
+        
+        switch state {
+            case .wait:
+                statusText = langManager.translate(key: .scanHoldOn)
+            case .needCloser:
+                statusText = langManager.translate(key: .scanCloser)
+            case .needGetAway:
+                statusText = langManager.translate(key: .scanGoAway)
+            default:
+                return
+        }
+        self.countLabel.text = statusText
         self.countLabel.backgroundColor = .black
         self.countLabel.textColor = .yellow
         self.countLabel.translatesAutoresizingMaskIntoConstraints = false
     }
 
+}
+
+
+
+public enum ScannerMode: Codable {
+    case idCard
+    case addressScan
 }

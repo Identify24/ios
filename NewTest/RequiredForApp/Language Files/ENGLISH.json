@@ -127,5 +127,20 @@
   "NfcStart" : "Start NFC",
   "CoreReconnecting" : "Connecting..",
   "WrongFrontSide" : "The front of the identity card is invalid",
-  "WrongBackSide" : "The back of the identity card is invalid"
+  "WrongBackSide" : "The back of the identity card is invalid",
+  "MissedCallTitle" : "We could not reach you",
+  "MissedCallSubTitle" : "Unfortunately, we were unable to reach you to do the video identification.",
+  "CheckMyConn": "Test my connection quality and proceed",
+  "IdNear" : "I have my ID card to hand",
+  "OwnAuth" : "Identification is performed independently",
+  "LightSoundCont" : "Light and noise conditions are appropriate",
+  "ConnectionGood" : "My internet speed is suitable",
+  "ConnectionSpeedSuccess" : "Connection quality is suitable",
+  "PrepareCam" : "Camera permission for live conversations",
+  "PrepareMic" : "Microphone permission",
+  "PrepareSpeech" : "Voice recognition permission",
+  "ScanHoldOn" : "Please hold the phone still",
+  "ScanCloser" : "Please approach the ID",
+  "ScanGoAway" : "Please move away from the ID",
+  "ScanPrepareList" : "Preparation List"
 }

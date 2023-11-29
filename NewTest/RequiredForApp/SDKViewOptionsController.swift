@@ -16,7 +16,6 @@ class SDKViewOptionsController: UIViewController {
     let languageManager = SDKLangManager.shared
     var onTap: VoidHandler?
     public typealias VoidHandler = () -> Void
-//    var isAlreadyShowingReConnectScreen: Bool
     var isExternalScreen = false
     
     override func viewDidLoad() {

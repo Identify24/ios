@@ -305,9 +305,41 @@ extension SDKLangManager {
                 return self.readKey(key: "WrongFrontSide")
             case .wrongBackSide:
                 return self.readKey(key: "WrongBackSide")
-            }
+            case .missedCallTitle:
+                return self.readKey(key: "MissedCallTitle")
+            case .missedCallSubTitle:
+                return self.readKey(key: "MissedCallSubTitle")
+            case .checkMyConn:
+                return self.readKey(key: "CheckMyConn")
+            case .idNear:
+                return self.readKey(key: "IdNear")
+            case .ownAuth:
+                return self.readKey(key: "OwnAuth")
+            case .lightSoundCont:
+                return self.readKey(key: "LightSoundCont")
+            case .connectionGood:
+                return self.readKey(key: "ConnectionGood")
+            case .connectionSpeedSuccess:
+                return self.readKey(key: "ConnectionSpeedSuccess")
+            case .prepareCam:
+                return self.readKey(key: "PrepareCam")
+            case .prepareMic:
+                return self.readKey(key: "PrepareMic")
+            case .prepareSpeech:
+                return self.readKey(key: "PrepareSpeech")
+            case .scanHoldOn:
+                return self.readKey(key: "ScanHoldOn")
+            case .scanCloser:
+                return self.readKey(key: "ScanCloser")
+            case .scanGoAway:
+                return self.readKey(key: "ScanGoAway")
+            case .scanPrepareList:
+                return self.readKey(key: "ScanPrepareList")
+        }
     }
 }
+
+
 
 public enum SDKKeywords {
     case connect
@@ -438,5 +470,20 @@ public enum SDKKeywords {
     case coreReconnecting
     case wrongFrontSide
     case wrongBackSide
-
+    case missedCallTitle
+    case missedCallSubTitle
+    case checkMyConn
+    case idNear
+    case ownAuth
+    case lightSoundCont
+    case connectionGood
+    case connectionSpeedSuccess
+    case prepareCam
+    case prepareMic
+    case prepareSpeech
+    case scanHoldOn
+    case scanCloser
+    case scanGoAway
+    case scanPrepareList
 }
+

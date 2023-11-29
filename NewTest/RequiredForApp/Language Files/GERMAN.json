@@ -127,6 +127,21 @@
   "NfcStart" : "Starte NFC",
   "CoreReconnecting" : "Verbinden..",
   "WrongFrontSide" : "Die Vorderseite des Personalausweises ist ungültig",
-  "WrongBackSide" : "Die Rückseite des Personalausweises ist ungültig"
+  "WrongBackSide" : "Die Rückseite des Personalausweises ist ungültig",
+  "MissedCallTitle" : "Wir konnten Sie nicht erreichen",
+  "MissedCallSubTitle" : "Wir konnten Sie leider nicht erreichen, um die Video-Identifizierung durchzuführen.",
+  "CheckMyConn": "Messe meine Internetverbindung und fahre fort",
+  "IdNear" : "Habe mein Ausweis zur Hand",
+  "OwnAuth" : "Identifizierung wird eigenständig durchgeführt",
+  "LightSoundCont" : "Licht- und Geräuschbedingungen sind angemessen",
+  "ConnectionGood" : "Meine Internetgeschwindigkeit ist angemessen",
+  "ConnectionSpeedSuccess" : "Die Verbindungsqualität ist angemessen",
+  "PrepareCam" : "Kameraerlaubnis für Live-Gespräche",
+  "PrepareMic" : "Mikrofonberechtigung",
+  "PrepareSpeech" : "Berechtigung zur Spracherkennung",
+  "ScanHoldOn" : "Bitte halten Sie das Telefon still",
+  "ScanCloser" : "Bitte nähern Sie sich dem Ausweisn",
+  "ScanGoAway" : "Bitte entfernen Sie sich von dem Ausweis",
+  "ScanPrepareList" : "Vorbereitungsliste"
 }
 
