@@ -10,6 +10,9 @@ import ARKit
 import IdentifySDK
 
 class SDKLivenessViewController: SDKBaseViewController {
+    
+    var timer: Timer?
+    let waitSecs: TimeInterval = 2.0
 
     @IBOutlet weak var resetCamBtn: IdentifyButton!
     @IBOutlet weak var myCam: ARSCNView!
@@ -54,7 +57,6 @@ class SDKLivenessViewController: SDKBaseViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         self.pauseSession()
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -165,11 +167,12 @@ class SDKLivenessViewController: SDKBaseViewController {
                 if self.nextStep == .completed {
                     self.resumeSession()
                 } else {
-                    self.oneButtonAlertShow(appName: "Identify", message: "Fotoğraf yüklendi, sonraki adıma geçiliyor.", title1: "Tamam") {
+                    self.timer = Timer.scheduledTimer(withTimeInterval: self.waitSecs, repeats: false) { _ in
                         self.resumeSession()
+                        self.timer?.invalidate()
+                        self.timer = nil
                     }
                 }
-                
             } else {
                 DispatchQueue.main.async {
                     self.showToast(type:.fail, title: self.translate(text: .coreError), subTitle: self.translate(text: .coreUploadError), attachTo: self.view) {
