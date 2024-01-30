@@ -51,7 +51,7 @@ class IdentifyButton: UIButton {
                 backgroundColor = IdentifyTheme.whiteColor
                 setTitleColor(IdentifyTheme.submitBlueColor, for: .normal)
                 dropShadow(color: .black, opacity: 0.3, offSet: CGSize(width: -1, height: 1), radius: 9, scale: true)
-                titleLabel?.font = .boldSystemFont(ofSize: 18)
+//                titleLabel?.font = .boldSystemFont(ofSize: 18)
             case .cancel:
                 cornerRadius = 3
                 backgroundColor = IdentifyTheme.orangeColor

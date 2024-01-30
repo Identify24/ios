@@ -3,6 +3,12 @@ Proje ile ilgili dökümantasyona ve SDK download linkine https://docs.identify.
 
 ### Sample App 
 
+## Build 80:
+- scanner ekranında daha hızlı fotoğraf çekimi sağlandı 
+- active result için NfcViewController, CardreaderViewController ve ThankYouViewController buna bağlı olarak güncellendi
+- scanner için yatay fotoğraf çekilmesi zorunluluğu eklendi
+- dil dosyaları güncellendi
+
 ## Build 75:
 - Scanner ve onu çağıran ekranlar güncellendi
 - Prepare modülü için örnek ekran eklendi

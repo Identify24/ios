@@ -157,6 +157,16 @@ class SDKViewOptionsController: UIViewController {
     func translate(text: SDKKeywords) -> String {
         return languageManager.translate(key: text)
     }
+    
+    func closeSDK() {
+        self.manager.quitSDK { cominVC in
+            if cominVC.self == self.manager.thankYouViewController {
+                let x = SDKThankYouViewController()
+                x.completeStatus = .notCompleted
+                self.navigationController?.pushViewController(x, animated: true)
+            }
+        }
+    }
 }
 
 
@@ -200,7 +210,7 @@ class SDKBaseViewController: SDKViewOptionsController {
         }
     }
     
-    func oneButtonAlertShow(appName: String, message: String, title1: String,  act1: @escaping () -> ()) {
+    func oneButtonAlertShow(appName: String? = "Identify", message: String, title1: String,  act1: @escaping () -> ()) {
         var topController: UIViewController? = UIApplication.shared.keyWindow?.rootViewController
         while ((topController?.presentedViewController) != nil) {
             topController = topController?.presentedViewController

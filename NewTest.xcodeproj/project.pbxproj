@@ -119,6 +119,7 @@
 		48BFE3CB2AEA994200980684 /* ExternalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4887EEED2A6E99B600D51461 /* ExternalViewController.swift */; };
 		48BFE3CC2AEA994200980684 /* ExternalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4887EEEE2A6E99B600D51461 /* ExternalViewController.xib */; };
 		48BFE3D12AEAA09100980684 /* Env.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 48622A042AA9BE7D00B5CFC2 /* Env.xcdatamodeld */; };
+		48C0381A2B5542F500AF690B /* CallStatusEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C038192B5542F500AF690B /* CallStatusEnum.swift */; };
 		48CD8CFF29792C8F008573F8 /* SDKIdentifyColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CD8CFE29792C8F008573F8 /* SDKIdentifyColorTheme.swift */; };
 		48CD8D0129792D5A008573F8 /* SDKLangManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CD8D0029792D5A008573F8 /* SDKLangManager.swift */; };
 		48D802292924F6B000B9BB83 /* CHIOTPField in Frameworks */ = {isa = PBXBuildFile; productRef = 48D802282924F6B000B9BB83 /* CHIOTPField */; settings = {ATTRIBUTES = (Required, ); }; };
@@ -138,7 +139,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4808F8922B174ADE00F95653 /* IdentifySDK-1.9.8.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,6 +146,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		480099BA2B175C5C00325ED0 /* SDKIdentifyLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDKIdentifyLoginViewController.swift; sourceTree = "<group>"; };
 		481065972922646600053004 /* SDKLivenessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKLivenessViewController.swift; sourceTree = "<group>"; };
 		481065982922646600053004 /* SDKLivenessViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKLivenessViewController.xib; sourceTree = "<group>"; };
 		4813037C29221E1300E66D73 /* SDKVideoRecorderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKVideoRecorderViewController.swift; sourceTree = "<group>"; };
@@ -230,6 +231,7 @@
 		483BDB1C28F459CC00635BCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48549AD82A41800D00F6838B /* SDKLivenessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDKLivenessViewController.swift; sourceTree = "<group>"; };
 		48549AD92A41800D00F6838B /* SDKLivenessViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SDKLivenessViewController.xib; sourceTree = "<group>"; };
+		485562172B63B03B00E55A80 /* IdentifySDK-1-9-9-1.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = "IdentifySDK-1-9-9-1.xcframework"; sourceTree = "<group>"; };
 		485C15302907D2E8007B9ED0 /* SDKLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKLoginViewController.swift; sourceTree = "<group>"; };
 		485C15312907D2E8007B9ED0 /* SDKLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKLoginViewController.xib; sourceTree = "<group>"; };
 		485C15382907D3CF007B9ED0 /* SDKViewOptionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKViewOptionsController.swift; sourceTree = "<group>"; };
@@ -251,6 +253,13 @@
 		485C157B2908190D007B9ED0 /* SDKNfcViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKNfcViewController.xib; sourceTree = "<group>"; };
 		48622A052AA9BE7D00B5CFC2 /* Env.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Env.xcdatamodel; sourceTree = "<group>"; };
 		4869E3642AAA09C100BD62FC /* sdkPassportList.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sdkPassportList.pem; sourceTree = "<group>"; };
+		486A11072B07BA9200A34623 /* EnvListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EnvListViewController.xib; sourceTree = "<group>"; };
+		486A11082B07BA9200A34623 /* EnvListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvListViewController.swift; sourceTree = "<group>"; };
+		486A110B2B07BA9800A34623 /* ServerSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerSettingsViewController.swift; sourceTree = "<group>"; };
+		486A110C2B07BA9800A34623 /* ServerSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServerSettingsViewController.xib; sourceTree = "<group>"; };
+		486A110F2B07BAA200A34623 /* SDKModuleListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDKModuleListViewController.swift; sourceTree = "<group>"; };
+		486A11102B07BAA200A34623 /* SDKModuleListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SDKModuleListViewController.xib; sourceTree = "<group>"; };
+		486A11142B07BAAA00A34623 /* SDKIdentifyLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SDKIdentifyLoginViewController.xib; sourceTree = "<group>"; };
 		4881A7FD29238CB400EB4072 /* SDKAddressConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKAddressConfirmViewController.swift; sourceTree = "<group>"; };
 		4881A7FE29238CB400EB4072 /* SDKAddressConfirmViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKAddressConfirmViewController.xib; sourceTree = "<group>"; };
 		4881A8092923BEF400EB4072 /* SDKCallScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKCallScreenViewController.swift; sourceTree = "<group>"; };
@@ -266,6 +275,11 @@
 		48A151EA292B73BA005B376B /* SDKSignLangViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKSignLangViewController.xib; sourceTree = "<group>"; };
 		48AB73F9291A75E200F591A4 /* SDKSignatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKSignatureViewController.swift; sourceTree = "<group>"; };
 		48AB73FA291A75E200F591A4 /* SDKSignatureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKSignatureViewController.xib; sourceTree = "<group>"; };
+		48BC60A82B2217F400B03684 /* SDKSocketLogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKSocketLogsViewController.swift; sourceTree = "<group>"; };
+		48BC60A92B2217F400B03684 /* SDKSocketLogsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKSocketLogsViewController.xib; sourceTree = "<group>"; };
+		48BC60AD2B22184500B03684 /* SocketLogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketLogTableViewCell.swift; sourceTree = "<group>"; };
+		48BC60AE2B22184500B03684 /* SocketLogTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SocketLogTableViewCell.xib; sourceTree = "<group>"; };
+		48C038192B5542F500AF690B /* CallStatusEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallStatusEnum.swift; sourceTree = "<group>"; };
 		48CD8CFE29792C8F008573F8 /* SDKIdentifyColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKIdentifyColorTheme.swift; sourceTree = "<group>"; };
 		48CD8D0029792D5A008573F8 /* SDKLangManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKLangManager.swift; sourceTree = "<group>"; };
 		48CD8D0229792E25008573F8 /* ENGLISH.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ENGLISH.json; sourceTree = "<group>"; };
@@ -292,7 +306,6 @@
 				4857BFF82902D621001FE850 /* OpenSSL in Frameworks */,
 				4881A80729239A1100EB4072 /* IQKeyboardManagerSwift in Frameworks */,
 				48171405294716830095A64F /* netfox in Frameworks */,
-				4808F8912B174ADE00F95653 /* IdentifySDK-1.9.8.xcframework in Frameworks */,
 				48F0867829F7CA4E00FCA4BF /* QKMRZScanner in Frameworks */,
 				4857BFFB2902D636001FE850 /* Starscream in Frameworks */,
 				48D802292924F6B000B9BB83 /* CHIOTPField in Frameworks */,
@@ -355,6 +368,7 @@
 			children = (
 				48263C0E292789C7005200A1 /* SDKThankYouViewController.swift */,
 				48263C0F292789C7005200A1 /* SDKThankYouViewController.xib */,
+				48C038192B5542F500AF690B /* CallStatusEnum.swift */,
 			);
 			path = ThankYou;
 			sourceTree = "<group>";
@@ -621,6 +635,8 @@
 		48622A072AA9C8C000B5CFC2 /* Add New */ = {
 			isa = PBXGroup;
 			children = (
+				486A110B2B07BA9800A34623 /* ServerSettingsViewController.swift */,
+				486A110C2B07BA9800A34623 /* ServerSettingsViewController.xib */,
 			);
 			path = "Add New";
 			sourceTree = "<group>";
@@ -628,6 +644,8 @@
 		48622A082AA9C8DC00B5CFC2 /* List */ = {
 			isa = PBXGroup;
 			children = (
+				486A11082B07BA9200A34623 /* EnvListViewController.swift */,
+				486A11072B07BA9200A34623 /* EnvListViewController.xib */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -706,9 +724,29 @@
 			path = "Module List";
 			sourceTree = "<group>";
 		};
+		48BC60A72B2217E300B03684 /* SocketLogs */ = {
+			isa = PBXGroup;
+			children = (
+				48BC60AC2B22183100B03684 /* logsCell */,
+				48BC60A82B2217F400B03684 /* SDKSocketLogsViewController.swift */,
+				48BC60A92B2217F400B03684 /* SDKSocketLogsViewController.xib */,
+			);
+			path = SocketLogs;
+			sourceTree = "<group>";
+		};
+		48BC60AC2B22183100B03684 /* logsCell */ = {
+			isa = PBXGroup;
+			children = (
+				48BC60AD2B22184500B03684 /* SocketLogTableViewCell.swift */,
+				48BC60AE2B22184500B03684 /* SocketLogTableViewCell.xib */,
+			);
+			path = logsCell;
+			sourceTree = "<group>";
+		};
 		48C87B262B075D300062E936 /* IdentifyApp */ = {
 			isa = PBXGroup;
 			children = (
+				48BC60A72B2217E300B03684 /* SocketLogs */,
 				486229FF2AA9A8AF00B5CFC2 /* Servers */,
 				48C87B2C2B075E520062E936 /* Module List */,
 				48C87B2B2B075E4E0062E936 /* Login */,
@@ -719,6 +757,8 @@
 		48C87B2B2B075E4E0062E936 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				480099BA2B175C5C00325ED0 /* SDKIdentifyLoginViewController.swift */,
+				486A11142B07BAAA00A34623 /* SDKIdentifyLoginViewController.xib */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -726,6 +766,8 @@
 		48C87B2C2B075E520062E936 /* Module List */ = {
 			isa = PBXGroup;
 			children = (
+				486A110F2B07BAA200A34623 /* SDKModuleListViewController.swift */,
+				486A11102B07BAA200A34623 /* SDKModuleListViewController.xib */,
 			);
 			path = "Module List";
 			sourceTree = "<group>";
@@ -753,7 +795,7 @@
 		48ED5F0E2A0D2A8B0000C279 /* SDK */ = {
 			isa = PBXGroup;
 			children = (
-				4808F88F2B174AD900F95653 /* IdentifySDK-1.9.8.xcframework */,
+				485562172B63B03B00E55A80 /* IdentifySDK-1-9-9-1.xcframework */,
 			);
 			path = SDK;
 			sourceTree = "<group>";
@@ -934,6 +976,7 @@
 				482D2BC52A547AC000F1344F /* ScannerViewController.swift in Sources */,
 				482D2BD62A547AC000F1344F /* VisionRectangleDetector.swift in Sources */,
 				482D2BD82A547AC000F1344F /* QuadrilateralView.swift in Sources */,
+				48C0381A2B5542F500AF690B /* CallStatusEnum.swift in Sources */,
 				482D2BD42A547AC000F1344F /* EditScanCornerView.swift in Sources */,
 				482D2BD12A547AC000F1344F /* EditImageViewController.swift in Sources */,
 				482D2BDE2A547AC000F1344F /* CaptureSession+Orientation.swift in Sources */,
@@ -954,7 +997,6 @@
 				482D2BB22A547AC000F1344F /* ImageScannerController.swift in Sources */,
 				482D2BCC2A547AC000F1344F /* CGRect+Utils.swift in Sources */,
 				4813037E29221E1300E66D73 /* SDKVideoRecorderViewController.swift in Sources */,
-				480099C52B175C9100325ED0 /* ServerSettingsViewController.swift in Sources */,
 				48DE1485290A7D3A00057EAD /* UIViewController+.swift in Sources */,
 				48DE147B290A6C1900057EAD /* SDKColorManager.swift in Sources */,
 				48171422294734FA0095A64F /* SDKPassportReaderViewController.swift in Sources */,
@@ -1157,7 +1199,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = NewTest/NewTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 75;
+				CURRENT_PROJECT_VERSION = 80;
 				DEVELOPMENT_TEAM = TQUQ2HQ482;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1198,7 +1240,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = NewTest/NewTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 75;
+				CURRENT_PROJECT_VERSION = 80;
 				DEVELOPMENT_TEAM = TQUQ2HQ482;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

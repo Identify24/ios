@@ -49,18 +49,15 @@ class SDKThankYouViewController: SDKBaseViewController {
             self.successLbl.text = self.translate(text: .missedCallTitle)
             self.desc1Lbl.text = self.translate(text: .missedCallSubTitle)
             self.desc2Lbl.text = ""
-
-            
+        case .notCompleted:
+            self.statusImg.image = UIImage(named: "sadFace")
+            self.successLbl.text = self.translate(text: .identifyFailedTitle)
+            self.desc1Lbl.text = self.translate(text: .identifyFailedDesc)
+            self.desc2Lbl.text = ""
         default:
             return
         }
         
-        
         UIApplication.shared.isIdleTimerDisabled = false
     }
-}
-
-enum CallStatus: Codable {
-    case completed
-    case missedCall
 }

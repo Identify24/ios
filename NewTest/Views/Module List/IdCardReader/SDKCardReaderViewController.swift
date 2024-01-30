@@ -40,6 +40,13 @@ class SDKCardReaderViewController: SDKBaseViewController {
         setupUI()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if self.manager.tryedNfcComparisonCount >= 2 {
+            setContinueButton(isActive: false)
+        }
+    }
+    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
     }
@@ -237,7 +244,6 @@ class SDKCardReaderViewController: SDKBaseViewController {
                                 return
                             }
                         } else {
-                            print("\(self.manager.sdkFrontInfo.asDictionary())")
                             print(self.manager.sdkFrontInfo.asDictionary())
                             self.manager.uploadIdPhoto(idPhoto: self.frontIdPhoto.image ?? UIImage()) { webResp in
                                 if webResp.result == true {
@@ -344,17 +350,24 @@ extension SDKCardReaderViewController: ImageScannerControllerDelegate {
                 default:
                     return
             }
-            self.startOCR()
+            DispatchQueue.main.async {
+                self.startOCR()
+            }
+            
         }
         
     }
     
     func imageScannerControllerDidCancel(_ scanner: ImageScannerController) {
         scanner.dismiss(animated: true)
+        scanner.delegate = nil
+        scanner.imageScannerDelegate = nil
         print("canceled")
     }
     
     func imageScannerController(_ scanner: ImageScannerController, didFailWithError error: Error) {
+        scanner.delegate = nil
+        scanner.imageScannerDelegate = nil
         print(error.localizedDescription)
     }
     

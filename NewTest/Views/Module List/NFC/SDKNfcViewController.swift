@@ -33,6 +33,7 @@ class SDKNfcViewController: SDKBaseViewController {
     @IBOutlet weak var expDateLbl: UILabel!
     
     var showOnlyEditScreen = false
+    var nfcComparisonCount = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -108,6 +109,15 @@ class SDKNfcViewController: SDKBaseViewController {
             self.errValidDate.text = cachedKeys.idValidDateMRZ?.mrzToNormalDate()
             self.infoLbl.isHidden = true
         }
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+        tapGesture.numberOfTapsRequired = 1
+        tapGesture.numberOfTouchesRequired = 1
+        self.view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func handleTap() {
+        view.endEditing(true)
     }
     
     private func showHidePickerStack() {
@@ -193,20 +203,37 @@ class SDKNfcViewController: SDKBaseViewController {
     func startNFC() {
         self.showLoader()
         self.manager.startNFC { idCard, identStatus, webResponse, err in
-            print(idCard?.asDictionary()) // kimlik kartının içindeki veriler
-            self.hideLoader()
+//            print(idCard?.asDictionary()) // kimlik kartının içindeki veriler
+            
             if self.showOnlyEditScreen {
+                self.hideLoader()
                 DispatchQueue.main.async {
                     self.dismiss(animated: true)
                 }
             } else {
+                self.hideLoader()
                 if webResponse.result == false {
                     if webResponse.msg == "MAX_ERR_COUNT" {
                         self.goToNextPage()
                     }
-                } else {
+                } else if webResponse.result == true && webResponse.data?.comparison == false {
+                    let alertMsg = self.translate(text: .activeNfcWarn)
+                    let alertExpMsg = self.translate(text: .activeNfcExit)
+                    if self.manager.nfcComparisonCount == self.manager.tryedNfcComparisonCount {
+                        self.oneButtonAlertShow(message: alertExpMsg, title1: "Tamam") {
+                            self.closeSDK()
+                        }
+                    } else {
+                        self.oneButtonAlertShow(message: alertMsg, title1: "Tamam") {
+                            self.manager.tryedNfcComparisonCount += 1
+                            self.navigationController?.popViewController(animated: true)
+                        }
+                    }
+                } else if webResponse.result == true && webResponse.data?.comparison == true {
+                    self.manager.tryedNfcComparisonCount = 1 // resetliyoruz
                     self.goToNextPage()
                 }
+                
                 if let error = err {
                     DispatchQueue.main.async {
                         self.showLoader()
@@ -223,8 +250,6 @@ class SDKNfcViewController: SDKBaseViewController {
             }
         }
     }
-    
-    
     
     private func showErrorScreen(needShow:Bool) {
         DispatchQueue.main.async {

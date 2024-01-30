@@ -142,5 +142,12 @@
   "ScanHoldOn" : "Please hold the phone still",
   "ScanCloser" : "Please approach the ID",
   "ScanGoAway" : "Please move away from the ID",
-  "ScanPrepareList" : "Preparation List"
+  "ScanErrDegree" : "Please correct your ID so that it is horizontal.",
+  "ScanPrepareList" : "Preparation List",
+  "IdentFailedTitle" : "Identification failed.",
+  "IdentFailedDesc" : "Identification failed. Please try again later.",
+  "ActiveSelfieWarn" : "Your identification photo does not match your selfie. Please take it again.",
+  "ActiveSelfieExit" : "You have made enough attempts, thank you.",
+  "ActiveNfcWarn" : "Your form and NFC data do not match. Please retake the correct identification photo.",
+  "ActiveNfcExit" : "The identity information does not match the data in the form. You have made enough attempts, thank you."
 }

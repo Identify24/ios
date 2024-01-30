@@ -142,6 +142,13 @@
   "ScanHoldOn" : "Bitte halten Sie das Telefon still",
   "ScanCloser" : "Bitte nähern Sie sich dem Ausweisn",
   "ScanGoAway" : "Bitte entfernen Sie sich von dem Ausweis",
-  "ScanPrepareList" : "Vorbereitungsliste"
+  "ScanErrDegree" : "Bitte korrigieren Sie Ihren Ausweis so, dass er horizontal ist.",
+  "ScanPrepareList" : "Vorbereitungsliste",
+  "IdentFailedTitle" : "Identifizierung fehlgeschlagen.",
+  "IdentFailedDesc" : "Identifizierung fehlgeschlagen. Bitte versuchen Sie es später erneut.",
+  "ActiveSelfieWarn" : "Ihr Ausweisfoto stimmt nicht mit Ihrem Selfie überein. Bitte machen Sie ein neues.",
+  "ActiveSelfieExit" : "Sie haben ausreichend Versuche unternommen, Vielen Dank.",
+  "ActiveNfcWarn" : "Ihre Formular und NFC Daten stimmen nicht überein. Bitte nehmen Sie das korrekte Ausweisfoto erneut auf.",
+  "ActiveNfcExit" : "Ihre Identifikationsdaten stimmen nicht mit den Angaben im Formular überein. Sie haben ausreichend Versuche unternommen, Vielen Dank."
 }
 

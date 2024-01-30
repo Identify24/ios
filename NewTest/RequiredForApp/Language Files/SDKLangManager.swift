@@ -335,11 +335,23 @@ extension SDKLangManager {
                 return self.readKey(key: "ScanGoAway")
             case .scanPrepareList:
                 return self.readKey(key: "ScanPrepareList")
+            case .identifyFailedTitle:
+                return self.readKey(key: "IdentFailedTitle")
+            case .identifyFailedDesc:
+                return self.readKey(key: "IdentFailedDesc")
+            case .activeNfcWarn:
+                return self.readKey(key: "ActiveNfcWarn")
+            case .activeNfcExit:
+                return self.readKey(key: "ActiveNfcExit")
+            case .activeSelfieWarn:
+                return self.readKey(key: "ActiveSelfieWarn")
+            case .activeSelfieExit:
+                return self.readKey(key: "ActiveSelfieExit")
+            case .scanErrDegree:
+                return self.readKey(key: "ScanErrDegree")
         }
     }
 }
-
-
 
 public enum SDKKeywords {
     case connect
@@ -485,5 +497,11 @@ public enum SDKKeywords {
     case scanCloser
     case scanGoAway
     case scanPrepareList
+    case identifyFailedTitle
+    case identifyFailedDesc
+    case activeSelfieWarn
+    case activeSelfieExit
+    case activeNfcWarn
+    case activeNfcExit
+    case scanErrDegree
 }
-

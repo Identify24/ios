@@ -64,12 +64,27 @@ class SDKSelfieViewController: SDKBaseViewController {
     private func uploadSelfie(image: UIImage) {
         self.showLoader()
         self.manager.uploadIdPhoto(idPhoto: image , selfieType: .selfie) { webResp in
-            if webResp.result == true {
+            
+            if webResp.result == true && webResp.data?.comparison == false {
+                self.hideLoader()
+                let alertMsg = self.translate(text: .activeSelfieWarn)
+                let alertExpMsg = self.translate(text: .activeSelfieExit)
+                if self.manager.selfieComparisonCount == self.manager.tryedSelfieComparisonCount {
+                    self.oneButtonAlertShow(message: alertExpMsg, title1: "Tamam") {
+                        self.closeSDK()
+                    }
+                } else {
+                    self.oneButtonAlertShow(message: alertMsg, title1: "Tamam") {
+                        self.manager.tryedSelfieComparisonCount += 1
+                    }
+                }
+            } else if webResp.result == true && webResp.data?.comparison == true {
                 self.hideLoader()
                 self.showToast(title: self.translate(text: .coreSuccess), subTitle: self.translate(text: .coreSuccess), attachTo: self.view) {
                     print("Foto upload tamam")
                     self.vc.delegate = nil
                 }
+                self.manager.tryedSelfieComparisonCount = 1 // resetliyoruz
                 self.isEnableSubmit(enabled: true)
             } else {
                 self.showToast(type:.fail, title: self.translate(text: .coreUploadError), attachTo: self.view) {

@@ -87,6 +87,7 @@ public final class ScannerViewController: UIViewController {
         case wait
         case needCloser
         case needGetAway
+        case needHorizontal
     }
 
     // MARK: - Life Cycle
@@ -389,28 +390,37 @@ extension ScannerViewController: RectangleDetectionDelegateProtocol {
         quadView.drawQuadrilateral(quad: transformedQuad, animated: true)
         
         if scanMode == .idCard {
-            if transformedQuad.perimeter >= 1000 && transformedQuad.perimeter <= 1200 {
-                quadView.strokeColor = UIColor.green.withAlphaComponent(1).cgColor
-                if captureSessionManager.enableAutoCapture ?? true {
-                    addInfoLabels(state: .wait)
-                }
-                enabledAutoCapture = true
-                CaptureSession.current.isAutoScanEnabled = true
-            } else if transformedQuad.perimeter < 1000 {
-                quadView.strokeColor = UIColor.red.withAlphaComponent(0.2).cgColor
-                if captureSessionManager.enableAutoCapture ?? true {
-                    addInfoLabels(state: .needCloser)
-                }
+            if transformedQuad.bottomLeft.x >= 50 {
                 enabledAutoCapture = false
                 CaptureSession.current.isAutoScanEnabled = false
-            } else if transformedQuad.perimeter > 1200 {
-                quadView.strokeColor = UIColor.red.withAlphaComponent(0.2).cgColor
-                if captureSessionManager.enableAutoCapture ?? true {
-                    addInfoLabels(state: .needGetAway)
+                addInfoLabels(state: .needHorizontal)
+                quadView.strokeColor = UIColor.red.withAlphaComponent(1).cgColor
+                return
+            } else {
+                if transformedQuad.perimeter >= 1000 && transformedQuad.perimeter <= 1200 {
+                    quadView.strokeColor = UIColor.green.withAlphaComponent(1).cgColor
+                    if captureSessionManager.enableAutoCapture ?? true {
+                        addInfoLabels(state: .wait)
+                    }
+                    enabledAutoCapture = true
+                    CaptureSession.current.isAutoScanEnabled = true
+                } else if transformedQuad.perimeter < 1000 {
+                    quadView.strokeColor = UIColor.red.withAlphaComponent(1).cgColor
+                    if captureSessionManager.enableAutoCapture ?? true {
+                        addInfoLabels(state: .needCloser)
+                    }
+                    enabledAutoCapture = false
+                    CaptureSession.current.isAutoScanEnabled = false
+                } else if transformedQuad.perimeter > 1200 {
+                    quadView.strokeColor = UIColor.red.withAlphaComponent(1).cgColor
+                    if captureSessionManager.enableAutoCapture ?? true {
+                        addInfoLabels(state: .needGetAway)
+                    }
+                    enabledAutoCapture = false
+                    CaptureSession.current.isAutoScanEnabled = false
                 }
-                enabledAutoCapture = false
-                CaptureSession.current.isAutoScanEnabled = false
             }
+            
         }
     }
     
@@ -422,7 +432,8 @@ extension ScannerViewController: RectangleDetectionDelegateProtocol {
             countLabel.bottomAnchor.constraint(equalTo: quadView.bottomAnchor, constant: -48),
             countLabel.leadingAnchor.constraint(equalTo: quadView.leadingAnchor, constant: 12),
             countLabel.trailingAnchor.constraint(equalTo: quadView.trailingAnchor, constant: -12),
-            countLabel.heightAnchor.constraint(equalToConstant: 36)
+            countLabel.heightAnchor.constraint(greaterThanOrEqualToConstant: 36)
+
         ])
         
         var statusText = ""
@@ -434,10 +445,13 @@ extension ScannerViewController: RectangleDetectionDelegateProtocol {
                 statusText = langManager.translate(key: .scanCloser)
             case .needGetAway:
                 statusText = langManager.translate(key: .scanGoAway)
+            case .needHorizontal:
+                statusText = langManager.translate(key: .scanErrDegree)
             default:
                 return
         }
         self.countLabel.text = statusText
+        self.countLabel.numberOfLines = 0
         self.countLabel.backgroundColor = .black
         self.countLabel.textColor = .yellow
         self.countLabel.translatesAutoresizingMaskIntoConstraints = false
