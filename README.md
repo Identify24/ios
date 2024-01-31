@@ -26,6 +26,10 @@ Proje ile ilgili dökümantasyona ve SDK download linkine https://docs.identify.
 
 ### SDK Son Güncelleme:
 
+## 2.0.1
+- active result desteği eklendi
+- ocr alanında güncellemeler yapıldı
+
 ## 1.9.8
 - bağlantı hızına bağlı olarak kamera güncellemesi düzenlendi
 - prepare modülünün panele attığı istek eklendi
