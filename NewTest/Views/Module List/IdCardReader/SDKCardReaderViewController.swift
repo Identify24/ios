@@ -360,14 +360,10 @@ extension SDKCardReaderViewController: ImageScannerControllerDelegate {
     
     func imageScannerControllerDidCancel(_ scanner: ImageScannerController) {
         scanner.dismiss(animated: true)
-        scanner.delegate = nil
-        scanner.imageScannerDelegate = nil
         print("canceled")
     }
     
     func imageScannerController(_ scanner: ImageScannerController, didFailWithError error: Error) {
-        scanner.delegate = nil
-        scanner.imageScannerDelegate = nil
         print(error.localizedDescription)
     }
     
