@@ -33,6 +33,9 @@ Proje ile ilgili dökümantasyona ve SDK download linkine https://docs.identify.
 
 ### SDK Son Güncelleme:
 
+## 2.0.2
+- ws credential webservisten gelecek hale getirildi, docs güncellendi
+
 ## 2.0.1
 - active result desteği eklendi
 - ocr alanında güncellemeler yapıldı
