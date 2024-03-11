@@ -33,7 +33,7 @@ class SDKLoginViewController: SDKViewOptionsController {
         self.manager.selfieModuleController = SDKSelfieViewController.instantiate()
         self.manager.idCardModuleController = SDKCardReaderViewController.instantiate()
         self.manager.nfcModuleController = SDKNfcViewController.instantiate()
-        self.manager.signatureModuleController = SDKSignatureViewController.instantiate()
+//        self.manager.signatureModuleController = SDKSignatureViewController.instantiate()
         self.manager.videoRecorderModuleController = SDKVideoRecorderViewController.instantiate()
         self.manager.livenessModuleController = SDKLivenessViewController.instantiate()
         self.manager.addressModuleController = SDKAddressConfirmViewController.instantiate()
@@ -101,9 +101,7 @@ class SDKLoginViewController: SDKViewOptionsController {
         self.manager.setupSDK(
             identId: identIdArea.text!,
             baseApiUrl: self.selectedServer.apiUrl,
-            stunServers: [self.selectedServer.stunUrl, self.selectedServer.turnUrl],
-            stunUser: self.selectedServer.turnUser, stunPass: self.selectedServer.turnPassword,
-            webSocketUrl: self.selectedServer.websocketUrl,
+            
             networkOptions: SDKNetworkOptions(timeoutIntervalForRequest: 10, timeoutIntervalForResource: 10, useSslPinning: false),
             kpsData: nil, // EĞER ELİNİZDE KPS DEN GELEN KİMLİK DATALARI VARSA ALTTAKİ KODU AKTİF EDİP BU SATIRI SİLEBİLİRSİNİZ.
 //                kpsData: SDKKpsData(birthDate: "890103", validDate: "300303", serialNo: "B25F24190"),
@@ -154,6 +152,14 @@ extension SDKLoginViewController: SDKSocketListener {
     
     func listenSocketMessage(message: SDKCallActions) {
         switch message {
+            
+            case .wrongSocketActionErr(let error):
+                self.hideLoader()
+                self.showToast(type: .fail, title: self.translate(text: .coreError), subTitle: error, attachTo: self.view) {
+                    return
+                }
+                return
+            
             case .subrejectedDismiss:
                 self.subRejected = true
                 self.showToast(type: .fail, title: self.translate(text: .coreError), subTitle: self.translate(text: .anotherUserInToTheRoom), attachTo: self.view) {

@@ -3,6 +3,13 @@ Proje ile ilgili dökümantasyona ve SDK download linkine https://docs.identify.
 
 ### Sample App 
 
+## Build 84:
+- scanner ekranında kimliğin yatay olma zorunluluğu iptal edildi
+- login ekranı yeni SDK kurulumuna göre düzenlendi
+- login ekranında socket hata vermesi durumunda ekstra durum bildirimi eklendi
+
+
+
 ## Build 80:
 - scanner ekranında daha hızlı fotoğraf çekimi sağlandı 
 - active result için NfcViewController, CardreaderViewController ve ThankYouViewController buna bağlı olarak güncellendi

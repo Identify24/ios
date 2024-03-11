@@ -390,38 +390,62 @@ extension ScannerViewController: RectangleDetectionDelegateProtocol {
         quadView.drawQuadrilateral(quad: transformedQuad, animated: true)
         
         if scanMode == .idCard {
-            if transformedQuad.bottomLeft.x >= 50 {
+            if transformedQuad.perimeter >= 1000 && transformedQuad.perimeter <= 1200 {
+                quadView.strokeColor = UIColor.green.withAlphaComponent(1).cgColor
+                if captureSessionManager.enableAutoCapture ?? true {
+                    addInfoLabels(state: .wait)
+                }
+                enabledAutoCapture = true
+                CaptureSession.current.isAutoScanEnabled = true
+            } else if transformedQuad.perimeter < 1000 {
+                quadView.strokeColor = UIColor.red.withAlphaComponent(1).cgColor
+                if captureSessionManager.enableAutoCapture ?? true {
+                    addInfoLabels(state: .needCloser)
+                }
                 enabledAutoCapture = false
                 CaptureSession.current.isAutoScanEnabled = false
-                addInfoLabels(state: .needHorizontal)
+            } else if transformedQuad.perimeter > 1200 {
                 quadView.strokeColor = UIColor.red.withAlphaComponent(1).cgColor
-                return
-            } else {
-                if transformedQuad.perimeter >= 1000 && transformedQuad.perimeter <= 1200 {
-                    quadView.strokeColor = UIColor.green.withAlphaComponent(1).cgColor
-                    if captureSessionManager.enableAutoCapture ?? true {
-                        addInfoLabels(state: .wait)
-                    }
-                    enabledAutoCapture = true
-                    CaptureSession.current.isAutoScanEnabled = true
-                } else if transformedQuad.perimeter < 1000 {
-                    quadView.strokeColor = UIColor.red.withAlphaComponent(1).cgColor
-                    if captureSessionManager.enableAutoCapture ?? true {
-                        addInfoLabels(state: .needCloser)
-                    }
-                    enabledAutoCapture = false
-                    CaptureSession.current.isAutoScanEnabled = false
-                } else if transformedQuad.perimeter > 1200 {
-                    quadView.strokeColor = UIColor.red.withAlphaComponent(1).cgColor
-                    if captureSessionManager.enableAutoCapture ?? true {
-                        addInfoLabels(state: .needGetAway)
-                    }
-                    enabledAutoCapture = false
-                    CaptureSession.current.isAutoScanEnabled = false
+                if captureSessionManager.enableAutoCapture ?? true {
+                    addInfoLabels(state: .needGetAway)
                 }
+                enabledAutoCapture = false
+                CaptureSession.current.isAutoScanEnabled = false
             }
-            
         }
+        
+//        if scanMode == .idCard {
+//            if transformedQuad.bottomLeft.x >= 50 {
+//                enabledAutoCapture = false
+//                CaptureSession.current.isAutoScanEnabled = false
+//                addInfoLabels(state: .needHorizontal)
+//                quadView.strokeColor = UIColor.red.withAlphaComponent(1).cgColor
+//                return
+//            } else {
+//                if transformedQuad.perimeter >= 1000 && transformedQuad.perimeter <= 1200 {
+//                    quadView.strokeColor = UIColor.green.withAlphaComponent(1).cgColor
+//                    if captureSessionManager.enableAutoCapture ?? true {
+//                        addInfoLabels(state: .wait)
+//                    }
+//                    enabledAutoCapture = true
+//                    CaptureSession.current.isAutoScanEnabled = true
+//                } else if transformedQuad.perimeter < 1000 {
+//                    quadView.strokeColor = UIColor.red.withAlphaComponent(1).cgColor
+//                    if captureSessionManager.enableAutoCapture ?? true {
+//                        addInfoLabels(state: .needCloser)
+//                    }
+//                    enabledAutoCapture = false
+//                    CaptureSession.current.isAutoScanEnabled = false
+//                } else if transformedQuad.perimeter > 1200 {
+//                    quadView.strokeColor = UIColor.red.withAlphaComponent(1).cgColor
+//                    if captureSessionManager.enableAutoCapture ?? true {
+//                        addInfoLabels(state: .needGetAway)
+//                    }
+//                    enabledAutoCapture = false
+//                    CaptureSession.current.isAutoScanEnabled = false
+//                }
+//            }
+//        }
     }
     
     func addInfoLabels(state: InfoLabelChabge) {
