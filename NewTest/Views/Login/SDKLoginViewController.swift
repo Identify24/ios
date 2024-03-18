@@ -33,7 +33,7 @@ class SDKLoginViewController: SDKViewOptionsController {
         self.manager.selfieModuleController = SDKSelfieViewController.instantiate()
         self.manager.idCardModuleController = SDKCardReaderViewController.instantiate()
         self.manager.nfcModuleController = SDKNfcViewController.instantiate()
-//        self.manager.signatureModuleController = SDKSignatureViewController.instantiate()
+        self.manager.signatureModuleController = SDKSignatureViewController.instantiate()
         self.manager.videoRecorderModuleController = SDKVideoRecorderViewController.instantiate()
         self.manager.livenessModuleController = SDKLivenessViewController.instantiate()
         self.manager.addressModuleController = SDKAddressConfirmViewController.instantiate()
@@ -48,12 +48,7 @@ class SDKLoginViewController: SDKViewOptionsController {
             print("cihazda jb tespit edildi, bu durumu yönetebilirsiniz.")
         }
         
-        self.selectedServer.turnUrl = "turn:185.32.14.165:3478"
-        self.selectedServer.stunUrl = "stun:185.32.14.165:3478"
-        self.selectedServer.turnUser = "itrturn"
-        self.selectedServer.turnPassword = "itrpass"
         self.selectedServer.apiUrl = "https://v2api.identify.com.tr/"
-        self.selectedServer.websocketUrl = "wss://v2ws.identify.com.tr/"
     }
     
     private func setupUI() {
@@ -101,7 +96,6 @@ class SDKLoginViewController: SDKViewOptionsController {
         self.manager.setupSDK(
             identId: identIdArea.text!,
             baseApiUrl: self.selectedServer.apiUrl,
-            
             networkOptions: SDKNetworkOptions(timeoutIntervalForRequest: 10, timeoutIntervalForResource: 10, useSslPinning: false),
             kpsData: nil, // EĞER ELİNİZDE KPS DEN GELEN KİMLİK DATALARI VARSA ALTTAKİ KODU AKTİF EDİP BU SATIRI SİLEBİLİRSİNİZ.
 //                kpsData: SDKKpsData(birthDate: "890103", validDate: "300303", serialNo: "B25F24190"),

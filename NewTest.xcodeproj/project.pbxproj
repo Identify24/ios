@@ -113,8 +113,6 @@
 		48773B622B6925AC004EFB83 /* SDKIdentifyLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 486A11142B07BAAA00A34623 /* SDKIdentifyLoginViewController.xib */; };
 		48773B632B6925AC004EFB83 /* SDKModuleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486A110F2B07BAA200A34623 /* SDKModuleListViewController.swift */; };
 		48773B642B6925AC004EFB83 /* SDKSocketLogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BC60A82B2217F400B03684 /* SDKSocketLogsViewController.swift */; };
-		4880059C2B9B505200040AE5 /* IdentifySDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4880059A2B9B504D00040AE5 /* IdentifySDK.xcframework */; };
-		4880059D2B9B505200040AE5 /* IdentifySDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4880059A2B9B504D00040AE5 /* IdentifySDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4880596E291D0EBD0058C7CD /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 4880596D291D0EBD0058C7CD /* Toast */; settings = {ATTRIBUTES = (Required, ); }; };
 		4881A7FF29238CB400EB4072 /* SDKAddressConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4881A7FD29238CB400EB4072 /* SDKAddressConfirmViewController.swift */; };
 		4881A80029238CB400EB4072 /* SDKAddressConfirmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4881A7FE29238CB400EB4072 /* SDKAddressConfirmViewController.xib */; };
@@ -143,6 +141,8 @@
 		48DE147B290A6C1900057EAD /* SDKColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DE147A290A6C1900057EAD /* SDKColorManager.swift */; };
 		48DE147D290A6C3E00057EAD /* SDKButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DE147C290A6C3E00057EAD /* SDKButtonExtension.swift */; };
 		48DE1485290A7D3A00057EAD /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DE1484290A7D3A00057EAD /* UIViewController+.swift */; };
+		48E068322BA0A51400A440AE /* IdentifySDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E068302BA0A51000A440AE /* IdentifySDK.xcframework */; };
+		48E068332BA0A51400A440AE /* IdentifySDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 48E068302BA0A51000A440AE /* IdentifySDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		48E157002AAB3A1000CDB30D /* sdkPassportList.pem in Resources */ = {isa = PBXBuildFile; fileRef = 4869E3642AAA09C100BD62FC /* sdkPassportList.pem */; };
 		48E8E43129266B8A0045C3F8 /* SDKSpeechRecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E8E42F29266B8A0045C3F8 /* SDKSpeechRecViewController.swift */; };
 		48E8E43229266B8A0045C3F8 /* SDKSpeechRecViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48E8E43029266B8A0045C3F8 /* SDKSpeechRecViewController.xib */; };
@@ -156,7 +156,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4880059D2B9B505200040AE5 /* IdentifySDK.xcframework in Embed Frameworks */,
+				48E068332BA0A51400A440AE /* IdentifySDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,7 +277,6 @@
 		486A110F2B07BAA200A34623 /* SDKModuleListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDKModuleListViewController.swift; sourceTree = "<group>"; };
 		486A11102B07BAA200A34623 /* SDKModuleListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SDKModuleListViewController.xib; sourceTree = "<group>"; };
 		486A11142B07BAAA00A34623 /* SDKIdentifyLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SDKIdentifyLoginViewController.xib; sourceTree = "<group>"; };
-		4880059A2B9B504D00040AE5 /* IdentifySDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = IdentifySDK.xcframework; sourceTree = "<group>"; };
 		4881A7FD29238CB400EB4072 /* SDKAddressConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKAddressConfirmViewController.swift; sourceTree = "<group>"; };
 		4881A7FE29238CB400EB4072 /* SDKAddressConfirmViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKAddressConfirmViewController.xib; sourceTree = "<group>"; };
 		4881A8092923BEF400EB4072 /* SDKCallScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKCallScreenViewController.swift; sourceTree = "<group>"; };
@@ -309,6 +308,7 @@
 		48DE147A290A6C1900057EAD /* SDKColorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKColorManager.swift; sourceTree = "<group>"; };
 		48DE147C290A6C3E00057EAD /* SDKButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKButtonExtension.swift; sourceTree = "<group>"; };
 		48DE1484290A7D3A00057EAD /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		48E068302BA0A51000A440AE /* IdentifySDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = IdentifySDK.xcframework; sourceTree = "<group>"; };
 		48E8E42F29266B8A0045C3F8 /* SDKSpeechRecViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKSpeechRecViewController.swift; sourceTree = "<group>"; };
 		48E8E43029266B8A0045C3F8 /* SDKSpeechRecViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKSpeechRecViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -326,7 +326,7 @@
 				486A111E2B07BED000A34623 /* CameraPermission in Frameworks */,
 				48420BA72A8B61840005250F /* WebRTC in Frameworks */,
 				4857BFF82902D621001FE850 /* OpenSSL in Frameworks */,
-				4880059C2B9B505200040AE5 /* IdentifySDK.xcframework in Frameworks */,
+				48E068322BA0A51400A440AE /* IdentifySDK.xcframework in Frameworks */,
 				4831E1F32B69284400B67891 /* IQKeyboardManagerSwift in Frameworks */,
 				48171405294716830095A64F /* netfox in Frameworks */,
 				48F0867829F7CA4E00FCA4BF /* QKMRZScanner in Frameworks */,
@@ -836,7 +836,7 @@
 		48ED5F0E2A0D2A8B0000C279 /* SDK */ = {
 			isa = PBXGroup;
 			children = (
-				4880059A2B9B504D00040AE5 /* IdentifySDK.xcframework */,
+				48E068302BA0A51000A440AE /* IdentifySDK.xcframework */,
 			);
 			path = SDK;
 			sourceTree = "<group>";
@@ -1255,7 +1255,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = NewTest/NewTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 84;
+				CURRENT_PROJECT_VERSION = 85;
 				DEVELOPMENT_TEAM = TQUQ2HQ482;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1296,7 +1296,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = NewTest/NewTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 84;
+				CURRENT_PROJECT_VERSION = 85;
 				DEVELOPMENT_TEAM = TQUQ2HQ482;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
