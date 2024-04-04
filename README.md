@@ -3,6 +3,11 @@ Proje ile ilgili dökümantasyona ve SDK download linkine https://docs.identify.
 
 ### Sample App 
 
+## Build 89:
+- yeni canlılık testi kodları eklendi
+- ssl pinning örnek sertifika eklendi
+- privacy info dosyası eklendi
+
 ## Build 84:
 - scanner ekranında kimliğin yatay olma zorunluluğu iptal edildi
 - login ekranı yeni SDK kurulumuna göre düzenlendi

@@ -234,7 +234,7 @@ class SDKCardReaderViewController: SDKBaseViewController {
                 } else {
                     self.manager.startFrontIdOcr(frontImg:self.frontIdPhoto.image ?? UIImage()) { resp, err in
                         if err != nil {
-                            self.showToast(type: .fail, title: self.translate(text: .coreError), subTitle: self.translate(text: .wrongFrontSide), attachTo: self.view) {
+                            self.showToast(type: .fail, title: self.translate(text: .coreError), subTitle: err?.errorMessages ?? "", attachTo: self.view) {
                                 if self.manager.selectedCardType == .passport {
                                     self.frontIdPhoto.image = UIImage(named: "passport")
                                 } else {

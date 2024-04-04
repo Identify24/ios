@@ -1,15 +1,6 @@
 {
   "pins" : [
     {
-      "identity" : "alamofire",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/Alamofire/Alamofire.git",
-      "state" : {
-        "branch" : "master",
-        "revision" : "7b38612d3142863f3d13a2c0e8aeab757dd49f19"
-      }
-    },
-    {
       "identity" : "chiotpfield",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ChiliLabs/CHIOTPField.git",

@@ -93,10 +93,11 @@ class SDKLoginViewController: SDKViewOptionsController {
             self.identIdArea.text = "87b9dc12bc003f80ab47c8d80d500349e6a31c5a"
         }
         self.showLoader()
+        
         self.manager.setupSDK(
             identId: identIdArea.text!,
             baseApiUrl: self.selectedServer.apiUrl,
-            networkOptions: SDKNetworkOptions(timeoutIntervalForRequest: 10, timeoutIntervalForResource: 10, useSslPinning: false),
+            networkOptions: SDKNetworkOptions(timeoutIntervalForRequest: 30, timeoutIntervalForResource: 30, useSslPinning: true), // DOCS' U MUTLAKA OKUYUN!!
             kpsData: nil, // EĞER ELİNİZDE KPS DEN GELEN KİMLİK DATALARI VARSA ALTTAKİ KODU AKTİF EDİP BU SATIRI SİLEBİLİRSİNİZ.
 //                kpsData: SDKKpsData(birthDate: "890103", validDate: "300303", serialNo: "B25F24190"),
             identCardType: [.idCard, .passport, .oldSchool], // destekleyeceğiniz kart tipleri
@@ -113,7 +114,7 @@ class SDKLoginViewController: SDKViewOptionsController {
                     self.hideLoader()
                 }
             } else { // hata yoksa işlemlere devam ediyoruz
-                if socketStats.isConnected {
+                if socketStats?.isConnected == true {
                     if apiResp.result ?? false {
                         self.manager.moduleStepOrder = 0
                         self.hideLoader()
@@ -128,7 +129,7 @@ class SDKLoginViewController: SDKViewOptionsController {
                                 })
                             }
                         }
-                    } else if (socketStats.isConnected == false) {
+                    } else if (socketStats?.isConnected == false) {
                         self.showToast(title: "Socket not connected", attachTo: self.view) {
                             self.hideLoader()
                         }

@@ -124,16 +124,18 @@
 		4887009B292CDA3500961218 /* SDKListenSocketViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48870099292CDA3500961218 /* SDKListenSocketViewController.xib */; };
 		48A151EB292B73BA005B376B /* SDKSignLangViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A151E9292B73BA005B376B /* SDKSignLangViewController.swift */; };
 		48A151EC292B73BA005B376B /* SDKSignLangViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A151EA292B73BA005B376B /* SDKSignLangViewController.xib */; };
-		48A2F33C2B6BAAEB009963B1 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 48A2F33B2B6BAAEB009963B1 /* Alamofire */; };
 		48AB73FB291A75E200F591A4 /* SDKSignatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AB73F9291A75E200F591A4 /* SDKSignatureViewController.swift */; };
 		48AB73FC291A75E200F591A4 /* SDKSignatureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48AB73FA291A75E200F591A4 /* SDKSignatureViewController.xib */; };
 		48AB73FF291A762100F591A4 /* SwiftSignatureView in Frameworks */ = {isa = PBXBuildFile; productRef = 48AB73FE291A762100F591A4 /* SwiftSignatureView */; settings = {ATTRIBUTES = (Required, ); }; };
 		48BFE3CB2AEA994200980684 /* ExternalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4887EEED2A6E99B600D51461 /* ExternalViewController.swift */; };
 		48BFE3CC2AEA994200980684 /* ExternalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4887EEEE2A6E99B600D51461 /* ExternalViewController.xib */; };
 		48BFE3D12AEAA09100980684 /* Env.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 48622A042AA9BE7D00B5CFC2 /* Env.xcdatamodeld */; };
+		48BFF0D12BBAF3940088D67E /* v2api.identify.com.tr.cer in Resources */ = {isa = PBXBuildFile; fileRef = 48BFF0D02BBAF3940088D67E /* v2api.identify.com.tr.cer */; };
 		48C0381A2B5542F500AF690B /* CallStatusEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C038192B5542F500AF690B /* CallStatusEnum.swift */; };
 		48CD8CFF29792C8F008573F8 /* SDKIdentifyColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CD8CFE29792C8F008573F8 /* SDKIdentifyColorTheme.swift */; };
 		48CD8D0129792D5A008573F8 /* SDKLangManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CD8D0029792D5A008573F8 /* SDKLangManager.swift */; };
+		48D6A6352BBC1A120075522E /* IdentifySDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D6A6332BBC1A0F0075522E /* IdentifySDK.xcframework */; };
+		48D6A6362BBC1A120075522E /* IdentifySDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 48D6A6332BBC1A0F0075522E /* IdentifySDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		48D802292924F6B000B9BB83 /* CHIOTPField in Frameworks */ = {isa = PBXBuildFile; productRef = 48D802282924F6B000B9BB83 /* CHIOTPField */; settings = {ATTRIBUTES = (Required, ); }; };
 		48DD2F292B8DD4DE0091FCCE /* IdentifyProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DD2F282B8DD4DE0091FCCE /* IdentifyProgressBar.swift */; };
 		48DD2F2D2B8DD57D0091FCCE /* SDKNewLivenessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DD2F2B2B8DD57D0091FCCE /* SDKNewLivenessViewController.swift */; };
@@ -141,9 +143,6 @@
 		48DE147B290A6C1900057EAD /* SDKColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DE147A290A6C1900057EAD /* SDKColorManager.swift */; };
 		48DE147D290A6C3E00057EAD /* SDKButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DE147C290A6C3E00057EAD /* SDKButtonExtension.swift */; };
 		48DE1485290A7D3A00057EAD /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DE1484290A7D3A00057EAD /* UIViewController+.swift */; };
-		48E068322BA0A51400A440AE /* IdentifySDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E068302BA0A51000A440AE /* IdentifySDK.xcframework */; };
-		48E068332BA0A51400A440AE /* IdentifySDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 48E068302BA0A51000A440AE /* IdentifySDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		48E157002AAB3A1000CDB30D /* sdkPassportList.pem in Resources */ = {isa = PBXBuildFile; fileRef = 4869E3642AAA09C100BD62FC /* sdkPassportList.pem */; };
 		48E8E43129266B8A0045C3F8 /* SDKSpeechRecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E8E42F29266B8A0045C3F8 /* SDKSpeechRecViewController.swift */; };
 		48E8E43229266B8A0045C3F8 /* SDKSpeechRecViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48E8E43029266B8A0045C3F8 /* SDKSpeechRecViewController.xib */; };
 		48F0867829F7CA4E00FCA4BF /* QKMRZScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 48F0867729F7CA4E00FCA4BF /* QKMRZScanner */; };
@@ -156,7 +155,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				48E068332BA0A51400A440AE /* IdentifySDK.xcframework in Embed Frameworks */,
+				48D6A6362BBC1A120075522E /* IdentifySDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,7 +268,6 @@
 		485C157A2908190D007B9ED0 /* SDKNfcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKNfcViewController.swift; sourceTree = "<group>"; };
 		485C157B2908190D007B9ED0 /* SDKNfcViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKNfcViewController.xib; sourceTree = "<group>"; };
 		48622A052AA9BE7D00B5CFC2 /* Env.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Env.xcdatamodel; sourceTree = "<group>"; };
-		4869E3642AAA09C100BD62FC /* sdkPassportList.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sdkPassportList.pem; sourceTree = "<group>"; };
 		486A11072B07BA9200A34623 /* EnvListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EnvListViewController.xib; sourceTree = "<group>"; };
 		486A11082B07BA9200A34623 /* EnvListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvListViewController.swift; sourceTree = "<group>"; };
 		486A110B2B07BA9800A34623 /* ServerSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerSettingsViewController.swift; sourceTree = "<group>"; };
@@ -296,19 +294,20 @@
 		48BC60A92B2217F400B03684 /* SDKSocketLogsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKSocketLogsViewController.xib; sourceTree = "<group>"; };
 		48BC60AD2B22184500B03684 /* SocketLogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketLogTableViewCell.swift; sourceTree = "<group>"; };
 		48BC60AE2B22184500B03684 /* SocketLogTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SocketLogTableViewCell.xib; sourceTree = "<group>"; };
+		48BFF0D02BBAF3940088D67E /* v2api.identify.com.tr.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = v2api.identify.com.tr.cer; sourceTree = "<group>"; };
 		48C038192B5542F500AF690B /* CallStatusEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallStatusEnum.swift; sourceTree = "<group>"; };
 		48CD8CFE29792C8F008573F8 /* SDKIdentifyColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKIdentifyColorTheme.swift; sourceTree = "<group>"; };
 		48CD8D0029792D5A008573F8 /* SDKLangManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKLangManager.swift; sourceTree = "<group>"; };
 		48CD8D0229792E25008573F8 /* ENGLISH.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ENGLISH.json; sourceTree = "<group>"; };
 		48CD8D0329792E26008573F8 /* TURKISH.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TURKISH.json; sourceTree = "<group>"; };
 		48CD8D0429792E26008573F8 /* GERMAN.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GERMAN.json; sourceTree = "<group>"; };
+		48D6A6332BBC1A0F0075522E /* IdentifySDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = IdentifySDK.xcframework; sourceTree = "<group>"; };
 		48DD2F282B8DD4DE0091FCCE /* IdentifyProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifyProgressBar.swift; sourceTree = "<group>"; };
 		48DD2F2B2B8DD57D0091FCCE /* SDKNewLivenessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKNewLivenessViewController.swift; sourceTree = "<group>"; };
 		48DD2F2C2B8DD57D0091FCCE /* SDKNewLivenessViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKNewLivenessViewController.xib; sourceTree = "<group>"; };
 		48DE147A290A6C1900057EAD /* SDKColorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKColorManager.swift; sourceTree = "<group>"; };
 		48DE147C290A6C3E00057EAD /* SDKButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKButtonExtension.swift; sourceTree = "<group>"; };
 		48DE1484290A7D3A00057EAD /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
-		48E068302BA0A51000A440AE /* IdentifySDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = IdentifySDK.xcframework; sourceTree = "<group>"; };
 		48E8E42F29266B8A0045C3F8 /* SDKSpeechRecViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKSpeechRecViewController.swift; sourceTree = "<group>"; };
 		48E8E43029266B8A0045C3F8 /* SDKSpeechRecViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SDKSpeechRecViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -319,17 +318,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				4880596E291D0EBD0058C7CD /* Toast in Frameworks */,
-				48A2F33C2B6BAAEB009963B1 /* Alamofire in Frameworks */,
 				486A11222B07BED000A34623 /* SpeechRecognizerPermission in Frameworks */,
 				486A11202B07BED000A34623 /* MicrophonePermission in Frameworks */,
 				48AB73FF291A762100F591A4 /* SwiftSignatureView in Frameworks */,
 				486A111E2B07BED000A34623 /* CameraPermission in Frameworks */,
 				48420BA72A8B61840005250F /* WebRTC in Frameworks */,
 				4857BFF82902D621001FE850 /* OpenSSL in Frameworks */,
-				48E068322BA0A51400A440AE /* IdentifySDK.xcframework in Frameworks */,
 				4831E1F32B69284400B67891 /* IQKeyboardManagerSwift in Frameworks */,
 				48171405294716830095A64F /* netfox in Frameworks */,
 				48F0867829F7CA4E00FCA4BF /* QKMRZScanner in Frameworks */,
+				48D6A6352BBC1A120075522E /* IdentifySDK.xcframework in Frameworks */,
 				4857BFFB2902D636001FE850 /* Starscream in Frameworks */,
 				48D802292924F6B000B9BB83 /* CHIOTPField in Frameworks */,
 			);
@@ -559,7 +557,7 @@
 		483BDB0D28F459CC00635BCC /* NewTest */ = {
 			isa = PBXGroup;
 			children = (
-				4869E3642AAA09C100BD62FC /* sdkPassportList.pem */,
+				48BFF0D02BBAF3940088D67E /* v2api.identify.com.tr.cer */,
 				482D2B612A547A8600F1344F /* WeScan-Edited */,
 				48ED5F0E2A0D2A8B0000C279 /* SDK */,
 				4820A4A12924CDAC004DB388 /* sample.mp4 */,
@@ -836,7 +834,7 @@
 		48ED5F0E2A0D2A8B0000C279 /* SDK */ = {
 			isa = PBXGroup;
 			children = (
-				48E068302BA0A51000A440AE /* IdentifySDK.xcframework */,
+				48D6A6332BBC1A0F0075522E /* IdentifySDK.xcframework */,
 			);
 			path = SDK;
 			sourceTree = "<group>";
@@ -871,7 +869,6 @@
 				486A111F2B07BED000A34623 /* MicrophonePermission */,
 				486A11212B07BED000A34623 /* SpeechRecognizerPermission */,
 				4831E1F22B69284400B67891 /* IQKeyboardManagerSwift */,
-				48A2F33B2B6BAAEB009963B1 /* Alamofire */,
 			);
 			productName = NewTest;
 			productReference = 483BDB0B28F459CC00635BCC /* NewTest.app */;
@@ -931,7 +928,6 @@
 				48420BA52A8B61840005250F /* XCRemoteSwiftPackageReference "WebRTC" */,
 				486A111C2B07BED000A34623 /* XCRemoteSwiftPackageReference "PermissionsKit" */,
 				4831E1F12B69284400B67891 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
-				48A2F33A2B6BAAEB009963B1 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 483BDB0C28F459CC00635BCC /* Products */;
 			projectDirPath = "";
@@ -961,6 +957,7 @@
 				4820A4A22924CDAD004DB388 /* sample.mp4 in Resources */,
 				485C154F2907DC19007B9ED0 /* SDKSelfieViewController.xib in Resources */,
 				4881A80029238CB400EB4072 /* SDKAddressConfirmViewController.xib in Resources */,
+				48BFF0D12BBAF3940088D67E /* v2api.identify.com.tr.cer in Resources */,
 				48E8E43229266B8A0045C3F8 /* SDKSpeechRecViewController.xib in Resources */,
 				482D2BB52A547AC000F1344F /* rotate@3x.png in Resources */,
 				4881A80C2923BEF400EB4072 /* SDKCallScreenViewController.xib in Resources */,
@@ -988,7 +985,6 @@
 				48BFE3CC2AEA994200980684 /* ExternalViewController.xib in Resources */,
 				48171423294734FA0095A64F /* SDKPassportReaderViewController.xib in Resources */,
 				48DD2F2E2B8DD57D0091FCCE /* SDKNewLivenessViewController.xib in Resources */,
-				48E157002AAB3A1000CDB30D /* sdkPassportList.pem in Resources */,
 				48A151EC292B73BA005B376B /* SDKSignLangViewController.xib in Resources */,
 				48549ADB2A41800E00F6838B /* SDKLivenessViewController.xib in Resources */,
 				482D2BBD2A547AC000F1344F /* enhance@3x.png in Resources */,
@@ -1255,7 +1251,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = NewTest/NewTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 85;
+				CURRENT_PROJECT_VERSION = 89;
 				DEVELOPMENT_TEAM = TQUQ2HQ482;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1296,7 +1292,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = NewTest/NewTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 85;
+				CURRENT_PROJECT_VERSION = 89;
 				DEVELOPMENT_TEAM = TQUQ2HQ482;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1409,14 +1405,6 @@
 				minimumVersion = 1.0.0;
 			};
 		};
-		48A2F33A2B6BAAEB009963B1 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
 		48AB73FD291A762100F591A4 /* XCRemoteSwiftPackageReference "SwiftSignatureView" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/alankarmisra/SwiftSignatureView.git";
@@ -1488,11 +1476,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4880596C291D0EBD0058C7CD /* XCRemoteSwiftPackageReference "Toast" */;
 			productName = Toast;
-		};
-		48A2F33B2B6BAAEB009963B1 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 48A2F33A2B6BAAEB009963B1 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
 		};
 		48AB73FE291A762100F591A4 /* SwiftSignatureView */ = {
 			isa = XCSwiftPackageProductDependency;

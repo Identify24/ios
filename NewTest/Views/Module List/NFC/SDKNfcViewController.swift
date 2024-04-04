@@ -215,6 +215,12 @@ class SDKNfcViewController: SDKBaseViewController {
                 if webResponse.result == false {
                     if webResponse.msg == "MAX_ERR_COUNT" {
                         self.goToNextPage()
+                    } else {
+                        if let errMsg = webResponse.msg, errMsg != "" {
+                            self.oneButtonAlertShow(message:errMsg, title1: "Hata") {
+                                return
+                            }
+                        }
                     }
                 } else if webResponse.result == true && webResponse.data?.comparison == false {
                     let alertMsg = self.translate(text: .activeNfcWarn)
