@@ -38,6 +38,10 @@ Proje ile ilgili dökümantasyona ve SDK download linkine https://docs.identify.
 
 ### SDK Son Güncelleme:
 
+## 2.0.3 (Xcode 15.3 sürümü ayrıca eklenmiştir, dökümantasyonu mutlaka kontrol edin)
+- network sınıfı güncellendi
+- ssl pinning desteği eklendi
+
 ## 2.0.2
 - ws credential webservisten gelecek hale getirildi, docs güncellendi
 
