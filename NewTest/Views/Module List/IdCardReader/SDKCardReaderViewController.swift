@@ -312,6 +312,11 @@ class SDKCardReaderViewController: SDKBaseViewController {
                             }
                         }
                     }
+                } else {
+                    self.showToast(title: self.translate(text: .coreError), subTitle: "\(err?.errorMessages ?? self.translate(text: .coreUploadError))", attachTo: self.view) {
+                        self.hideLoader()
+                    }
+                    print("error")
                 }
             }
             
