@@ -3,6 +3,9 @@ Proje ile ilgili dökümantasyona ve SDK download linkine https://docs.identify.
 
 ### Sample App 
 
+## Build 97:
+- yeni dil desteği eklendi
+
 ## Build 89:
 - yeni canlılık testi kodları eklendi
 - ssl pinning örnek sertifika eklendi
@@ -37,6 +40,13 @@ Proje ile ilgili dökümantasyona ve SDK download linkine https://docs.identify.
 
 
 ### SDK Son Güncelleme:
+
+## 2.0.5
+- yeni dil desteği eklendi
+
+## 2.0.4
+- close sdk methodu güncellendi
+- endReconnectSubscribe eklendi
 
 ## 2.0.3 (Xcode 15.3 sürümü ayrıca eklenmiştir, dökümantasyonu mutlaka kontrol edin)
 - network sınıfı güncellendi

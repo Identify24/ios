@@ -23,6 +23,10 @@ class SDKLangManager:NSObject {
                 return loadJson(filename: "ENGLISH")?[key] ?? ""
             case .tr:
                 return loadJson(filename: "TURKISH")?[key] ?? ""
+            case .az:
+                return loadJson(filename: "AZERI")?[key] ?? ""
+            case .ru:
+                return loadJson(filename: "RUSSIAN")?[key] ?? ""
             default:
                 return ""
         }
